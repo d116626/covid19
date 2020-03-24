@@ -515,7 +515,7 @@ def bar_compare(br_it,pais='BR',pais_name='Brasil',pais_comp='IT',pais_comp_name
 
 
 
-def brasil_vis(dd, var_col,cities, drop_cities, escala, today, largura=None, save=False):
+def brasil_vis(dd, var_col,cities, in_cities, escala, today, largura=None, save=False):
     wid = 10
     marker_size = 15
 
@@ -528,26 +528,30 @@ def brasil_vis(dd, var_col,cities, drop_cities, escala, today, largura=None, sav
         tipo = 'log'
 
     if var_col == 'deaths':
-        x_name  = '<br>DATA<br>'
-        y_name  = '<br>MOTES CONFIRMADAS<br>'
-        title   = '<br>MORTES POR ESTADO EM {}<br>'.format(today)
+        x_name  = '<b>DATA<b>'
+        y_name  = '<b>MOTES CONFIRMADAS<b>'
+        title   = '<b>MORTES POR ESTADO EM {}<b>'.format(today)
     
     elif var_col == 'confirmed':
-        x_name  = '<br>DATA<br>'
-        y_name  = '<br>CASOS CONFIRMADAS<br>'
-        title   = '<br>CASOS POR ESTADO EM {}<br>'.format(today)
+        x_name  = '<b>DATA<b>'
+        y_name  = '<b>CASOS CONFIRMADAS<b>'
+        title   = '<b>CASOS POR ESTADO EM {}<b>'.format(today)
 
-    # cities = list(dd['city'].unique())
-    # cities.sort(reverse=False)
+
+    in_cities = ['Brasil','SP', 'RJ']
+    cities = dd['city'].unique()
+    drop_cities = [city for city in cities if city not in in_cities]
+    drop_cities.sort()
+    cities =  in_cities + drop_cities
 
     data = []
 
     for city in cities:
 
-        if city in drop_cities:
-            just_legend = 'legendonly'
-        else:
+        if city in in_cities:
             just_legend = None
+        else:
+            just_legend = 'legendonly'
         
         mask = (dd['city']==city)
 
@@ -563,7 +567,6 @@ def brasil_vis(dd, var_col,cities, drop_cities, escala, today, largura=None, sav
         visible = just_legend
         )
         data.append(trace)
-
 
 
     layout = go.Layout(
@@ -586,6 +589,8 @@ def brasil_vis(dd, var_col,cities, drop_cities, escala, today, largura=None, sav
                 color='black',
             ),
     #         font = dict(size=20)
+        tickformat ='%d/%m'
+
 
         ),
 
