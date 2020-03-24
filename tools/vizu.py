@@ -512,3 +512,125 @@ def bar_compare(br_it,pais='BR',pais_name='Brasil',pais_comp='IT',pais_comp_name
         fig.write_image("../images/comparacao/pdf/comparacao_{}_vs_{}.pdf".format(pais_save[0],pais_save[1]))
 
     return(fig)
+
+
+
+def brasil_vis(dd, var_col,cities, drop_cities, escala, today, largura=None, save=False):
+    wid = 10
+    marker_size = 15
+
+
+    if escala == 'lin':
+        tick = 'n'
+        tipo = None
+    elif escala=='log':
+        tick = None
+        tipo = 'log'
+
+    if var_col == 'deaths':
+        x_name  = '<br>DATA<br>'
+        y_name  = '<br>MOTES CONFIRMADAS<br>'
+        title   = '<br>MORTES POR ESTADO EM {}<br>'.format(today)
+    
+    elif var_col == 'confirmed':
+        x_name  = '<br>DATA<br>'
+        y_name  = '<br>CASOS CONFIRMADAS<br>'
+        title   = '<br>CASOS POR ESTADO EM {}<br>'.format(today)
+
+    # cities = list(dd['city'].unique())
+    # cities.sort(reverse=False)
+
+    data = []
+
+    for city in cities:
+
+        if city in drop_cities:
+            just_legend = 'legendonly'
+        else:
+            just_legend = None
+        
+        mask = (dd['city']==city)
+
+        trace = go.Scatter(
+        name=city,
+        x=dd[mask]['date'], 
+        y=dd[mask][var_col],
+    #     line=dict(color='#a14900', width=wid),
+        line=dict(width=wid),
+        mode='lines+markers',
+        marker=dict(size=marker_size),
+        hoverlabel=dict(namelength=-1, font=dict(size=18)),
+        visible = just_legend
+        )
+        data.append(trace)
+
+
+
+    layout = go.Layout(
+        barmode='stack',
+
+        yaxis_title=y_name,
+        yaxis = dict(
+
+            tickfont=dict(
+                size=22,
+                color='black',
+            ),
+            tickformat=tick,
+            type=tipo,
+        ),
+        xaxis_title=x_name,
+        xaxis = dict(
+            tickfont=dict(
+                size=22,
+                color='black',
+            ),
+    #         font = dict(size=20)
+
+        ),
+
+        title=dict(
+            text=title,
+            x=0.5,
+    #         y=0.9,
+            xanchor='center',
+            yanchor='top',
+            font = dict(
+                size=22,
+            )
+        ),
+
+        legend=go.layout.Legend(
+    #         x=0.05,
+    #         y=0.99,
+    #         traceorder="normal",
+            orientation='v',
+            font=dict(
+                family="sans-serif",
+                size=20,
+                color="black"
+            ),
+            bgcolor= 'rgba(0,0,0,0)' ,
+    #         bordercolor="Black",
+        #     borderwidth=2
+        ),
+
+        height = 800,
+
+        width = largura,
+
+        font=dict(
+            size=18,
+        )
+    )
+
+    fig = go.Figure(data=data, layout=layout)
+
+
+    if save==True:
+        plot(fig, filename="../images/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+        plot(fig, filename="../../sample_pages/images/covid19/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+    else:
+        pass
+
+    return(fig)
