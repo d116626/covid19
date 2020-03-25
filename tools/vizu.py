@@ -515,7 +515,7 @@ def bar_compare(br_it,pais='BR',pais_name='Brasil',pais_comp='IT',pais_comp_name
 
 
 
-def brasil_vis(dd, var_col,cities, in_cities, escala, today, largura=None, save=False):
+def brasil_vis(dd, var_col, in_cities, escala, today, largura=None, save=False):
     wid = 10
     marker_size = 15
 

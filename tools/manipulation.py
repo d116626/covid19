@@ -35,4 +35,21 @@ def create_br_not_sp(df):
 
     df = pd.concat([df_brasil[df.columns],not_sp[df.columns],df],axis=0)
 
+    df['confirmed_shift'] = df['confirmed'].shift(1)
+    df['deaths_shift'] = df['deaths'].shift(1)
+
+    df['countryname']= df['city']
+    df['countryname_shift'] = df['countryname'].shift(1)
+
+
+
+    df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
+    df['new_cases'] = df['confirmed'] - df['confirmed_shift']
+
+    df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
+    df['new_deaths'] = df['deaths'] - df['deaths_shift']
+    ''
+    cols = ['city','city_ibge_code', 'date', 'confirmed','new_cases','deaths','new_deaths', 'estimated_population_2019','place_type','state']
+    df = df[cols]
+
     return df 
