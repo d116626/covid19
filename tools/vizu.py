@@ -538,7 +538,7 @@ def brasil_vis(dd, var_col, in_cities, escala, today, largura=None, save=False):
         title   = '<b>CASOS POR ESTADO EM {}<b>'.format(today)
 
 
-    in_cities = ['Brasil','SP', 'RJ']
+    # in_cities = ['BRASIL','SP', 'RJ']
     cities = dd['city'].unique()
     drop_cities = [city for city in cities if city not in in_cities]
     drop_cities.sort()
