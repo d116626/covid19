@@ -641,129 +641,129 @@ def brasil_vis(dd, var_col, in_cities, escala, today, largura=None, save=False):
     return(fig)
 
 
-def brasil_vis2(dd, var_col, in_cities, escala, today, largura=None, save=False):
-    wid = 10
-    marker_size = 15
+# def brasil_vis2(dd, var_col, in_cities, escala, today, largura=None, save=False):
+#     wid = 10
+#     marker_size = 15
 
 
-    if escala == 'lin':
-        tick = 'n'
-        tipo = None
-    elif escala=='log':
-        tick = None
-        tipo = 'log'
+#     if escala == 'lin':
+#         tick = 'n'
+#         tipo = None
+#     elif escala=='log':
+#         tick = None
+#         tipo = 'log'
 
-    if var_col == 'deaths':
-        x_name  = '<b>DATA<b>'
-        y_name  = '<b>MOTES CONFIRMADAS<b>'
-        title   = '<b>MORTES POR ESTADO EM {}<b>'.format(today)
+#     if var_col == 'deaths':
+#         x_name  = '<b>DATA<b>'
+#         y_name  = '<b>MOTES CONFIRMADAS<b>'
+#         title   = '<b>MORTES POR ESTADO EM {}<b>'.format(today)
     
-    elif var_col == 'confirmed':
-        x_name  = '<b>DATA<b>'
-        y_name  = '<b>CASOS CONFIRMADAS<b>'
-        title   = '<b>CASOS POR ESTADO EM {}<b>'.format(today)
+#     elif var_col == 'confirmed':
+#         x_name  = '<b>DATA<b>'
+#         y_name  = '<b>CASOS CONFIRMADAS<b>'
+#         title   = '<b>CASOS POR ESTADO EM {}<b>'.format(today)
 
 
-    # in_cities = ['BRASIL','SP', 'RJ']
-    cities = dd['city'].unique()
-    drop_cities = [city for city in cities if city not in in_cities]
-    drop_cities.sort()
-    cities =  in_cities + drop_cities
+#     # in_cities = ['BRASIL','SP', 'RJ']
+#     cities = dd['city'].unique()
+#     drop_cities = [city for city in cities if city not in in_cities]
+#     drop_cities.sort()
+#     cities =  in_cities + drop_cities
 
-    data = []
+#     data = []
 
-    for city in cities:
+#     for city in cities:
 
-        if city in in_cities:
-            just_legend = None
-        else:
-            just_legend = 'legendonly'
+#         if city in in_cities:
+#             just_legend = None
+#         else:
+#             just_legend = 'legendonly'
         
-        mask = (dd['city']==city)
+#         mask = (dd['city']==city)
 
-        trace = go.Scatter(
-        name=city,
-        x=dd[mask]['date'], 
-        y=dd[mask][var_col],
-    #     line=dict(color='#a14900', width=wid),
-        line=dict(width=wid),
-        mode='lines+markers',
-        marker=dict(size=marker_size),
-        hoverlabel=dict(namelength=-1, font=dict(size=18)),
-        visible = just_legend
-        )
-        data.append(trace)
-
-
-    layout = go.Layout(
-        barmode='stack',
-
-        yaxis_title=y_name,
-        yaxis = dict(
-
-            tickfont=dict(
-                size=22,
-                color='black',
-            ),
-            tickformat=tick,
-            type=tipo,
-        ),
-        xaxis_title=x_name,
-        xaxis = dict(
-            tickfont=dict(
-                size=22,
-                color='black',
-            ),
-    #         font = dict(size=20)
-        tickformat ='%d/%m'
+#         trace = go.Scatter(
+#         name=city,
+#         x=dd[mask]['date'], 
+#         y=dd[mask][var_col],
+#     #     line=dict(color='#a14900', width=wid),
+#         line=dict(width=wid),
+#         mode='lines+markers',
+#         marker=dict(size=marker_size),
+#         hoverlabel=dict(namelength=-1, font=dict(size=18)),
+#         visible = just_legend
+#         )
+#         data.append(trace)
 
 
-        ),
+#     layout = go.Layout(
+#         barmode='stack',
+        
+#         ## X - xaxis
+#         xaxis_title=x_name,
+#         xaxis = dict(
+#             tickfont=dict(
+#                 size=22,
+#                 color='black',
+#             ),
+#     #       font = dict(size=20)
+#             tickformat ='%d/%m'
+#         ),
 
-        title=dict(
-            text=title,
-            x=0.5,
-    #         y=0.9,
-            xanchor='center',
-            yanchor='top',
-            font = dict(
-                size=22,
-            )
-        ),
-
-        legend=go.layout.Legend(
-    #         x=0.05,
-    #         y=0.99,
-    #         traceorder="normal",
-            orientation='v',
-            font=dict(
-                family="sans-serif",
-                size=20,
-                color="black"
-            ),
-            bgcolor= 'rgba(0,0,0,0)' ,
-    #         bordercolor="Black",
-        #     borderwidth=2
-        ),
-
-        height = 800,
-
-        width = largura,
-
-        font=dict(
-            size=18,
-            family = "Century Gothic"
-        )
-    )
-
-    fig = go.Figure(data=data, layout=layout)
+#         ## X - xaxis
+#         yaxis_title=y_name,
+#         yaxis = dict(
+#             tickfont=dict(
+#                 size=22,
+#                 color='black',
+#             ),
+#             tickformat=tick,
+#             type=tipo,
+#         ),
 
 
-    if save==True:
-        # plot(fig, filename="../images/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
-        # plot(fig, filename="../../sample_pages/images/covid19/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
-        pass
-    else:
-        pass
+#         title=dict(
+#             text=title,
+#             x=0.5,
+#     #         y=0.9,
+#             xanchor='center',
+#             yanchor='top',
+#             font = dict(
+#                 size=22,
+#             )
+#         ),
 
-    return(fig)
+#         legend=go.layout.Legend(
+#     #         x=0.05,
+#     #         y=0.99,
+#     #         traceorder="normal",
+#             orientation='v',
+#             font=dict(
+#                 family="sans-serif",
+#                 size=20,
+#                 color="black"
+#             ),
+#             bgcolor= 'rgba(0,0,0,0)' ,
+#     #         bordercolor="Black",
+#         #     borderwidth=2
+#         ),
+        
+#         font=dict(
+#             size=18,
+#             family = "Century Gothic"
+#         )
+        
+#         height = 800,
+#         width = largura,
+#     )
+
+#     fig = go.Figure(data=data, layout=layout)
+
+
+#     if save==True:
+#         # plot(fig, filename="../images/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+#         # plot(fig, filename="../../sample_pages/images/covid19/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+#         pass
+#     else:
+#         pass
+
+#     return(fig)
