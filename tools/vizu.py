@@ -157,16 +157,16 @@ def total_casos(df,mask_countrys, escala='lin',var='cases',date=today, save=Fals
     
     if save==True:
         if escala == 'lin':
-            plot(fig, filename="../images/{}_lin.html".format(var_save), auto_open=False)
-            plot(fig, filename="../../sample_pages/images/covid19/{}_lin.html".format(var_save), auto_open=False)
+            plot(fig, filename="../images/multipleCountry/{}_lin.html".format(var_save), auto_open=False)
+            plot(fig, filename="../../sample_pages/images/covid19/multipleCountry/{}_lin.html".format(var_save), auto_open=False)
         elif escala=='log':
-            plot(fig, filename="../images/{}_log.html".format(var_save), auto_open=False)
-            plot(fig, filename="../../sample_pages/images/covid19/{}_log.html".format(var_save),auto_open=False)
+            plot(fig, filename="../images/multipleCountry/{}_log.html".format(var_save), auto_open=False)
+            plot(fig, filename="../../sample_pages/images/covid19/multipleCountry/{}_log.html".format(var_save),auto_open=False)
     else:
         if escala == 'lin':
-            fig.write_image("../images/pdf/{}_lin.pdf".format(var_save))
+            fig.write_image("../images/multipleCountry/pdf/{}_lin.pdf".format(var_save))
         elif escala=='log':
-            fig.write_image("../images/pdf/{}_log.pdf".format(var_save))
+            fig.write_image("../images/multipleCountry/pdf/{}_log.pdf".format(var_save))
 
     return(fig, dd)
 
@@ -377,19 +377,21 @@ def total_by_country(df,geoid, escala='lin',var='cases', data=today, save=False)
     fig = go.Figure(data=data, layout=layout)
     
     
+    pais_save = pais_save.lower().replace(' ','_')
+    
     
     if save==True:
         if escala == 'lin':
-            plot(fig, filename="../images/{}_lin_{}.html".format(pais_save,var_save), auto_open=False)
-            plot(fig, filename="../../sample_pages/images/covid19/{}_{}_lin.html".format(pais_save,var_save), auto_open=False)
+            plot(fig, filename="../images/singleCountry/{}_lin_{}.html".format(pais_save,var_save), auto_open=False)
+            plot(fig, filename="../../sample_pages/images/covid19/singleCountry/{}_{}_lin.html".format(pais_save,var_save), auto_open=False)
         elif escala=='log':
-            plot(fig, filename="../images/{}_log_{}.html".format(pais_save,var_save), auto_open=False)
-            plot(fig, filename="../../sample_pages/images/covid19/{}_{}_log.html".format(pais_save,var_save),auto_open=False)
+            plot(fig, filename="../images/singleCountry/{}_log_{}.html".format(pais_save,var_save), auto_open=False)
+            plot(fig, filename="../../sample_pages/images/covid19/singleCountry/{}_{}_log.html".format(pais_save,var_save),auto_open=False)
     else:
         if escala == 'lin':
-            fig.write_image("../images/pdf/{}_{}_lin.pdf".format(pais_save,var_save))
+            fig.write_image("../images/singleCountry/pdf/{}_{}_lin.pdf".format(pais_save,var_save))
         elif escala=='log':
-            fig.write_image("../images/pdf/{}_{}_log.pdf".format(pais_save,var_save))
+            fig.write_image("../images/singleCountry/pdf/{}_{}_log.pdf".format(pais_save,var_save))
     
     return(fig,dd)
 

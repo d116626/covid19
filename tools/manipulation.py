@@ -11,7 +11,7 @@ def create_br_not_sp(df):
     df_brasil = df[mask].groupby(by=['date'], as_index=False).sum()
 
     ### FILL DATA FOR BRASIL
-    df_brasil['city']='Brasil'
+    df_brasil['city']='BRASIL'
     df_brasil['city_ibge_code']=0
     df_brasil['estimated_population_2019'] = 209*10**6
     df_brasil['death_rate'] = np.nan
