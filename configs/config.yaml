@@ -1,0 +1,68 @@
+get_data_paths:
+    cases_covid19br: https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time.csv
+    cases_brasilio: https://brasil.io/api/dataset/covid19/caso/data?format=json
+  
+raw_paths:
+    cases_covid19br: city_cases_covid19br.csv
+    cases_brasilio: city_cases_brasilio.csv
+    sus: covid19_SUS_database.csv
+    
+treated_paths:
+    cases_covid19br: last_cases_covid19br.csv
+    cases_brasilio: last_cases_covid19br.csv
+    sus: treated_covid19_SUS_database.csv
+
+models:
+    - sir
+
+model_parameters:
+    sir:
+        sick_days: 
+            lower_bound: 15
+            upper_bound: 15
+        i2_percentage: 
+            lower_bound: 12
+            upper_bound: 12
+        i3_percentage: 
+            lower_bound: 2.5
+            upper_bound: 2.5
+
+    seir:
+        sick_days: 
+            lower_bound: 15
+            upper_bound: 15
+        i2_percentage: 
+            lower_bound: 12
+            upper_bound: 12
+        i3_percentage: 
+            lower_bound: 2.5
+            upper_bound: 2.5
+        sigma: 
+            lower_bound: 0.2
+            upper_bound: 0.2
+      
+estimation_days: 360
+
+scenarios:
+    nothing: 
+        R0:
+            lower_bound: 3.74
+            upper_bound: 3.97
+    isolation: 
+        R0: 
+            lower_bound: 1.21
+            upper_bound: 1.31
+        dates: [360]
+    lockdown:
+        R0:
+            lower_bound: 0.28
+            upper_bound: 0.37
+        dates: [360]
+
+resources:
+    - resource: quantidade_leitos
+      infected: I2
+      variation_perc: [100] 
+    - resource: ventiladores_existentes
+      infected: I3
+      variation_perc: [100] 
