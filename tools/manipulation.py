@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+
+
+
 def create_br_not_sp(df):
     ### GET ONLY DA STATES TO MAKE THE BRASIL DATA
     mask = df['place_type'] == 'state'

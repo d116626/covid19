@@ -2,7 +2,6 @@ import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, offline
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 def show_colors(scaled_colours):
     fig, ax = plt.subplots(figsize=(len(scaled_colours), 1))
@@ -13,7 +12,10 @@ def show_colors(scaled_colours):
     for index, colour in enumerate(scaled_colours):
         ax.axvspan(index, index + 1, color=colour)
     
-#     return fig
+    # return fig
+
+
+
 
 
 def plot_simulation(final, columns, colors, config, leitos=1, perc_ventiladores=1):
@@ -24,7 +26,6 @@ def plot_simulation(final, columns, colors, config, leitos=1, perc_ventiladores=
     title   = "<b>{} - SEIR MODEL<b>".format(final['city_name'].tolist()[0])
     x_name  = "<b>Dias<b>"
     y_name  = "<b>Populacão<b>"
-    
     
     
     data = []
