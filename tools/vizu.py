@@ -172,7 +172,158 @@ def total_casos(df,mask_countrys, escala='lin',var='cases',date=today, save=Fals
 
 
 
+def total_casos2(df,mask_countrys, escala='lin',var='cases',date=today, save=False):
+    mask = df['new_{}'.format(var)]!=0
+    df = df[mask]
+    df['count'] = 1
+    
+    since_first_day = df[['count','countrycode']].groupby(by = ['countrycode',]).cumsum()['count'].tolist()
+    df['since_first_day'] = since_first_day
+    
+    dd = df[mask_countrys]
+    
+    dd = dd.sort_values(by=['countryname'], ascending=False)
+    dd = dd.sort_values(by=['date'])
+    
+    data = []
+    wid = 5
+    marker_size = 2
+    
+        
+    if escala == 'lin':
+        tick = 'n'
+        tipo = None
+    elif escala=='log':
+        tick = None
+        tipo = 'log'
+    
+    
+    if var == 'deaths':
+        title = '<b>MORTES DIARIAS X MORTES ACUMULADAS{}</b>'.format(date)
+        var_col = 'deaths_mean'
+        var_col2= 'new_deaths_mean'
+        var_save= 'mortes'
+        y_name = "<b>MORTES DIARIAS<b>"
+        x_name = "<b>MORTES ACUMULADAS<b>"
+        
+    if var== 'cases':
+        title = '<b>Casos Diarios X Casos Acumulados - {}</b>'.format(date)
+        var_col = 'confirmed_mean'
+        var_col2='new_cases_mean'
+        var_save= 'total'
+        y_name = "<b>CASOS DIARIOS<b>"
+        x_name = "<b>CASOS ACUMULADOS<b>"
+        
+    if var== 'recovered':       
+        title = '<b>Total de Recuperados Confirmados - {}</b>'.format(date)
+        var_col = 'recovered'
+        var_save= 'recuperados'
+        y_name = "<b>RECUPERADOS CONFIRMADOS<b>"
+        x_name = "<b>DIAS DESDE O PRIMEIRO CASO<b>"        
+        
+    if save ==True:
+        largura = None
+    else:
+        largura = 1600
+        
 
+    
+    
+    countrys = list(dd['countrycode'].unique())
+    countrys.sort(reverse=True)
+    
+    for geoid in countrys:
+
+        mask = (dd['countrycode']==geoid)
+
+        trace = go.Scatter(
+        name=dd[mask]['countryname'].str.replace('_',' ').tolist()[0],
+        x=round(dd[mask][var_col],0), 
+        y=round(dd[mask][var_col2],0),
+    #     line=dict(color='#a14900', width=wid),
+        line=dict(width=wid),
+        mode='lines+markers',
+        marker=dict(size=marker_size),
+        hoverlabel=dict(namelength=-1, font=dict(size=18))   
+        )
+        data.append(trace)
+        
+    layout = go.Layout(
+        barmode='stack',
+
+        yaxis_title=y_name,
+        yaxis = dict(
+
+            tickfont=dict(
+                size=22,
+                color='black',
+            ),
+            # tickformat=tick,
+            type=tipo,
+        ),
+        xaxis_title=x_name,
+        xaxis = dict(
+            tickfont=dict(
+                size=22,
+                color='black',
+            ),
+            type=tipo,
+    #         font = dict(size=20)
+
+        ),
+
+        title=dict(
+            text=title,
+            x=0.5,
+            y=0.9,
+            xanchor='center',
+            yanchor='top',
+            font = dict(
+                size=22,
+            )
+        ),
+
+        legend=go.layout.Legend(
+            x=0.05,
+            y=0.99,
+    #         traceorder="normal",
+            orientation='v',
+            font=dict(
+                family="sans-serif",
+                size=20,
+                color="black"
+            ),
+            bgcolor= 'rgba(0,0,0,0)' ,
+    #         bordercolor="Black",
+        #     borderwidth=2
+        ),
+
+        height = 800,
+
+        width = largura,
+
+        font=dict(
+            size=18,
+        )
+    )
+
+    fig = go.Figure(data=data, layout=layout)
+
+    
+    # if save==True:
+    #     if escala == 'lin':
+    #         plot(fig, filename="../images/multipleCountry/{}_lin.html".format(var_save), auto_open=False)
+    #         plot(fig, filename="../../sample_pages/images/covid19/multipleCountry/{}_lin.html".format(var_save), auto_open=False)
+    #     elif escala=='log':
+    #         plot(fig, filename="../images/multipleCountry/{}_log.html".format(var_save), auto_open=False)
+    #         plot(fig, filename="../../sample_pages/images/covid19/multipleCountry/{}_log.html".format(var_save),auto_open=False)
+    # else:
+    #     if escala == 'lin':
+    #         fig.write_image("../images/multipleCountry/pdf/{}_lin.pdf".format(var_save))
+    #     elif escala=='log':
+    #         fig.write_image("../images/multipleCountry/pdf/{}_log.pdf".format(var_save))
+
+    return(fig, dd)
 
 
 
