@@ -21,26 +21,13 @@ def show_colors(scaled_colours):
     
     # return fig
     
-    
-def brasil_viz(dd,
+   
+def brasil_vis(dd,
                var_col,
                in_cities, 
-               escala,
                today,
                themes,
                save=False):
-    
-    
-    wid = 10
-    marker_size = 15
-
-
-    if escala == 'lin':
-        tick = 'n'
-        tipo = None
-    elif escala=='log':
-        tick = None
-        tipo = 'log'
 
     if var_col == 'deaths':
         x_name  = '<b>DATA<b>'
@@ -57,7 +44,9 @@ def brasil_viz(dd,
     cities = dd['city'].unique()
     drop_cities = [city for city in cities if city not in in_cities]
     drop_cities.sort()
-    cities =  in_cities + drop_cities
+    # cities =  in_cities + drop_cities
+
+    cities = in_cities
 
     colors =  themes['soft_colors']
     
@@ -83,20 +72,37 @@ def brasil_viz(dd,
         name=city,
         x=dd[mask]['date'], 
         y=dd[mask][var_col],
-        line=dict(color=colors[i], width=wid),
+        line=dict(color=colors[i], width=themes['data']['line_width']),
         # line=dict(width=wid),
         mode='lines+markers',
-        marker=dict(size=marker_size),
-        hoverlabel=dict(namelength=-1, font=dict(size=26)),
+        marker=dict(size=themes['data']['marker_size']),
+        hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
         visible = just_legend,
         )
         data.append(trace)
         i+=1
 
+    
+    layout = get_layout(themes, title, x_name, y_name)
 
+    fig = go.Figure(data=data, layout=layout)
+
+
+    if save==True:
+        plot(fig, filename="../images/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+        plot(fig, filename="../../sample_pages/images/covid19/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
+    else:
+        pass
+
+    return(fig)
+
+
+
+def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
+    
     layout = go.Layout(
                 
-        barmode='stack',
+        barmode=themes['barmode'],
     
         title=dict(
             text=title,
@@ -110,15 +116,21 @@ def brasil_viz(dd,
             )
         ),
 
-
         xaxis_title=x_name,
+        
         xaxis = dict(
             tickfont=dict(
                 size=themes['axis_legend']['size'],
                 color=themes['axis_legend']['color'],
             ),
-    #         font = dict(size=20)
-        tickformat ='%d/%m'
+        gridcolor=themes['axis_legend']['gridcolor'],
+        zerolinecolor=themes['axis_legend']['gridcolor'],
+        # linecolor=themes['axis_legend']['gridcolor'],
+        # linewidth=2,
+        # mirror=True,
+        tickformat =themes['axis_legend']['tickformat']['x'],
+        type=themes['axis_legend']['type']['x'],
+
         ),
         
         
@@ -130,9 +142,13 @@ def brasil_viz(dd,
                 color=themes['axis_legend']['color'],
             ),
             gridcolor=themes['axis_legend']['gridcolor'],
-            # tickformat=tick,
+            zerolinecolor=themes['axis_legend']['gridcolor'],
+            # linecolor=themes['axis_legend']['gridcolor'],
+            # linewidth=2,
+            tickformat=tick,
             type=tipo,
         ),
+        
         
         font=dict(
             size=themes['axis_tilte']['size'],
@@ -141,9 +157,9 @@ def brasil_viz(dd,
         
 
         legend=go.layout.Legend(
-    #         x=0.05,
-    #         y=0.99,
-    #         traceorder="normal",
+            x=themes['legend']['position']['x'],
+            y=themes['legend']['position']['y'],
+            traceorder="normal",
             orientation='v',
             font=dict(
                 family=themes['legend']['family'],
@@ -161,47 +177,33 @@ def brasil_viz(dd,
         
 
         paper_bgcolor=themes['paper_bgcolor'],
-        plot_bgcolor=themes['plot_bgcolor']
+        plot_bgcolor=themes['plot_bgcolor'],
         
-        
+        annotations =[dict(
+            showarrow=False,
+            text = f"<b>{themes['source']['text']}<b>",
+            
+            x = themes['source']['position']['x'],
+            y = themes['source']['position']['y'],
+            
+
+            
+            xref="paper",
+            yref="paper",
+
+            align="left",
+            
+            # xanchor='right',
+            xshift=0, yshift=0,
+            
+            font=dict(
+                family=themes['source']['family'],
+                size=themes['source']['size'],
+                color=themes['source']['color']
+                ),
+        )]
         
     )
     
-
-
-    fig = go.Figure(data=data, layout=layout)
-
-    fig.add_annotation(
-        
-        showarrow=False,
-        text = themes['source']['text'],
-        
-        x = themes['source']['position']['x'],
-        y = themes['source']['position']['y'],
-        
-
-        
-        xref="paper",
-        yref="paper",
-
-        align="left",
-        
-        # xanchor='right',
-        xshift=0, yshift=0,
-        
-        font=dict(
-            family=themes['source']['family'],
-            size=themes['source']['size'],
-            color=themes['source']['color']
-    ),   
-        
-    )
-
-    if save==True:
-        pass
-        # plot(fig, filename="../images/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
-        # plot(fig, filename="../../sample_pages/images/covid19/brasil/brasil_por_estado_{}.html".format(var_col), auto_open=False)
-    else:
-        pass
-
-    return(fig)
+    
+    return layout

@@ -73,4 +73,3 @@ def to_storage(bucket,bucket_folder,file_name,path_to_file):
     
     print('Done!')
 
-
