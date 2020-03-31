@@ -64,10 +64,10 @@ def read_gbq(query,
     
 
 
-def to_storage(bucket_folder,file_name,path_to_file):
+def to_storage(bucket,bucket_folder,file_name,path_to_file):
     
     client = storage.Client(project='gavinete-sv')
-    bucket = client.get_bucket('gabinete-sv')
+    bucket = client.get_bucket(f'{bucket}')
     blob = bucket.blob(f'{bucket_folder}/{file_name}')
     blob.upload_from_filename(f'{path_to_file}')
     
