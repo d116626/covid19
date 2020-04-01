@@ -290,7 +290,7 @@ def bar_compare(br_it, pais='BR',pais_name='Brasil',
     #     data = [trace1] 
 
     title  = '<b>Número Total de Confirmados (A partir do Caso 100) - {} vs {}<b>'.format(pais_name,pais_comp_name)
-    x_name = '<b>Data<b>'
+    x_name = '<b>Dias desde o Primeiro Caso<b>'
     y_name = '<b>Número de Confirmados<b>'
     tick   =    tickformat =themes['axis_legend']['tickformat']['y']
 

@@ -60,7 +60,7 @@ def get_map(dd_final,variavel, ufs):
             highlight_function=highlight_function,
             #show the chosen variables
             tooltip=folium.features.GeoJsonTooltip(
-                fields=['Estado','Casos','Mortes','Data'],
+                fields=['Estado','Casos','Óbitos','Data do Boletim'],
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
@@ -91,7 +91,7 @@ def get_map(dd_final,variavel, ufs):
             control=False,
             highlight_function=highlight_function,
             #show the chosen variables
-            tooltip=folium.features.GeoJsonTooltip(fields=['Estado','Município','Casos'],
+            tooltip=folium.features.GeoJsonTooltip(fields=['Estado','Município','Casos','Óbitos','Data do Boletim'],
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
