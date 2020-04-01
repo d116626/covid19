@@ -64,8 +64,8 @@ novo:
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
     position:
-      x: 
-      y: 
+      x:
+      y:
 
   source:
     text: 'Fonte: Ministério da Saúde'
@@ -77,7 +77,7 @@ novo:
       y: -0.14
     
   altura: 720
-  largura: 
+  largura:
 
 
 all_world:

@@ -6,7 +6,7 @@ from folium.plugins import HeatMap
 import branca.colormap as cm
 import branca
 
-def get_map(dd_final,variavel, ufs):
+def get_map(dd_final, variavel, cols ,ufs):
     
     #min and max color map range
     minn = min(dd_final[variavel])
@@ -35,7 +35,7 @@ def get_map(dd_final,variavel, ufs):
 
     #legend caption
 
-    colormap.caption = "Número de Casos"
+    colormap.caption = "Número de Casos Confirmados"
 
 
     #add color in polygons
@@ -60,7 +60,7 @@ def get_map(dd_final,variavel, ufs):
             highlight_function=highlight_function,
             #show the chosen variables
             tooltip=folium.features.GeoJsonTooltip(
-                fields=['Estado','Casos','Óbitos','Data do Boletim'],
+                fields=cols[1:],
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
@@ -68,9 +68,6 @@ def get_map(dd_final,variavel, ufs):
         )
         
     mymap.add_child(NIL)
-
-
-
 
 
     #add color in polygons
@@ -91,7 +88,7 @@ def get_map(dd_final,variavel, ufs):
             control=False,
             highlight_function=highlight_function,
             #show the chosen variables
-            tooltip=folium.features.GeoJsonTooltip(fields=['Estado','Município','Casos','Óbitos','Data do Boletim'],
+            tooltip=folium.features.GeoJsonTooltip(fields=cols,
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
@@ -103,9 +100,6 @@ def get_map(dd_final,variavel, ufs):
     mymap.add_child(NIL) 
 
     return(mymap)
-
-
-
 
 
 def get_map_vale(dd_final,variavel,cols, ufs):
@@ -137,7 +131,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
 
     #legend caption
 
-    colormap.caption = "Número de Casos"
+    colormap.caption = "Número de Casos Confirmados"
 
 
     #add color in polygons
@@ -159,7 +153,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
             highlight_function=highlight_function,
             #show the chosen variables
             tooltip=folium.features.GeoJsonTooltip(
-                fields=['Estado','Casos Confirmados','Óbitos Confirmados','Data do Boletim'],
+                fields=cols[1:],
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
