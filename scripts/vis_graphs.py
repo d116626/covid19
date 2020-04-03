@@ -44,14 +44,14 @@ def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, sa
     
     
     if var == 'deaths':
-        title = '<b>Total de Mortes Confirmadas em {}</b>'.format(date)
+        title = '<b>Evolução do Número de Mortes'
         var_col = 'deaths'
         var_save= 'mortes'
         y_name = "<b>MORTES CONFIRMADAS<b>"
         x_name = "<b>DIAS DESDE A PRIMEIRA MORTE<b>"
         
     if var== 'cases':
-        title = '<b>Total de Casos Confirmados em {}</b>'.format(date)
+        title = '<b>Evolução do Número de Casos'
         var_col = 'confirmed'
         var_save= 'total'
         y_name = "<b>CASOS CONFIRMADOS<b>"
@@ -162,7 +162,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
     
     
     if var == 'deaths':
-        title = '<b>{} - Total de Mortes Confirmadas em {}</b>'.format(pais,data)
+        title = '<b>{} - Evolução do número de Mortes'.format(pais)
         var_col = 'deaths'
         var_save= 'mortes'
         barra1 = "Mortes Diarias"
@@ -171,7 +171,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
         nome_final = "Total de Mortes"
         
     if var== 'cases':
-        title = '<b>{} - Total de Casos Confirmados em {}</b>'.format(pais,data)
+        title = '<b>{} - Evolução do número de Casos'.format(pais)
         var_col = 'confirmed'
         var_save= 'total'
         barra1 = "Casos Diarios"
@@ -326,12 +326,12 @@ def brasil_vis(dd,
     if var_col == 'deaths':
         x_name  = '<b>DATA<b>'
         y_name  = '<b>MOTES CONFIRMADAS<b>'
-        title   = '<b>MORTES POR ESTADO EM {}<b>'.format(today)
+        title   = '<b>EVOLUÇÃO DO NÚMERO DE MORTES<b>'
     
     elif var_col == 'confirmed':
         x_name  = '<b>DATA<b>'
         y_name  = '<b>CASOS CONFIRMADOS<b>'
-        title   = '<b>CASOS POR ESTADO EM {}<b>'.format(today)
+        title   = '<b>EVOLUÇÃO DO NUMERO DE CASOS'
 
 
     # in_cities = ['BRASIL','SP', 'RJ']
@@ -388,6 +388,57 @@ def brasil_vis(dd,
     else:
         pass
 
+    return(fig)
+
+
+def total_by_country_dash(df,geoid, themes, data=today, save=False):
+    mask = (df['countrycode']==geoid)
+
+    dd = df[mask]
+    mask = (dd['confirmed']>0)
+    dd = dd[mask]
+    pais = dd['countryname'].tolist()[0]
+
+    # if escala == 'lin':
+    #     tick = 'n'
+    #     tipo = None
+    # elif escala=='log':
+    #     tick = None
+    #     tipo = 'log'
+    
+
+    trace2 = go.Bar(
+    name='Casos Confirmados',
+    x=dd[mask]['date'], 
+    y=dd[mask]['new_{}'.format('cases')],
+
+    marker=dict(color='#1d8179',),
+    hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
+    )
+
+
+    trace3 = go.Bar(
+    name='Mortes Confirmadas',
+    x=dd[mask]['date'], 
+    y=dd[mask]['new_{}'.format('deaths')],
+
+    marker=dict(color='#fa7609',),
+    hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
+    )
+
+
+
+
+    data = [trace2,trace3]
+
+    title = "<b>Evolução do Número Diario de Casos e Mortes<b>"
+    x_name = '<b>Data<b>'
+    y_name = "<b>Número de Individuos<b>"
+
+    layout = get_layout(themes, title, x_name, y_name)
+
+    fig = go.Figure(data=data, layout=layout)
+    
     return(fig)
 
 

@@ -147,10 +147,10 @@ all_world:
   largura: 
 
 
-all_world:
+all_world_dash:
   data:
-    line_width: 10
-    marker_size: 15
+    line_width: 7
+    marker_size: 9
     hoverlabel_size: 22
   
   barmode: 'group'
@@ -167,19 +167,19 @@ all_world:
   title:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 32
+    size: 30
   
   ### AXIS TITLE
   axis_tilte:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 24
+    size: 18
   
   #AXIS VALUES
   axis_legend:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 26
+    size: 18
     gridcolor: '#000000'
     tickformat: 
       x: #'%d/%m'
@@ -206,11 +206,11 @@ all_world:
     size: 16
     color: '#000000'
     position:
-      x: -0.04
-      y: -0.14
+      x: -0.143
+      y: -0.18
     
-  altura: 720
-  largura: 
+  altura: 520
+  largura:
 
 
 by_country:
@@ -219,7 +219,7 @@ by_country:
     marker_size: 15
     hoverlabel_size: 22
   
-  barmode: 'group'
+  barmode: 'stack'
 
   colors: ['#FA7609','#0D485A','#1D8179','#585858']
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']

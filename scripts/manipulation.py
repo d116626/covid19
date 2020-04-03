@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from scripts.vis_graphs import normalize_cols
 import geopandas as gpd
-
+from scripts.profiling import do_cprofile
 
 
 def create_all_country_total_data(df):
