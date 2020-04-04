@@ -9,6 +9,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import os
 import requests
 import json
+from scripts.vis_graphs import normalize_cols
+
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="../../credentials/gabinete_sv_credentials.json"
 
@@ -29,13 +31,13 @@ def _get_credentials_gbq():
         auth_local_webserver=True,
     )
 
-    return credentials
+    return      credentials
 
 
 def to_gbq(df, 
             table_name, 
-            schema_name='simula_corona',
-            project_id='robusta-lab', 
+            schema_name = 'simula_corona',
+            project_id  = 'robusta-lab',
             **kwargs):
     """
     write a dataframe in Google BigQuery
@@ -47,7 +49,7 @@ def to_gbq(df,
         df,
         destination_table,
         project_id,
-        credentials=_get_credentials_gbq(),
+        credentials = _get_credentials_gbq(),
         **kwargs
     )
 
@@ -71,7 +73,7 @@ def to_storage(bucket,bucket_folder,file_name,path_to_file):
     
     client = storage.Client(project='gavinete-sv')
     bucket = client.get_bucket(f'{bucket}')
-    blob = bucket.blob(f'{bucket_folder}/{file_name}')
+    blob   = bucket.blob(f'{bucket_folder}/{file_name}')
     blob.upload_from_filename(f'{path_to_file}')
     
     print('Done!')
@@ -85,29 +87,27 @@ def read_sheets(sheet_name):
             'https://www.googleapis.com/auth/drive']
 
     credentials = ServiceAccountCredentials.from_json_keyfile_name('../../credentials/gabinete-sv-9aed310629e5.json', scope)
-    gc = gspread.authorize(credentials)
-
-    wks = gc.open(sheet_name).sheet1
-
-    data = wks.get_all_values()
-    headers = data.pop(0)
+    gc          = gspread.authorize(credentials)
+    wks         = gc.open(sheet_name).sheet1
+    data        = wks.get_all_values()
+    headers     = data.pop(0)
 
     return pd.DataFrame(data, columns=headers)
 
 
 def load_brasilIO():
     ####### IMPORT DATA ######
-    url = 'https://brasil.io/api/dataset/covid19/caso/data?format=json'
+    url      = 'https://brasil.io/api/dataset/covid19/caso/data?format=json'
     df_final = pd.DataFrame()
 
     while url != None:
         
         print(url)
         response = requests.get(url)
-        data = response.text
-        parsed = json.loads(data)
-        url = parsed['next']
-        df = pd.DataFrame(parsed['results']).sort_values(by='confirmed',ascending=False)
+        data     = response.text
+        parsed   = json.loads(data)
+        url      = parsed['next']
+        df       = pd.DataFrame(parsed['results']).sort_values(by='confirmed',ascending=False)
         df_final = pd.concat([df_final,df], axis=0)
         
     
@@ -121,11 +121,34 @@ def load_brasilIO():
 
 
 def load_wcota():
-    df = pd.read_csv('https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv')
+    df          = pd.read_csv('https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv')
     df['state'] = df['state'].str.replace('TOTAL','BRASIL')
     # df.to_csv('brasil_states.csv', index=False)
-    dd = df.drop(['country','deaths'],1)
+    dd          = df.drop(['country','deaths'],1)
     
     return dd
+
+
+def load_total_table():
+    final_data = pd.read_csv('../data/cumulative_data/covid_last.csv')
+    codes = pd.read_csv('../data/country_codes.csv')
+
+    df = final_data.copy()
+    df.columns = normalize_cols(df.columns)
+
+    df = pd.merge(df,codes,on='countryname', how='left')
+    country_rename = {'US':'United States', 'UK':'United Kingdom', "Brazil":"Brasil"}
+    df['countryname'] = df['countryname'].replace(country_rename)
+
+
+    df_pop = pd.read_csv('../data/world_population.csv')
+
+    df = pd.merge(df,df_pop,on='countryname', how='left')
+    mask = ((df['population'].notnull()) & (df['countrycode'].notnull()))
+    df = df[mask]
+    
+    return df
+
+
 
 

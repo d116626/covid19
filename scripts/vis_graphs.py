@@ -25,6 +25,10 @@ def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, sa
     df = df[mask]
     df['count'] = 1
     
+    mask = df['confirmed'] > 100
+    df = df[mask]
+    df['count'] = 1
+
     since_first_day = df[['count','countrycode']].groupby(by = ['countrycode',]).cumsum()['count'].tolist()
     df['since_first_day'] = since_first_day
     
@@ -441,8 +445,6 @@ def total_by_country_dash(df,geoid, themes, data=today, save=False):
     
     return(fig)
 
-
-
 def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
     
     layout = go.Layout(
@@ -552,3 +554,7 @@ def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
     
     
     return layout
+
+
+
+

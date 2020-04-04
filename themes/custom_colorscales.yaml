@@ -14,13 +14,12 @@ pale: ['#24306C',"#BB4140",'#559F7A','#2C0226' ,'#585858']
 novo: ['#FA7609','#0D485A','#1D8179','#585858']
 
 #novo
-
 novo:
   data:
     line_width: 10
     marker_size: 15
     hoverlabel_size: 22
-  
+
   barmode: 'group'
 
   colors: ['#FA7609','#0D485A','#1D8179','#585858']
@@ -79,9 +78,7 @@ novo:
   altura: 720
   largura:
 
-
 all_world:
-
   data:
     line_width: 10
     marker_size: 15
@@ -117,10 +114,10 @@ all_world:
     gridcolor: '#000000'
     tickformat: 
       x: #'%d/%m'
-      y:
+      y: 'n'
     type:
       x: #lin or log
-      y:
+      y: 'log'
 
 
   legend:
@@ -145,73 +142,6 @@ all_world:
     
   altura: 720
   largura: 
-
-
-all_world_dash:
-  data:
-    line_width: 7
-    marker_size: 9
-    hoverlabel_size: 22
-  
-  barmode: 'group'
-
-
-  colors: ['#FA7609','#0D485A','#1D8179','#585858']
-  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
-  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
-  
-  paper_bgcolor: '#FFFFFF'
-  plot_bgcolor: 'rgba(0,0,0,0)'
-  
-
-  title:
-    family: 'Courier New, monospace'
-    color: '#000000'
-    size: 30
-  
-  ### AXIS TITLE
-  axis_tilte:
-    family: 'Courier New, monospace'
-    color: '#000000'
-    size: 18
-  
-  #AXIS VALUES
-  axis_legend:
-    family: 'Courier New, monospace'
-    color: '#000000'
-    size: 18
-    gridcolor: '#000000'
-    tickformat: 
-      x: #'%d/%m'
-      y:
-    type:
-      x: #lin or log
-      y:
-
-
-  legend:
-    family: 'Courier New, monospace'
-    color: '#000000'
-    size: 16
-    bgcolor: 'rgba(0,0,0,0)'
-    bordercolor: 'rgba(0,0,0,0)'
-    borderwidth: 0
-    position:
-      x: 0.05
-      y: 0.975
-
-  source:
-    text: 'Fonte: Worldometers'
-    family: 'Courier New, monospace'
-    size: 16
-    color: '#000000'
-    position:
-      x: -0.143
-      y: -0.18
-    
-  altura: 520
-  largura:
-
 
 by_country:
   data:
