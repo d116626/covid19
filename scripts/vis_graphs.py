@@ -150,7 +150,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
         
         mask = (dd['confirmed']>0)
         dd = dd[mask]
-        
+
         dd['lockdown']=0
         pais = dd['countryname'].tolist()[0]
         pais_save = pais
@@ -166,7 +166,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
     
     
     if var == 'deaths':
-        title = '<b>{} - Evolução do número de Mortes'.format(pais)
+        title = '<b>{} - Número Diário de Óbitos'.format(pais)
         var_col = 'deaths'
         var_save= 'mortes'
         barra1 = "Mortes Diarias"
@@ -175,7 +175,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
         nome_final = "Total de Mortes"
         
     if var== 'cases':
-        title = '<b>{} - Evolução do número de Casos'.format(pais)
+        title = '<b>{} - Número Diário de Casos'.format(pais)
         var_col = 'confirmed'
         var_save= 'total'
         barra1 = "Casos Diarios"
@@ -198,16 +198,15 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
     else:
         largura = 1600
 
-    trace1 = go.Scatter(
-    name=nome_final,
-    x=dd['date'], 
-    y=dd[var_col],
-    line=dict(width=themes['data']['line_width'], color='#3b5bff'),
-    mode='lines+markers',
-    marker=dict(size=themes['data']['marker_size']),
-    hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
-    )
-
+    # trace1 = go.Scatter(
+    # name=nome_final,
+    # x=dd['date'], 
+    # y=dd[var_col],
+    # line=dict(width=themes['data']['line_width'], color='#3b5bff'),
+    # mode='lines+markers',
+    # marker=dict(size=themes['data']['marker_size']),
+    # hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
+    # )
 
     mask = dd['lockdown']==0
 
@@ -235,7 +234,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
 
 
 
-    data = [trace3, trace2, trace1]
+    data = [trace3, trace2]
 
     x_name = '<b>Data<b>'
     layout = get_layout(themes, title, x_name, y_name)
@@ -450,7 +449,8 @@ def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
     layout = go.Layout(
                 
         barmode=themes['barmode'],
-    
+        autosize=True,
+        # automargin=True,
         title=dict(
             text=title,
             x=0.5,

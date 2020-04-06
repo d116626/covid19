@@ -161,8 +161,8 @@ def manipulate_for_br_maps(df,municipios,maps, df_states,ufs):
     rename_cols = {
         'nome_municipio':'Município',
         'nome_uf'       : 'Estado',
-        'confirmed'     : 'Casos Confirmados',
-        'deaths'        : 'Óbitos Confirmados',
+        'confirmed'     : 'Confirmados',
+        'deaths'        : 'Óbitos',
         'date'          : 'Data do Boletim'
         }
     final = final.rename(columns=rename_cols)
@@ -182,8 +182,8 @@ def manipulate_for_br_maps(df,municipios,maps, df_states,ufs):
     estados.crs = {'init' :'epsg:4326'}
     
     rename_cols = {
-        'confirmed' :'Casos Confirmados',
-        'deaths'    : 'Óbitos Confirmados',
+        'confirmed' : 'Confirmados',
+        'deaths'    : 'Óbitos',
         'new_cases' : 'Novos Casos',
         'new_deaths': 'Novas Mortes',
         'date'      : 'Data do Boletim'
@@ -213,11 +213,18 @@ def manipulate_for_vale_maps(df, municipios_sp, estados):
     vale.crs = {'init' :'epsg:4326'}
 
     col_rename ={
-        'municipio'     : 'Município',
-        'confirmados'   : 'Casos Confirmados',
-        'mortes'        : 'Óbitos Confirmados',
-        'ultimo_boletim': 'Data do Boletim',
-        'fonte'         : 'Fonte'
+        'municipio'             : 'Município',
+        'confirmados'           : 'Confirmados',
+        'confirmados_internados': 'Confirmados Internados',
+        'mortes'                : 'Óbitos',
+        'suspeitas'             : 'Suspeitos',
+        'suspeitas_internados'  : 'Suspeitos Internados',
+        'mortes_investigação'   : 'Óbitos Suspeitos',
+        'descartados'           : 'Descartados',
+        'recuperados'           : 'Recuperados',
+        'fonte'                 : 'Fonte',
+        'ultimo_boletim'        : 'Data do Boletim',
+        
     }
 
     vale = vale.rename(columns=col_rename)

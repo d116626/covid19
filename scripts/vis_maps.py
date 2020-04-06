@@ -124,7 +124,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
 
 
     #create map
-    mymap = folium.Map(location=[-23.234392, -45.026147], zoom_start=9,tiles=None)
+    mymap = folium.Map(location=[-23.234392, -45.026147], zoom_start=7,tiles=None, )
     
     #def type
     folium.TileLayer('CartoDB positron',name="Light Map",control=False).add_to(mymap)
@@ -153,7 +153,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
             highlight_function=highlight_function,
             #show the chosen variables
             tooltip=folium.features.GeoJsonTooltip(
-                fields=cols[1:],
+                fields=['Estado','Confirmados', 'Óbitos', 'Data do Boletim'],
     #             aliases=['Neighborhood','% of foreign resident population'],
                 style=("background-color: white; color: #333333; font-family: arial; font-size: 12px; padding: 10px;"),
                 sticky=True
@@ -199,7 +199,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
     
     
     vale = dd_final.copy()
-    mask = vale['Óbitos Confirmados']>0
+    mask = vale['Óbitos']>0
     vale_obitos = vale[mask]
 
     vale_obitos['coords'] = vale_obitos['geometry'].apply(lambda x: x.representative_point().coords[:])
@@ -212,7 +212,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
     locationlist = locations.values.tolist()
 
     municipio = vale_obitos['Município'].to_list()
-    obitos = vale_obitos['Óbitos Confirmados'].to_list()
+    obitos = vale_obitos['Óbitos'].to_list()
     
     # icon_url = "https://cdn3.iconfinder.com/data/icons/pictomisc/100/skull-512.png"
     # icon = folium.CustomIcon(icon_url,icon_size=(14, 14))
@@ -229,7 +229,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
     for i in range(0, len(locationlist)):
         
         text = "<b>Município:</b> " + str(municipio[i]) \
-        + '<br>''<br>'+ "<b>Óbitos Confirmados:</b> "+ str(obitos[i]) \
+        + '<br>''<br>'+ "<b>Óbitos:</b> "+ str(obitos[i]) \
         
         size=0.5
         popup = text

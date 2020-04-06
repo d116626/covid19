@@ -76,7 +76,76 @@ novo:
       y: -0.14
     
   altura: 720
-  largura:
+  largura: 
+
+
+
+#novo
+novo_storage:
+  data:
+    line_width: 5
+    marker_size: 7
+    hoverlabel_size: 22
+
+  barmode: 'group'
+
+  colors: ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x: '%d/%m' #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    position:
+      x: 0.1
+      y: 1
+
+  source:
+    text: 'Fonte: Ministério da Saúde'
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: -0.1
+      y: -0.32
+    
+  altura: 
+  largura: 
+
+
 
 all_world:
   data:
