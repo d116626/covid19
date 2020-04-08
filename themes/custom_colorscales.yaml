@@ -46,7 +46,7 @@ novo:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 26
-    gridcolor: '#000000'
+    gridcolor: '#e5e5e5'
     tickformat: 
       x: '%d/%m' #'%d/%m' or n 
       y: 
@@ -187,13 +187,13 @@ all_world:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 26
-    gridcolor: '#000000'
+    gridcolor: '#e5e5e5'
     tickformat: 
       x: #'%d/%m'
-      y: 'n'
+      y:
     type:
       x: #lin or log
-      y: 'log'
+      y: 'linear'
 
 
   legend:
@@ -252,7 +252,7 @@ by_country:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 26
-    gridcolor: '#000000'
+    gridcolor: '#e5e5e5'
     tickformat: 
       x: '%d/%m'
       y:
@@ -318,13 +318,13 @@ bar_comparison:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 26
-    gridcolor: '#000000'
+    gridcolor: '#e5e5e5'
     tickformat: 
       x:  #'%d/%m' or n 
-      y: 'n'
+      y:
     type:
       x: #lin or log
-      y: 
+      y: 'lin'
 
 
   legend:

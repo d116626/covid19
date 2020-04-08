@@ -40,10 +40,8 @@ def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, sa
     data = []
             
     if escala == 'lin':
-        tick = 'n'
         tipo = None
     elif escala=='log':
-        tick = None
         tipo = 'log'
     
     
@@ -88,7 +86,7 @@ def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, sa
         )
         data.append(trace)
 
-    layout = get_layout(themes, title, x_name, y_name, tick, tipo)
+    layout = get_layout(themes, title, x_name, y_name, tipo)
     
 
 
@@ -297,7 +295,7 @@ def bar_compare(br_it, pais='BR',pais_name='Brasil',
     y_name = '<b>Número de Confirmados<b>'
     tick   =    tickformat =themes['axis_legend']['tickformat']['y']
 
-    layout = get_layout(themes, title, x_name, y_name, tick=tick)
+    layout = get_layout(themes, title, x_name, y_name)
 
 
 
@@ -444,7 +442,7 @@ def total_by_country_dash(df,geoid, themes, data=today, save=False):
     
     return(fig)
 
-def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
+def get_layout(themes, title, x_name, y_name, tipo=None):
     
     layout = go.Layout(
         # automargin=True,
@@ -494,7 +492,7 @@ def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
             # linecolor=themes['axis_legend']['gridcolor'],
             # linewidth=2,
             tickformat=themes['axis_legend']['tickformat']['y'],
-            type=themes['axis_legend']['type']['y'],
+            type=tipo,
         ),
         
         
