@@ -61,6 +61,7 @@ novo:
     size: 20
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
+    orientation: 'v' #vertical
     borderwidth: 0
     position:
       x:
@@ -96,7 +97,13 @@ novo_storage:
   paper_bgcolor: '#FFFFFF'
   plot_bgcolor: 'rgba(0,0,0,0)'
   
-
+  
+  margin :
+    l:
+    r:
+    t:
+    b:
+    
   title:
     family: 'Courier New, monospace'
     color: '#000000'
@@ -112,7 +119,7 @@ novo_storage:
   axis_legend:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 10
+    size: 12
     gridcolor: '#e5e5e5'
     tickformat: 
       x: '%d/%m' #'%d/%m' or n 
@@ -129,17 +136,17 @@ novo_storage:
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
+    orientation: 'h' #vertical
     position:
-      x: 0.1
-      y: 1
-
+      x: 
+      y:
   source:
-    text: 'Fonte: Ministério da Saúde'
+    text: ' '
     family: 'Courier New, monospace'
     size: 10
     color: '#000000'
     position:
-      x: -0.1
+      x: 0.5
       y: -0.32
     
   altura: 
@@ -192,6 +199,7 @@ all_world:
   legend:
     family: 'Courier New, monospace'
     color: '#000000'
+    orientation: 'v' #vertical
     size: 16
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
@@ -257,6 +265,7 @@ by_country:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 22
+    orientation: 'v' #vertical
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
@@ -322,6 +331,7 @@ bar_comparison:
     family: 'Courier New, monospace'
     color: '#000000'
     size: 30
+    orientation: 'v' #vertical
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0

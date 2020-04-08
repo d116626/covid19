@@ -447,23 +447,24 @@ def total_by_country_dash(df,geoid, themes, data=today, save=False):
 def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
     
     layout = go.Layout(
-                
+        # automargin=True,
+        margin=dict(l=0, r=0, t=10, b=10),
         barmode=themes['barmode'],
         autosize=True,
         # automargin=True,
-        title=dict(
-            text=title,
-            x=0.5,
-    #         y=0.9,
-            xanchor='center',
-            yanchor='top',
-            font = dict(
-                size=themes['title']['size'],
-                color=themes['title']['color']
-            )
-        ),
+    #     title=dict(
+    #         text=title,
+    #         x=0.5,
+    # #         y=0.9,
+    #         xanchor='center',
+    #         yanchor='top',
+    #         font = dict(
+    #             size=themes['title']['size'],
+    #             color=themes['title']['color']
+    #         )
+    #     ),
 
-        xaxis_title=x_name,
+        # xaxis_title=x_name,
         
         xaxis = dict(
             tickfont=dict(
@@ -492,8 +493,8 @@ def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
             zerolinecolor=themes['axis_legend']['gridcolor'],
             # linecolor=themes['axis_legend']['gridcolor'],
             # linewidth=2,
-            tickformat=tick,
-            type=tipo,
+            tickformat=themes['axis_legend']['tickformat']['y'],
+            type=themes['axis_legend']['type']['y'],
         ),
         
         
@@ -505,9 +506,9 @@ def get_layout(themes, title, x_name, y_name, tick=None, tipo=None):
 
         legend=go.layout.Legend(
             x=themes['legend']['position']['x'],
-            y=themes['legend']['position']['y'],
+            y=themes['legend']['position']['y'], 
             traceorder="normal",
-            orientation='v',
+            orientation=themes['legend']['orientation'],
             font=dict(
                 family=themes['legend']['family'],
                 size=themes['legend']['size'],

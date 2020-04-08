@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-def create_cards(df_states):
+def create_cards(df_states, vale):
     firstDay   = min(df_states['date'])
     lastDay    = max(df_states['date'])
     firstDayDt = datetime.strptime(str(firstDay)[:10], "%Y-%m-%d")
@@ -16,11 +16,20 @@ def create_cards(df_states):
     todayDeaths   = today_data['deaths'].values[0]
     todayNewDeaths = today_data['new_deaths'].values[0]
     todayDeathsPerc = todayNewDeaths/(todayDeaths -todayNewDeaths)
+    
+
+    todayValeSuspects   = vale['suspeitas'].astype(int).sum()
+    todayValeCases   = vale['confirmados'].astype(int).sum()
+    todayValeDeaths   = vale['mortes'].astype(int).sum()
+
 
 
     replace_vars = {'daysOutbreak':daysOutbreak,
                     'todayNewCases':"{:,d}".format(todayNewCases),'todayCasesPerc':"{:.1%}".format(todayCasesPerc), "todayCases":"{:,d}".format(todayCases),
-                    'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths)}
+                    'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths),
+                    "todayValeSuspects":"{:,d}".format(todayValeSuspects),"todayValeCases":"{:,d}".format(todayValeCases),"todayValeDeaths":"{:,d}".format(todayValeDeaths)
+                    }
+
 
     final_lines = []
     with open(r'../images/storage/br_indicator_model.html', mode='r') as f:
