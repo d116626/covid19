@@ -1,5 +1,9 @@
+from paths import *
 import pandas as pd
 from datetime import datetime
+from scripts.io import read_sheets
+from scripts import manipulation
+from scripts import io
 
 def create_cards(df_states, vale):
     firstDay   = min(df_states['date'])
@@ -46,7 +50,28 @@ def create_cards(df_states, vale):
         new_f.writelines(final_lines)
 
     # return final_lines
+    
+    
+    
+def update_html():
 
 
+    df = read_sheets('covid19_estados')
 
+    df_states = manipulation.manipule_mytable(df)
 
+    vale = read_sheets('covid19_vale_do_paraiba_e_litoral_norte').replace('',0)
+
+    create_cards(df_states,vale)
+
+    name= "br_indicator_final.html"
+    path= f"../images/storage/{name}"
+
+    io.to_storage(bucket='sv-covid19',
+            bucket_folder='brasil',
+            file_name=name,
+            path_to_file=path)
+
+if __name__ == "__main__":
+    
+    update_html()

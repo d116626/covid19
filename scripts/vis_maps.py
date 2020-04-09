@@ -124,7 +124,7 @@ def get_map_vale(dd_final,variavel,cols, ufs):
 
 
     #create map
-    mymap = folium.Map(location=[-23.234392, -45.026147], zoom_start=7,tiles=None, )
+    mymap = folium.Map(location=[-23.234392, -45.026147], zoom_start=7,tiles=None,control_scale=False)
     
     #def type
     folium.TileLayer('CartoDB positron',name="Light Map",control=False).add_to(mymap)
