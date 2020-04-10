@@ -9,8 +9,12 @@ from oauth2client.service_account import ServiceAccountCredentials
 import os
 import requests
 import json
-from scripts.vis_graphs import normalize_cols
+from scripts.manipulation import normalize_cols
+from scripts import vis_graphs
+from datetime import datetime
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, offline
 
+today = datetime.today().strftime('%Y-%m-%d')
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="../../credentials/gabinete_sv_credentials.json"
 
@@ -151,4 +155,50 @@ def load_total_table():
 
 
 
+def br_cumulative_generate_upload(df_states,config_cumulative, themes):
+    for theme_option in config_cumulative['color_options']:
+        if theme_option == 'novo_storage':
+            save = False
+        else:
+            save=True
+
+        for var in config_cumulative['var_options']:
+            fig = vis_graphs.brasil_vis(df_states,
+                             var,
+                             in_cities=config_cumulative['in_cities'],
+                             today=today,
+                             save=save,
+                             themes=themes[theme_option])
+
+            if theme_option == 'novo_storage':
+                name= f"{config_cumulative['save_name']}".format(var)
+                path= f"{config_cumulative['path_save']}{name}"
+                plot(fig, filename=path, auto_open=False)
+                to_storage(bucket=config_cumulative['bucket'],
+                              bucket_folder=config_cumulative['bucket_folder'],
+                              file_name=name,
+                              path_to_file=path)
+            else:
+                pass
+
+
+def br_daily_genarete_upload(df_states,config_daily,themes):
+    
+    brasil = df_states[df_states['state']=='BRASIL']
+    brasil['countrycode'] = 'Brasil'
+    brasil['countryname'] = 'Brasil'
+    
+    for var in config_daily['var_options'].keys():
+
+        fig = vis_graphs.total_by_country(df = brasil, save=True,geoid='Brasil', var=var,themes = themes['novo_storage'])
+        
+        name = config_daily['var_options'][var]
+        path= f"{config_daily['path_save']}{name}"
+        plot(fig, filename=path, auto_open=False)
+    
+    
+        to_storage(bucket=config_daily['bucket'],
+                      bucket_folder=config_daily['bucket_folder'],
+                      file_name=name,
+                      path_to_file=path)
 

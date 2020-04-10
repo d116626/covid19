@@ -50,8 +50,7 @@ def get_map(dd_final, variavel, cols ,ufs):
                                     'fillOpacity': 0.5, 
                                     'weight': 3}
     
-    
-        
+
     
     NIL=folium.features.GeoJson(
             ufs,
