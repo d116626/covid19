@@ -36,3 +36,16 @@ vale_map:
     save_name: 'mapa_vale.html'
     bucket: 'sv-covid19'
     bucket_folder: "site/maps"
+
+
+ms_table:
+    rename_cols: {
+        'region':"regiao", 
+        'sigla':'state',
+        "date":'date',
+        'cases_inc':'new_cases',
+        'cases':'confirmed',
+        'deaths_inc':'new_deaths',
+        'deaths':'deaths'
+        }
+    date_format: "%d/%m/%Y"

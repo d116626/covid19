@@ -142,13 +142,13 @@ def manipule_bar_compare_data(df,country,paises):
     
     return br_it, pais, pais_name, pais_comp, pais_comp_name
 
-def manipule_mytable(df):
-    rename_cols = {'região':"regiao", 'sigla':'state',"data":'date',
-               'casosNovos':'new_cases','casosAcumulados':'confirmed',
-               'obitosNovos':'new_deaths','obitosAcumulados':'deaths'}
+def manipule_mytable(df,config_mstable):
+    rename_cols = config_mstable['rename_cols']
     df = df.rename(columns=rename_cols)
 
-    df['date'] = pd.to_datetime(df['date'], format = "%d/%m/%Y")
+    df['date'] = pd.to_datetime(df['date'], format = config_mstable['date_format'])
+    last_update = df['last_update'].values[0]
+    
     
     for col in ['confirmed','new_cases','deaths','new_deaths']:
         df[col] = pd.to_numeric(df[col])
@@ -161,6 +161,7 @@ def manipule_mytable(df):
     br['state']  = 'BRASIL'
     br['city']   = 'BRASIL'
     br['regiao']   = 'Brasil'
+    br['last_update'] = last_update
     
     df_states        = pd.concat([df_states,br[df_states.columns]],axis=0)
 
@@ -172,6 +173,7 @@ def manipule_mytable(df):
     not_sp['state']  = 'BRASIL SEM SP'
     not_sp['city']   = 'BRASIL SEM SP'
     not_sp['regiao']    = 'Brasil sem SP'
+    not_sp['last_update'] = last_update
 
     df_states        = pd.concat([df_states,not_sp[df_states.columns]],axis=0).sort_values(by=['date','confirmed'], ascending=False)
     

@@ -7,13 +7,17 @@ from gcloud import storage
 from google.oauth2 import service_account
 from oauth2client.service_account import ServiceAccountCredentials
 import os
+from os import listdir
 import requests
 import json
 from scripts.manipulation import normalize_cols
 from scripts import vis_graphs
 from datetime import datetime
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, offline
-
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+import time
+from datetime import datetime
 today = datetime.today().strftime('%Y-%m-%d')
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="../../credentials/gabinete_sv_credentials.json"
@@ -202,3 +206,52 @@ def br_daily_genarete_upload(df_states,config_daily,themes):
                       file_name=name,
                       path_to_file=path)
 
+
+def update_ms_data():
+
+    path=os.getcwd().split('9')[0]+ '9/' + 'data/ministerio_da_saude'
+
+    initial_files = listdir(path)
+
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("browser.download.dir",path);
+    profile.set_preference("browser.download.folderList",2);
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
+    profile.set_preference("browser.download.manager.showWhenStarting",False);
+    profile.set_preference("browser.helperApps.neverAsk.openFile","application/csv,application/excel,application/vnd.msexcel,application/vnd.ms-excel,text/anytext,text/comma-separated-values,text/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/octet-stream");
+    profile.set_preference("browser.helperApps.alwaysAsk.force", False);
+    profile.set_preference("browser.download.manager.useWindow", False);
+    profile.set_preference("browser.download.manager.focusWhenStarting", False);
+    profile.set_preference("browser.download.manager.alertOnEXEOpen", False);
+    profile.set_preference("browser.download.manager.showAlertOnComplete", False);
+    profile.set_preference("browser.download.manager.closeWhenDone", True);
+    profile.set_preference("pdfjs.disabled", True);
+
+    # year = '2019'
+
+    firefox = webdriver.Firefox(firefox_profile=profile)
+
+    # firefox = webdriver.Firefox()
+    url = 'https://covid.saude.gov.br/'
+
+    firefox.get(url)
+    # firefox.request('POST', url,)
+
+    time.sleep(3)
+
+    download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[6]/div[1]')[0]
+    download_button.click()
+
+    time.sleep(3)
+
+    firefox.quit()
+
+    now_files = listdir(path)
+
+
+    today = datetime.today().strftime('%Y-%m-%d-%H-%M')    
+    new_file = [file for file in now_files if file not in initial_files][0]
+    os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.csv')
+    df = pd.read_csv(path+f'/{today}_ms_covid19.csv', sep=';')
+    df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')  
+    df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')

@@ -4,6 +4,9 @@ import geopandas as gpd
 import unicodedata
 from paths import *
 
+import warnings
+warnings.filterwarnings('ignore')
+
 from scripts import io
 from scripts import manipulation
 from scripts import vis_html
@@ -53,8 +56,9 @@ def main():
     print("Br.IO table, Done!")
     
     #### MS TABLE ###
-    df = io.read_sheets('covid19_estados')
-    df_states = manipulation.manipule_mytable(df)
+    io.update_ms_data()
+    df = pd.read_csv("../data/ministerio_da_saude/last_data_ms_covid19.csv")
+    df_states = manipulation.manipule_mytable(df,config['ms_table'])
     print("States table, Done!")
     
     #### VALE TABLE ###
