@@ -40,12 +40,12 @@ vale_map:
 
 ms_table:
     rename_cols: {
-        'region':"regiao", 
-        'sigla':'state',
-        "date":'date',
-        'cases_inc':'new_cases',
-        'cases':'confirmed',
-        'deaths_inc':'new_deaths',
-        'deaths':'deaths'
+        'região':"regiao", 
+        'estado':'state',
+        "data":'date',
+        'casosNovos':'new_cases',
+        'casosAcumulados':'confirmed',
+        'obitosNovos':'new_deaths',
+        'obitosAcumulados':'deaths'
         }
     date_format: "%d/%m/%Y"

@@ -31,6 +31,8 @@ def _generate_and_upload_br_map(final, estados, map_config):
               file_name=map_config['save_name'],
               path_to_file=f'{map_config["path_save"]}{map_config["save_name"]}')
 
+    os.remove(f'{map_config["path_save"]}{map_config["save_name"]}')
+
 def _generate_and_upload_vale_map(vale, estados, map_config):
     #generate map
     cols = ['Município','Confirmados','Confirmados Internados','Óbitos','Óbitos Suspeitos','Suspeitos','Suspeitos Internados','Recuperados','Descartados','Data do Boletim']
@@ -44,7 +46,8 @@ def _generate_and_upload_vale_map(vale, estados, map_config):
               bucket_folder=map_config['bucket_folder'],
               file_name=map_config['save_name'],
               path_to_file=f'{map_config["path_save"]}{map_config["save_name"]}')
-    
+    os.remove(f'{map_config["path_save"]}{map_config["save_name"]}')
+
 
 def main():
     config = yaml.load(open('../configs/config.yaml', 'r'), Loader=yaml.FullLoader)

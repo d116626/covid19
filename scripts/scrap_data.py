@@ -10,6 +10,10 @@ import os
 from scripts.vis_graphs import normalize_cols
 
 
+
+
+
+
 # Function for remove comma within numbers
 def removeCommas(string): 
     string = string.replace(',','')
@@ -118,8 +122,10 @@ def load_data():
     caseTableSimple = caseTableSimple.astype({'Country/Region':'str',
                                             'Confirmed':'int',
                                             'Deaths':'int',
-                                            'Recovered':'int',                                          
+                                            # 'Recovered':'int',                                          
                                             })
+    
+    caseTableSimple['Recovered'] = pd.to_numeric(caseTableSimple['Recovered'], errors='coerce')
     # Data for these countries come from other source
     removeRegion = []
     for i in removeRegion:
