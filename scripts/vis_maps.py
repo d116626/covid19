@@ -247,3 +247,5 @@ def get_map_vale(dd_final,variavel,cols, ufs):
 
     return(mymap)
 
+
+

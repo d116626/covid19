@@ -181,8 +181,15 @@ def manipule_mytable(df,config_mstable):
 
 def manipulate_for_br_maps(df,municipios,maps, df_states,ufs):
     
+    df['city_ibge_code'] = df['city_ibge_code'].astype(int)
+    municipios['geocodigo'] = municipios['geocodigo'].astype(int)
+    maps['CD_GEOCMU'] = maps['CD_GEOCMU'].astype(int)
+    
     cols = ['geocodigo','state','city','nome_uf','nome_mesorregiao','nome_municipio','confirmed','deaths','date']
+
     dd   = pd.merge(df,municipios, left_on='city_ibge_code', right_on='geocodigo', how = 'left')[cols]
+
+    
 
     final = pd.merge(dd,maps, left_on='geocodigo', right_on='CD_GEOCMU', how='left').drop(['CD_GEOCMU','NM_MUNICIP'],1)
 

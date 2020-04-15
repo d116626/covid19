@@ -96,7 +96,8 @@ def main():
     final, estados = manipulation.manipulate_for_br_maps(brio, municipios, maps, df_states, ufs)
 
     ### generate and upload the map
-    _generate_and_upload_br_map(final, estados, config['br_map'])
+    print('skip br maps')
+    # _generate_and_upload_br_map(final, estados, config['br_map'])
 
     print('\nStart Vale Map')
     ### LOAD DATA FOR BRASIL MAPS    

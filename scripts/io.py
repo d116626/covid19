@@ -88,7 +88,7 @@ def to_storage(bucket,bucket_folder,file_name,path_to_file):
     
     
 
-def read_sheets(sheet_name):
+def read_sheets(sheet_name, workSheet=0):
 
 
     scope = ['https://spreadsheets.google.com/feeds',
@@ -96,7 +96,11 @@ def read_sheets(sheet_name):
 
     credentials = ServiceAccountCredentials.from_json_keyfile_name('../../credentials/gabinete-sv-9aed310629e5.json', scope)
     gc          = gspread.authorize(credentials)
-    wks         = gc.open(sheet_name).sheet1
+    if workSheet==0:
+        wks         = gc.open(sheet_name).sheet1
+    else:
+        wks = gc.open(sheet_name).worksheet(workSheet)
+        
     data        = wks.get_all_values()
     headers     = data.pop(0)
 
@@ -105,27 +109,15 @@ def read_sheets(sheet_name):
 
 def load_brasilIO():
     ####### IMPORT DATA ######
-    url      = 'https://brasil.io/api/dataset/covid19/caso/data?format=json'
-    df_final = pd.DataFrame()
+    brio = pd.read_csv('https://data.brasil.io/dataset/covid19/caso_full.csv.gz')
 
-    while url != None:
-        
-        print(url)
-        response = requests.get(url)
-        data     = response.text
-        parsed   = json.loads(data)
-        url      = parsed['next']
-        df       = pd.DataFrame(parsed['results']).sort_values(by='confirmed',ascending=False)
-        df_final = pd.concat([df_final,df], axis=0)
-        
-    
-    brio = df_final.copy()
 
-    mask = ((brio['is_last']==True) & (brio['place_type']=='city') & (brio['confirmed_per_100k_inhabitants'].notnull()))
-    cols = ['city_ibge_code','city','confirmed','deaths','date','state']
-    brio = brio[mask][cols]
+    mask = ((brio['is_last']==True) & (brio['place_type']=='city') & (brio['last_available_confirmed_per_100k_inhabitants'].notnull()))
+    cols = ['city_ibge_code','city','last_available_confirmed','last_available_deaths','date','state']
+    df_final = brio[mask][cols]
+    df_final = df_final.rename(columns={'last_available_confirmed':'confirmed','last_available_deaths':'deaths'})
 
-    return brio, df_final
+    return df_final, brio
 
 
 def load_wcota():

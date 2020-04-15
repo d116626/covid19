@@ -13,7 +13,7 @@ def create_cards(df_states, vale, config_embed):
     firstDayDt = datetime.strptime(str(firstDay)[:10], "%Y-%m-%d")
     lastDayDt  = datetime.strptime(str(lastDay)[:10], "%Y-%m-%d")
     daysOutbreak = (today - firstDayDt).days
-
+    todayDate = lastDay.strftime("%d/%m/%Y")
 
     today_data = df_states.query(f"state=='BRASIL' & date=='{lastDay}'")
     todayCases     = today_data['confirmed'].values[0]
@@ -28,10 +28,10 @@ def create_cards(df_states, vale, config_embed):
     todayValeSuspects   = vale['suspeitas'].astype(int).sum()
     todayValeCases   = vale['confirmados'].astype(int).sum()
     todayValeDeaths   = vale['mortes'].astype(int).sum()
+    todayValeDate = max(vale['ultima_atualizaçao'])
 
 
-
-    replace_vars = {'daysOutbreak':daysOutbreak,
+    replace_vars = {'daysOutbreak':daysOutbreak, 'todayDate':todayDate, 'todayValeDate':todayValeDate,
                     'todayNewCases':"{:,d}".format(todayNewCases),'todayCasesPerc':"{:.1%}".format(todayCasesPerc), "todayCases":"{:,d}".format(todayCases),
                     'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths),
                     "todayValeSuspects":"{:,d}".format(todayValeSuspects),"todayValeCases":"{:,d}".format(todayValeCases),"todayValeDeaths":"{:,d}".format(todayValeDeaths)
