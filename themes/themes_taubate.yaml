@@ -86,3 +86,162 @@ taubate:
     
   altura: 
   largura:
+
+
+
+
+#novo
+taubate_pie:
+  data:
+    line_width: 2
+    marker:
+      size: 7
+      color: '#000000'
+    hoverlabel_size: 25
+
+  barmode: 'group'
+
+  colors: ['blue', 'red']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+  
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+  
+  
+  margin :
+    l: 0
+    r: 0
+    t: 10
+    b: 0
+    
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+  
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+  
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 12
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x: '%d/%m' #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 16
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reverse or normal
+    orientation: 'h' #vertical
+    position:
+      x: 0.5
+      y:
+      xanchor: "center"
+      yanchor: 'top'
+
+  source:
+    text: ' '
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: 0.5
+      y: -0.32
+    
+  altura: 
+  largura: 
+
+
+taubate_faixas:
+  data:
+    line_width: 2
+    marker:
+      size: 7
+      color: '#FA7609'
+    hoverlabel_size: 25
+
+  barmode: 'group'
+
+  colors: ['blue', 'red']
+  # ['#FA7609','#0D485A','#1D8179','#585858']
+  soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
+  # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
+
+  paper_bgcolor: '#FFFFFF'
+  plot_bgcolor: 'rgba(0,0,0,0)'
+
+
+  margin :
+    l: 20
+    r: 20
+    t: 20
+    b: 20
+    
+  title:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 14
+
+  ### AXIS TITLE
+  axis_tilte:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 10
+
+  #AXIS VALUES
+  axis_legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 18
+    gridcolor: '#e5e5e5'
+    tickformat: 
+      x:  #'%d/%m' or n 
+      y: 'n'
+    type:
+      x: #lin or log
+      y: 
+
+
+  legend:
+    family: 'Courier New, monospace'
+    color: '#000000'
+    size: 22
+    bgcolor: 'rgba(0,0,0,0)'
+    bordercolor: 'rgba(0,0,0,0)'
+    borderwidth: 0
+    traceorder: 'reversed' #reverse or normal
+    orientation: 'h' #vertical
+    position:
+      x: 0.37
+      y:
+  source:
+    text: ' '
+    family: 'Courier New, monospace'
+    size: 10
+    color: '#000000'
+    position:
+      x: 0.5
+      y: -0.32
+    
+  altura: 
+  largura:
+
+
+
+

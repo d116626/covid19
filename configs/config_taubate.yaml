@@ -28,6 +28,19 @@ taubate_map:
     bucket: 'sv-covid19'
     bucket_folder: "taubate/maps"
 
+taubate_faixa_etaria:
+    bucket: 'sv-covid19'
+    bucket_folder: "taubate/graphs/perfil"
+    path_save: '../site/sv_taubate/perfil/'
+    save_name: 'taubate_confirmados_faixa_etaria.html'
+    # color_options: 'taubate'
+
+taubate_sexo:
+    bucket: 'sv-covid19'
+    bucket_folder: "taubate/graphs/perfil"
+    path_save: '../site/sv_taubate/perfil/'
+    save_name: 'taubate_confirmados_sexo.html'
+
 # vale_map:
 #     path_save: '../maps/'
 #     save_name: 'mapa_vale.html'

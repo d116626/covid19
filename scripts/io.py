@@ -229,9 +229,9 @@ def update_ms_data():
     firefox.get(url)
     # firefox.request('POST', url,)
 
-    time.sleep(3)
+    time.sleep(5)
 
-    download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[6]/div[1]')[0]
+    download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[1]/div[2]/ion-button[1]')[0]
     download_button.click()
 
     time.sleep(3)

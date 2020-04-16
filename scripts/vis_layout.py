@@ -4,11 +4,15 @@ import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, offline
 
 
-def get_layout(themes, title, x_name, y_name, tipo=None):
+def get_layout(themes, title='', x_name='', y_name='', tipo=None):
     
     layout = go.Layout(
         # automargin=True,
-        margin=dict(l=0, r=0, t=10, b=10),
+        margin=dict(l=themes['margin']['l'],
+                    r=themes['margin']['r'],
+                    t=themes['margin']['t'],
+                    b=themes['margin']['b']),
+        
         barmode=themes['barmode'],
         autosize=True,
         
@@ -67,8 +71,10 @@ def get_layout(themes, title, x_name, y_name, tipo=None):
 
         legend=go.layout.Legend(
             x=themes['legend']['position']['x'],
-            y=themes['legend']['position']['y'], 
-            traceorder="normal",
+            y=themes['legend']['position']['y'],
+            xanchor = themes['legend']['position']['xanchor'],
+            yanchor = themes['legend']['position']['yanchor'],
+            traceorder =themes['legend']['traceorder'],
             orientation=themes['legend']['orientation'],
             font=dict(
                 family=themes['legend']['family'],
@@ -77,7 +83,7 @@ def get_layout(themes, title, x_name, y_name, tipo=None):
             ),
             bgcolor=themes['legend']['bgcolor'] ,
             bordercolor=themes['legend']['bordercolor'],
-            borderwidth=themes['legend']['borderwidth']
+            borderwidth=themes['legend']['borderwidth'],
         ),
 
 

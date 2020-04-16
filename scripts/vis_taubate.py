@@ -91,23 +91,122 @@ def taubate_cum(df, themes, adjusts, config_cumulative, save=False):
     return fig.update_layout(hovermode = 'x unified')
 
 
-def get_map_taubate(df,status_adjusts, config_map, save=False):
-    mymap = folium.Map(location=[ -23.021628, -45.556273 ], zoom_start=13,tiles=None,control_scale=False, max_bounds=True, max_zoom=9,max_lat=-22.956844, min_lat=-23.084949, min_lon= -45.726182, max_lon=-45.437983)
 
-    #def type
+def taubate_faixas(confirmados, themes, config, save=False):
+    
+    bins = pd.IntervalIndex.from_tuples([(0, 20), (21, 30), (31, 40), (41, 50), (51, 60), (61, 70), (71, 80),(81, 90),(91, 200)])
+    bined = pd.cut(confirmados['idade'].astype(int), bins).value_counts()
+
+    idades = pd.DataFrame(data = bined.index.tolist(), columns=['faixa'])
+    idades['quantidade'] = bined.values.tolist()
+
+    idades = idades.sort_values(by='faixa')
+
+    labels = ['0 a 20', '21 a 30', '31 a 40', '41 a 50',' 51 a 60',' 61 a 70',' 71 a 80',' 81 a 90','+91']
+    idades['faixa'] = labels
+    
+    trace = go.Bar(
+        name=adjusts[status]['nome'],
+        x=idades['quantidade'], 
+        y=idades['faixa'],
+        marker=dict(color=themes['data']['marker']['color'],
+                   line=dict(color='rgba(58, 71, 80, 1.0)', width=3)
+                   ),
+        hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
+        orientation='h'
+    )
+
+    data = [trace]
+
+
+    from scripts import vis_layout
+
+
+    layout = vis_layout.get_layout(themes)
+
+    fig = go.Figure(data, layout)
+    
+    
+    if save == True:
+        name= f"{config['save_name']}"
+        path= f"{config['path_save']}{name}"
+        
+        plot(fig, filename=path, auto_open=False)
+        
+        io.to_storage(bucket=config['bucket'],
+                        bucket_folder=config['bucket_folder'],
+                        file_name=name,
+                        path_to_file=path)
+
+    return fig
+
+
+
+def taubate_pie(confirmados, themes, config, save=False):
+
+    trace = go.Pie(
+        labels=confirmados['sexo'].value_counts().index,
+        values=confirmados['sexo'].value_counts().values,
+        hoverinfo='label+percent',
+        textinfo='value',
+        textfont_size=30,
+        marker=dict(
+            colors=themes['colors'], 
+            line=dict(color=themes['data']['marker']['color'], width=themes['data']['line_width'])
+        ),
+        hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))
+    )
+
+    data = [trace]
+
+
+    from scripts import vis_layout
+
+
+    layout = vis_layout.get_layout(themes)
+
+    fig = go.Figure(data, layout)
+    
+    if save == True:
+        name= f"{config['save_name']}"
+        path= f"{config['path_save']}{name}"
+
+        plot(fig, filename=path, auto_open=False)
+
+        io.to_storage(bucket=config['bucket'],
+                        bucket_folder=config['bucket_folder'],
+                        file_name=name,
+                        path_to_file=path)
+
+    return fig
+
+
+def get_map_taubate(df,status_adjusts, config_map, save=False):
+    mymap = folium.Map(location=[ -23.021628, -45.556273 ], zoom_start=13,tiles=None,control_scale=False, max_bounds=True, max_zoom=9,max_lat=-22.883089, min_lat=-23.292957, min_lon= -45.866733, max_lon=-45.117794)
+
     folium.TileLayer('CartoDB positron',control=False).add_to(mymap)
 
-    for status in df['status'].value_counts(ascending=False).index.tolist():
-        
-        dd = df.query(f'status == "{status}"')
+
+    
+    dd = df.copy()
+    dd['count']=1
+    bairos_list = dd.groupby(['bairro','status','lat','lon'], as_index=False).sum().sort_values(by='count', ascending=False)['bairro'].unique()
+
+    for bairro in bairos_list:
+
+        dd = df.query(f'bairro == "{bairro}"')
         dd['count']=1
-        bairro_table = dd.groupby(['bairro','lat','lon'], as_index=False).sum().sort_values(by='count', ascending=False)
+        bairro_table = dd.groupby(['bairro','status','lat','lon'], as_index=False).sum().sort_values(by='count', ascending=False)
+
+        status_list = bairro_table.sort_values(by='count', ascending=False)['status'].to_list()
         
-        for bairro in bairro_table.bairro.unique():
-            mask = bairro_table['bairro']==bairro
+        for status in status_list:
+
+            mask = bairro_table['status']==status
             bairro_row = bairro_table[mask]
-        # mymap.add_child(NIL)
-            r   = int(bairro_row['count'].values[0]+1)*30
+            
+             
+            r   = int(bairro_row['count'].values[0])*40
             lat = bairro_row['lat'].values[0]
             lon = bairro_row['lon'].values[0]
 
@@ -138,32 +237,35 @@ def get_map_taubate(df,status_adjusts, config_map, save=False):
     return mymap
 
 
-def taubate_update_html(casos_taubate, config_embed, save=False):
+def taubate_update_html(tb_cases, config_embed, save=False):
 
-    lastDay    = max(casos_taubate['data'])
+    lastDay    = max(tb_cases['data'])
     todayDate  = lastDay.strftime("%d/%m/%Y")
     firstDay   = '2020-03-12'
     firstDayDt = datetime.strptime(str(firstDay)[:10], "%Y-%m-%d")
     lastDayDt  = datetime.strptime(str(lastDay)[:10], "%Y-%m-%d")
     daysOutbreak = (lastDayDt - firstDayDt).days
 
+    today_data =  tb_cases.query(f"data =='{lastDay}'")
+    
+    todayDeaths   = today_data['obito'].values[0]
+    todayNewDeaths = today_data['obito_day'].values[0]
+    todayDeathsPerc = todayNewDeaths/(todayDeaths -todayNewDeaths)
 
-    today_data = casos_taubate.query(f"data=='{lastDay}'")
-    todayCases     = today_data['confirmado_sum'].values[0]
-    todayNewCases  = today_data['confirmado'].values[0]
+    today_data = tb_cases.query(f"data=='{lastDay}'")
+    todayCases     = today_data['confirmado'].values[0] - todayDeaths
+    todayNewCases  = today_data['confirmado_day'].values[0]
     todayCasesPerc = todayNewCases/(todayCases - todayNewCases)
 
-    todayDeaths   = today_data['obito_sum'].values[0]
-    todayNewDeaths = today_data['obito'].values[0]
-    todayDeathsPerc = todayNewDeaths/(todayDeaths -todayNewDeaths)
-    
-    todaySuspects     = today_data['analise_sum'].values[0]
-    todayNewSuspects  = today_data['analise'].values[0]
-    todaySuspectsPerc = todayNewSuspects/(todaySuspects - todayNewSuspects)
-    
-    todayRecover     = today_data['descartado_sum'].values[0]
-    todayNewRecover  = today_data['descartado'].values[0]
+
+    todayRecover     = today_data['descartado'].values[0]
+    todayNewRecover  = today_data['descartado_day'].values[0]
     todayRecoverPerc = todayNewRecover/(todayRecover - todayNewRecover)
+
+
+    todaySuspects     = today_data['em_analise'].values[0]
+    todayNewSuspects  = today_data['em_analise_day'].values[0]
+    todaySuspectsPerc = todayNewSuspects/(todaySuspects - todayNewSuspects)
 
 
 

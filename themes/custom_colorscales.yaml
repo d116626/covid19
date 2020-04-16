@@ -26,6 +26,12 @@ novo:
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
   # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
   
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
+      
   paper_bgcolor: '#FFFFFF'
   plot_bgcolor: 'rgba(0,0,0,0)'
   
@@ -63,9 +69,12 @@ novo:
     bordercolor: 'rgba(0,0,0,0)'
     orientation: 'v' #vertical
     borderwidth: 0
+    traceorder: 'normal' #reverse or normal
     position:
-      x:
+      x: 
       y:
+      xanchor:
+      yanchor:
 
   source:
     text: 'Fonte: Ministério da Saúde'
@@ -99,10 +108,10 @@ novo_storage:
   
   
   margin :
-    l:
-    r:
-    t:
-    b:
+    l: 10
+    r: 10
+    t: 10
+    b: 10
     
   title:
     family: 'Courier New, monospace'
@@ -137,9 +146,12 @@ novo_storage:
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
     orientation: 'h' #vertical
+    traceorder: 'normal' #reverse or normal
     position:
       x: 
       y:
+      xanchor:
+      yanchor:
   source:
     text: ' '
     family: 'Courier New, monospace'
@@ -170,6 +182,11 @@ all_world:
   paper_bgcolor: '#FFFFFF'
   plot_bgcolor: 'rgba(0,0,0,0)'
   
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
 
   title:
     family: 'Courier New, monospace'
@@ -204,9 +221,13 @@ all_world:
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
+    traceorder: 'normal' #reverse or normal
     position:
       x: 0.05
       y: 0.975
+      xanchor:
+      yanchor:
+
 
   source:
     text: 'Fonte: Worldometers'
@@ -235,6 +256,11 @@ by_country:
   paper_bgcolor: '#FFFFFF'
   plot_bgcolor: 'rgba(0,0,0,0)'
   
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
 
   title:
     family: 'Courier New, monospace'
@@ -269,9 +295,12 @@ by_country:
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
+    traceorder: 'normal' #reverse or normal
     position:
       x: 0.01
       y: 0.975
+      xanchor:
+      yanchor:
 
   source:
     text: 'Fonte: Worldometers'
@@ -301,6 +330,11 @@ bar_comparison:
   paper_bgcolor: '#FFFFFF'
   plot_bgcolor: 'rgba(0,0,0,0)'
   
+  margin :
+    l: 10
+    r: 10
+    t: 10
+    b: 10
 
   title:
     family: 'Courier New, monospace'
@@ -335,9 +369,12 @@ bar_comparison:
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
+    traceorder: 'normal'
     position:
       x: 0.01
       y: 0.965
+      xanchor:
+      yanchor:
 
   source:
     text: 'Fonte: Worldometers'

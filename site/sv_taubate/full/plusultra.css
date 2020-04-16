@@ -114,12 +114,12 @@ body {
 
 .card-middle {
     border-radius: 5px;
-    background-color: blue;
+    background-color: red;
 }
 
 .card-right {
     border-radius: 5px;
-    background-color: red;
+    background-color: black;
 }
 
 .card-recover {
