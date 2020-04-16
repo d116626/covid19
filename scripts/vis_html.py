@@ -5,7 +5,10 @@ from scripts.io import read_sheets
 from scripts import manipulation
 from scripts import io
 
-def create_cards(df_states, vale, config_embed):
+def create_cards(df_states, vale, br, config_embed):
+    
+    mask = ((br['date'] == max(br['date'])) & (br['countrycode']=='BR'))
+    br_today = br[mask]
     
     today = datetime.today()
     firstDay   = '2020-02-26'
@@ -24,17 +27,35 @@ def create_cards(df_states, vale, config_embed):
     todayNewDeaths = today_data['new_deaths'].values[0]
     todayDeathsPerc = todayNewDeaths/(todayDeaths -todayNewDeaths)
     
+    todayNewRecover = br_today['new_recovered'].astype(int).values[0]
+    todayRecover = br_today['recovered'].astype(int).values[0]
+    todayRecoverPerc = todayNewRecover/(todayRecover - todayNewRecover)
+
 
     todayValeSuspects   = vale['suspeitas'].astype(int).sum()
     todayValeCases   = vale['confirmados'].astype(int).sum()
     todayValeDeaths   = vale['mortes'].astype(int).sum()
     todayValeDate = max(vale['ultima_atualizaçao'])
-
+    todayValeRecover =  vale['recuperados'].astype(int).sum()
 
     replace_vars = {'daysOutbreak':daysOutbreak, 'todayDate':todayDate, 'todayValeDate':todayValeDate,
-                    'todayNewCases':"{:,d}".format(todayNewCases),'todayCasesPerc':"{:.1%}".format(todayCasesPerc), "todayCases":"{:,d}".format(todayCases),
-                    'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths),
-                    "todayValeSuspects":"{:,d}".format(todayValeSuspects),"todayValeCases":"{:,d}".format(todayValeCases),"todayValeDeaths":"{:,d}".format(todayValeDeaths)
+                    
+                    'todayNewCases':"{:,d}".format(todayNewCases),
+                    'todayCasesPerc':"{:.1%}".format(todayCasesPerc),
+                    "todayCases":"{:,d}".format(todayCases),
+                    
+                    'todayNewDeaths':"{:,d}".format(todayNewDeaths),
+                    'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc),
+                    "todayDeaths":"{:,d}".format(todayDeaths),
+                    
+                    "todayNewRecover":"{:,d}".format(todayNewRecover),
+                    'todayRecoverPerc':"{:.1%}".format(todayRecoverPerc),
+                    'todayRecover':"{:,d}".format(todayRecover),
+                    
+                    "todayValeSuspects":"{:,d}".format(todayValeSuspects),
+                    "todayValeCases":"{:,d}".format(todayValeCases),
+                    "todayValeDeaths":"{:,d}".format(todayValeDeaths),
+                    'todayValeRecover':"{:,d}".format(todayValeRecover)
                     }
 
 
