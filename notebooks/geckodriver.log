@@ -278,3 +278,16 @@ IPDL protocol error: Handler returned error code!
 1587040976333	Marionette	INFO	Listening on port 41633
 1587040976362	Marionette	WARN	TLS certificate errors will be ignored for this session
 1587040979884	Marionette	INFO	Stopped listening on port 41633
+1587064144061	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilel3NjzL"
+1587064144455	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587064144474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587064144474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587064144474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587064144474	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587064146038	Marionette	INFO	Listening on port 33689
+1587064146097	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587064163752	Marionette	INFO	Stopped listening on port 33689
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+

@@ -72,9 +72,12 @@ taubate:
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
     orientation: 'h' #vertical
+    traceorder: 'normal'
     position:
       x: 
       y:
+      xanchor:
+      yanchor:
   source:
     text: ' '
     family: 'Courier New, monospace'
@@ -101,7 +104,7 @@ taubate_pie:
 
   barmode: 'group'
 
-  colors: ['blue', 'red']
+  colors: ['#5768D2', '#C51162']
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
   # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
   
@@ -173,7 +176,7 @@ taubate_faixas:
     line_width: 2
     marker:
       size: 7
-      color: '#FA7609'
+      color: 'red'
     hoverlabel_size: 25
 
   barmode: 'group'
@@ -230,6 +233,8 @@ taubate_faixas:
     position:
       x: 0.37
       y:
+      xanchor: "center"
+      yanchor: 'top'
   source:
     text: ' '
     family: 'Courier New, monospace'

@@ -26,12 +26,9 @@ def get_map(dd_final, variavel, cols ,ufs):
     colors = ['#E6E1BC','#ECA14D','#F9A602','#F05E23','#883002']
     colormap = colormap = cm.LinearColormap(colors=colors, index=indexx,vmin=round(minn),vmax=maxx)
 
-
-    #create map
-    mymap = folium.Map(location=[-15.734392, -54.026147], zoom_start=5,tiles=None)
-    
-    #def type
-    folium.TileLayer('CartoDB positron',name="Light Map",control=False).add_to(mymap)
+    mymap = folium.Map(location=[-15.734392, -54.026147], 
+                    zoom_start=5, min_zoom=4, max_zoom=12,
+                    tiles='CartoDB positron')
 
     #legend caption
 
@@ -123,11 +120,9 @@ def get_map_vale(dd_final,variavel,cols, ufs):
 
 
     #create map
-    mymap = folium.Map(location=[-23.234392, -45.026147], zoom_start=7,tiles=None,control_scale=False)
-    
-    #def type
-    folium.TileLayer('CartoDB positron',name="Light Map",control=False).add_to(mymap)
-
+    mymap = folium.Map(location=[-23.234392, -45.026147], 
+                    zoom_start=7, min_zoom=4, max_zoom=10,
+                    tiles='CartoDB positron')
     #legend caption
 
     colormap.caption = "Número de Casos Confirmados"

@@ -96,7 +96,7 @@ def taubate_cum(df, themes, adjusts, config_cumulative, save=False):
 
 def taubate_faixas(confirmados, themes, config, save=False):
     
-    bins = pd.IntervalIndex.from_tuples([(0, 20), (21, 30), (31, 40), (41, 50), (51, 60), (61, 70), (71, 80),(81, 90),(91, 200)])
+    bins = pd.IntervalIndex.from_tuples([(0, 20), (20, 30), (30, 40), (40, 50), (50, 60), (60, 70), (70, 80),(80, 90),(90, 200)])
     bined = pd.cut(confirmados['idade'].astype(int), bins).value_counts()
 
     idades = pd.DataFrame(data = bined.index.tolist(), columns=['faixa'])
@@ -108,7 +108,7 @@ def taubate_faixas(confirmados, themes, config, save=False):
     idades['faixa'] = labels
     
     trace = go.Bar(
-        name=adjusts[status]['nome'],
+        # name=,
         x=idades['quantidade'], 
         y=idades['faixa'],
         marker=dict(color=themes['data']['marker']['color'],
@@ -184,10 +184,19 @@ def taubate_pie(confirmados, themes, config, save=False):
 
 
 def get_map_taubate(df,status_adjusts, config_map, save=False):
-    mymap = folium.Map(location=[ -23.021628, -45.556273 ], zoom_start=13,tiles=None,control_scale=False, max_bounds=True, max_zoom=9,max_lat=-22.883089, min_lat=-23.292957, min_lon= -45.866733, max_lon=-45.117794)
-
-    folium.TileLayer('CartoDB positron',control=False).add_to(mymap)
-
+    
+    # tiles = '     https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=98b606377e0b4514a106725fe3df2e52 '
+    # attr= '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    
+    tiles = 'CartoDB positron'
+    attr = ''
+    mymap = folium.Map(location=[ -23.021628, -45.556273 ], 
+                    max_bounds=True, 
+                    zoom_start=13, min_zoom=12,
+                    max_lat=-22.883089, min_lat=-23.292957, 
+                    max_lon=-45.117794, min_lon= -45.866733,
+                    tiles = tiles,
+                    attr=attr)
 
     
     dd = df.copy()
