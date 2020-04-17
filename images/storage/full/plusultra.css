@@ -102,19 +102,27 @@ body {
     text-align: center;
 }
 
-.card-left {
+.card-dias {
     border-radius: 5px;
     background-color: #007482;
 }
 
-.card-middle {
-    border-radius: 5px;
-    background-color: #ec7024;
+.casos {
+    color: #0393D0
 }
 
-.card-right {
+.obitos {
+    color: #EF4136
+}
+
+.card-casos {
     border-radius: 5px;
-    background-color: #053248;
+    background-color: #0393D0;
+}
+
+.card-obitos {
+    border-radius: 5px;
+    background-color: #EF4136;
 }
 
 .card-recover {

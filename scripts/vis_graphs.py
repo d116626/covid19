@@ -205,7 +205,7 @@ def total_by_country(df,geoid, themes,escala='lin',var='cases', data=today, save
     x=dd[mask]['date'], 
     y=dd[mask]['new_{}'.format(var)],
 
-    marker=dict(color='#1d8179',),
+    marker=dict(color=themes['data']['marker_color'][var],),
     hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
     )
 

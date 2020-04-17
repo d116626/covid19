@@ -95,6 +95,9 @@ novo_storage:
   data:
     line_width: 5
     marker_size: 7
+    marker_color:
+      cases: '#0393D0'
+      deaths: '#EF4136'
     hoverlabel_size: 22
 
   barmode: 'group'

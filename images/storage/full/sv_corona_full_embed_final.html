@@ -34,12 +34,12 @@
     <div class="row cards">
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-left">
+                <div class="card-body card-dias">
                     <p class="card-top">
                         <font color="#007482">xxx</font>
                     </p>
                     <h5 class="card-mid">
-                        <font color="#f9f9f9">50</font>
+                        <font color="#f9f9f9">51</font>
                     </h5>
                     <p class="card-bot">
                         <font color="#f9f9f9">dias desde o primeiro caso</font>
@@ -49,7 +49,7 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-middle">
+                <div class="card-body card-casos">
                     <p class="card-top">
                         <font color="#f9f9f9">+3,058 nas ultimas 24h (12.1%)</font>
                     </p>
@@ -64,7 +64,7 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-right">
+                <div class="card-body card-obitos">
                     <p class="card-top">
                         <font color="#f9f9f9">+204 nas ultimas 24h (13.3%)</font>
                     </p>
@@ -99,13 +99,14 @@
     <!-- ###### CUMULATIVE GRAPHS -->
     <div class="row cards">
         <div class="col-lg col-space">
-            <h2 class="text-title">Evolução do número de Casos</h2>
+            <h2 class="text-title">Evolução do número de <strong class='casos'>Casos</strong></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/site/graphs/cumulative/brasil_por_estado_confirmed.html" scrolling="no" frameborder="0"></iframe>
             </div>
         </div>
         <div class="col-lg col-space">
-            <h2 class="text-title">Evolução do número de Óbitos</h2>
+            <h2 class="text-title">Evolução do número de <strong class='obitos'>Óbitos</strong></h2>
+            </h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/site/graphs/cumulative/brasil_por_estado_confirmed.html" scrolling="no" frameborder="0"></iframe>
             </div>
@@ -115,13 +116,13 @@
     <!-- ### DAILY -->
     <div class="row cards">
         <div class="col-lg col-space">
-            <h2 class="text-title">Número diário de Casos</h2>
+            <h2 class="text-title">Número diário de <strong class='casos'>Casos</strong></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/site/graphs/daily/brasil_lin_total.html" scrolling="no" frameborder="0"></iframe>
             </div>
         </div>
         <div class="col-lg col-space">
-            <h2 class="text-title">Número diário de Óbitos</h2>
+            <h2 class="text-title">Número diário de <strong class='obitos'>Óbitos</strong></h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/site/graphs/daily/brasil_lin_mortes.html" scrolling="no" frameborder="0"></iframe>
             </div>
@@ -150,7 +151,7 @@
     <div class="row cards">
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-left">
+                <div class="card-body card-dias">
                     <p class="card-top">
                         <font color="#007482">xxx</font>
                     </p>
@@ -165,9 +166,9 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-middle">
+                <div class="card-body card-casos">
                     <p class="card-top">
-                        <font color="#ec7024">xxx</font>
+                        <font color="#0393D0">xxx</font>
                     </p>
                     <h5 class="card-mid">
                         <font color="#f9f9f9">171</font>
@@ -180,9 +181,9 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-right">
+                <div class="card-body card-obitos">
                     <p class="card-top">
-                        <font color="#053248">xxx</font>
+                        <font color="#EF4136">xxx</font>
                     </p>
                     <h5 class="card-mid">
                         <font color="#f9f9f9">11</font>
@@ -198,7 +199,7 @@
             <div class="card h-100 mb-3">
                 <div class="card-body card-recover">
                     <p class="card-top">
-                        <font color="#f9f9f9">xxx</font>
+                        <font color="#00bd7e">xxx</font>
                     </p>
                     <h5 class="card-mid">
                         <font color="#f9f9f9">40</font>
@@ -214,7 +215,7 @@
     <!-- ###### VALE MAP -->
     <div class="row margem-mapa">
         <div class="col-10 offset-1 responsive-map">
-            <h2 class="text-title justify-content-center">Mapa de Casos por Estado e Município do Vale do Paraíba e Litoral Norte</h2>
+            <h2 class="text-title justify-content-center">Mapa do COVID19 por Estado e Município do Vale do Paraíba e Litoral Norte</h2>
             <iframe src="https://storage.googleapis.com/sv-covid19/site/maps/mapa_vale.html" frameborder="0"></iframe>
         </div>
     </div>
@@ -325,19 +326,27 @@
         text-align: center;
     }
     
-    .card-left {
+    .card-dias {
         border-radius: 5px;
         background-color: #007482;
     }
     
-    .card-middle {
-        border-radius: 5px;
-        background-color: #ec7024;
+    .casos {
+        color: #0393D0
     }
     
-    .card-right {
+    .obitos {
+        color: #EF4136
+    }
+    
+    .card-casos {
         border-radius: 5px;
-        background-color: #053248;
+        background-color: #0393D0;
+    }
+    
+    .card-obitos {
+        border-radius: 5px;
+        background-color: #EF4136;
     }
     
     .card-recover {
