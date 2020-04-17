@@ -248,6 +248,9 @@ by_country:
   data:
     line_width: 10
     marker_size: 15
+    marker_color:
+      cases: '#0393D0'
+      deaths: '#EF4136'
     hoverlabel_size: 22
   
   barmode: 'stack'

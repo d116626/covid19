@@ -35,8 +35,7 @@ def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, sa
         tipo = None
     elif escala=='log':
         tipo = 'log'
-    
-    
+            
     if var == 'deaths':
         title = '<b>Evolução do Número de Mortes'
         var_col = 'deaths'
