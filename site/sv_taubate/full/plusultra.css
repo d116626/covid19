@@ -102,7 +102,7 @@ body {
     text-align: center;
 }
 
-.card-left {
+.card-dias {
     border-radius: 5px;
     background-color: #007482;
 }
@@ -112,12 +112,16 @@ body {
     background-color: #EF9B0F;
 }
 
-.card-middle {
+.card-confirmado {
     border-radius: 5px;
     background-color: red;
 }
 
-.card-right {
+.confirmado {
+    color: red;
+}
+
+.card-obito {
     border-radius: 5px;
     background-color: black;
 }

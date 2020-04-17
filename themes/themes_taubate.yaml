@@ -34,10 +34,10 @@ taubate:
   
   
   margin :
-    l:
-    r:
-    t:
-    b:
+    l: 0
+    r: 0
+    t: 15
+    b: 0
     
   title:
     family: 'Courier New, monospace'
@@ -89,9 +89,6 @@ taubate:
     
   altura: 
   largura:
-
-
-
 
 #novo
 taubate_pie:

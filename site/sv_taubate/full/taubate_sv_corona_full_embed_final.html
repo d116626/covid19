@@ -34,7 +34,7 @@
     <div class="row cards">
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-left">
+                <div class="card-body card-dias">
                     <p class="card-top">
                         <font color="#007482">xxx</font>
                     </p>
@@ -64,7 +64,7 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-middle">
+                <div class="card-body card-confirmado">
                     <p class="card-top">
                         <font color="#f9f9f9">+2 nas ultimas 24h (16.7%)</font>
                     </p>
@@ -79,7 +79,7 @@
         </div>
         <div class="col">
             <div class="card h-100 mb-3">
-                <div class="card-body card-right">
+                <div class="card-body card-obito">
                     <p class="card-top">
                         <font color="#f9f9f9">+0 nas ultimas 24h (0.0%)</font>
                     </p>
@@ -129,13 +129,13 @@
 
     <div class="row cards">
         <div class="col-lg col-space">
-            <h2 class="text-title"><strong>Confirmados</strong> por faixa etária</h2>
+            <h2 class="text-title"><strong class='confirmado'>Confirmados</strong> por faixa etária</h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/taubate/graphs/perfil/taubate_confirmados_faixa_etaria.html" scrolling="no" frameborder="0"></iframe>
             </div>
         </div>
         <div class="col-lg col-space">
-            <h2 class="text-title"><strong>Confirmados</strong> por sexo</h2>
+            <h2 class="text-title"><strong class='confirmado'>Confirmados</strong> por sexo</h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sv-covid19/taubate/graphs/perfil/taubate_confirmados_sexo.html" scrolling="no" frameborder="0"></iframe>
                 <!-- <iframe class="embed-responsive-item" src="../perfil/taubate_confirmados_sexo.html" scrolling="no" frameborder="0"></iframe> -->
@@ -268,7 +268,7 @@
         text-align: center;
     }
     
-    .card-left {
+    .card-dias {
         border-radius: 5px;
         background-color: #007482;
     }
@@ -278,12 +278,16 @@
         background-color: #EF9B0F;
     }
     
-    .card-middle {
+    .card-confirmado {
         border-radius: 5px;
         background-color: red;
     }
     
-    .card-right {
+    .confirmado {
+        color: red;
+    }
+    
+    .card-obito {
         border-radius: 5px;
         background-color: black;
     }

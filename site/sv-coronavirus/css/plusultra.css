@@ -1,11 +1,17 @@
-@media (min-width: 945px) {
+@media (max-width: 769px) {
     .iframe-adjust {
-        height: 2600px;
+        height: 3850px;
     }
 }
 
-@media (max-width: 944px) and (min-width: 770px) {
+@media (max-width: 982px) and (min-width: 770px) {
     .iframe-adjust {
-        height: 3200px;
+        height: 4400px;
+    }
+}
+
+@media (min-width: 981px) {
+    .iframe-adjust {
+        height: 2700px;
     }
 }
