@@ -1,44 +1,33 @@
 embed_html:
-    path: "../site/sv_taubate/full/"
-    model_name: "taubate_sv_corona_full_embed_model.html"
-    save_name : "taubate_sv_corona_full_embed_final.html"
-    css_name: "plusultra.css"
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/full"
+    path: "../site/sv_taubate/coronataubate/"
+    model_name: "model_index.html"
+    save_name : "index.html"
+
 
 
 taubate_cumulative:
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/graphs/cumulative"
-    path_save: '../site/sv_taubate/cumulative/'
+    path_save: '../site/sv_taubate/coronataubate/images/cumulative/'
     save_name: 'taubate_casos_cumulativo.html' ##get a format by var_options
     color_options: taubate'
 
 taubate_daily:
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/graphs/daily"
-    path_save: '../site/sv_taubate/daily/'
+    path_save: '../site/sv_taubate/coronataubate/images/daily/'
     save_name: 'taubate_casos_diarios.html'
     color_options: 'taubate'
 
 
 taubate_map:
-    path_save: '../site/sv_taubate/map/'
+    path_save: '../site/sv_taubate/coronataubate/images/map/'
     save_name: 'taubate_map.html'
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/maps"
+
 
 taubate_faixa_etaria:
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/graphs/perfil"
-    path_save: '../site/sv_taubate/perfil/'
+    path_save: '../site/sv_taubate/coronataubate/images/perfil/'
     save_name: 'taubate_confirmados_faixa_etaria.html'
-    # color_options: 'taubate'
 
 taubate_sexo:
-    bucket: 'sv-covid19'
-    bucket_folder: "taubate/graphs/perfil"
-    path_save: '../site/sv_taubate/perfil/'
+
+    path_save: '../site/sv_taubate/coronataubate/images/perfil/'
     save_name: 'taubate_confirmados_sexo.html'
 
 # vale_map:

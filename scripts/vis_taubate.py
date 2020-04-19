@@ -49,10 +49,10 @@ def taubate_daily(df, themes, adjusts, config_daily, save=False):
         name= f"{config_daily['save_name']}"
         path= f"{config_daily['path_save']}{name}"
         plot(fig, filename=path, auto_open=False)
-        io.to_storage(bucket=config_daily['bucket'],
-                        bucket_folder=config_daily['bucket_folder'],
-                        file_name=name,
-                        path_to_file=path)
+        # io.to_storage(bucket=config_daily['bucket'],
+        #                 bucket_folder=config_daily['bucket_folder'],
+        #                 file_name=name,
+        #                 path_to_file=path)
 
     
     return fig
@@ -83,10 +83,10 @@ def taubate_cum(df, themes, adjusts, config_cumulative, save=False):
         name= f"{config_cumulative['save_name']}"
         path= f"{config_cumulative['path_save']}{name}"
         plot(fig, filename=path, auto_open=False)
-        io.to_storage(bucket=config_cumulative['bucket'],
-                        bucket_folder=config_cumulative['bucket_folder'],
-                        file_name=name,
-                        path_to_file=path)
+        # io.to_storage(bucket=config_cumulative['bucket'],
+        #                 bucket_folder=config_cumulative['bucket_folder'],
+        #                 file_name=name,
+        #                 path_to_file=path)
     
     
      
@@ -135,10 +135,10 @@ def taubate_faixas(confirmados, themes, config, save=False):
         
         plot(fig, filename=path, auto_open=False)
         
-        io.to_storage(bucket=config['bucket'],
-                        bucket_folder=config['bucket_folder'],
-                        file_name=name,
-                        path_to_file=path)
+        # io.to_storage(bucket=config['bucket'],
+        #                 bucket_folder=config['bucket_folder'],
+        #                 file_name=name,
+        #                 path_to_file=path)
 
     return fig
 
@@ -175,10 +175,10 @@ def taubate_pie(confirmados, themes, config, save=False):
 
         plot(fig, filename=path, auto_open=False)
 
-        io.to_storage(bucket=config['bucket'],
-                        bucket_folder=config['bucket_folder'],
-                        file_name=name,
-                        path_to_file=path)
+        # io.to_storage(bucket=config['bucket'],
+        #                 bucket_folder=config['bucket_folder'],
+        #                 file_name=name,
+        #                 path_to_file=path)
 
     return fig
 
@@ -244,11 +244,11 @@ def get_map_taubate(df,status_adjusts, config_map, save=False):
     if save==True:
         mymap.save(f'{config_map["path_save"]}{config_map["save_name"]}')
 
-        print('Upload vale map..')
-        io.to_storage(bucket=config_map['bucket'],
-                bucket_folder=config_map['bucket_folder'],
-                file_name=config_map['save_name'],
-                path_to_file=f'{config_map["path_save"]}{config_map["save_name"]}')
+        # print('Upload vale map..')
+        # io.to_storage(bucket=config_map['bucket'],
+        #         bucket_folder=config_map['bucket_folder'],
+        #         file_name=config_map['save_name'],
+        #         path_to_file=f'{config_map["path_save"]}{config_map["save_name"]}')
         
         # os.remove(f'{config_map["path_save"]}{config_map["save_name"]}')
     
@@ -306,33 +306,33 @@ def taubate_update_html(tb_cases, config_embed, save=False):
             if var in final_lines[i]:
                 final_lines[i] = final_lines[i].replace(var,str(replace_vars[var]))
 
-    css = []
-    with open(r'{}'.format(config_embed['path'] + config_embed['css_name']), mode='r') as f:
-        for line in f.readlines():
-            css.append(line)
-    final_html = []
-    for line in final_lines:
-        if "getCSS" in line:
-            for cssLine in css:
-                final_html.append("    "+cssLine)
+    # css = []
+    # with open(r'{}'.format(config_embed['path'] + config_embed['css_name']), mode='r') as f:
+    #     for line in f.readlines():
+    #         css.append(line)
+    # final_html = []
+    # for line in final_lines:
+    #     if "getCSS" in line:
+    #         for cssLine in css:
+    #             final_html.append("    "+cssLine)
             
-            final_html.append('\n')
-        else:
-            final_html.append(line)
+    #         final_html.append('\n')
+    #     else:
+    #         final_html.append(line)
             
         
     with open(r'{}'.format(config_embed['path'] + config_embed['save_name']), mode='w') as new_f:
 
-        new_f.writelines(final_html)
+        new_f.writelines(final_lines)
 
-    if save==True:
+    # if save==True:
             
-        io.to_storage(bucket=config_embed['bucket'],
-                bucket_folder=config_embed['bucket_folder'],
-                file_name=config_embed['save_name'],
-                path_to_file=config_embed['path']+config_embed['save_name'])
+    #     io.to_storage(bucket=config_embed['bucket'],
+    #             bucket_folder=config_embed['bucket_folder'],
+    #             file_name=config_embed['save_name'],
+    #             path_to_file=config_embed['path']+config_embed['save_name'])
 
-        print("Embed html uploaded!")
+    #     print("Embed html uploaded!")
 
 
     

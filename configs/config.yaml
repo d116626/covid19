@@ -1,24 +1,18 @@
 embed_html:
-    path: "../images/storage/full/"
-    model_name: "sv_corona_full_embed_model.html"
-    save_name : "sv_corona_full_embed_final.html"
-    css_name: "plusultra.css"
-    bucket: 'sv-covid19'
-    bucket_folder: "site/full"
+    path: "../site/sv_br_vale/coronavirus/"
+    model_name: "model_index.html"
+    save_name : "index.html"
+    
 
 br_cumulative:
-    bucket: 'sv-covid19'
-    bucket_folder: "site/graphs/cumulative"
-    path_save: '../images/storage/cumulativo/'
+    path_save: '../site/sv_br_vale/coronavirus/images/cumulative/'
     save_name: 'brasil_por_estado_{}.html' ##get a format by var_options
     var_options: [confirmed, deaths]
     in_cities: ['BRASIL','BRASIL SEM SP','SP', 'RJ']
     color_options: ['novo', 'novo_storage']
 
 br_daily:
-    bucket: 'sv-covid19'
-    bucket_folder: "site/graphs/daily"
-    path_save: '../images/storage/diario/'
+    path_save: '../site/sv_br_vale/coronavirus/images/daily/'
     ### var and save_name
     var_options: {'cases':'brasil_lin_total.html','deaths':'brasil_lin_mortes.html'}
     color_options: 'novo_storage'
@@ -28,14 +22,12 @@ br_daily:
 br_map:
     path_save: '../maps/'
     save_name: 'cidades_estados.html'
-    bucket: 'sv-covid19'
-    bucket_folder: "site/maps"
+
 
 vale_map:
-    path_save: '../maps/'
-    save_name: 'mapa_vale.html'
-    bucket: 'sv-covid19'
-    bucket_folder: "site/maps"
+    path_save: '../site/sv_br_vale/coronavirus/images/maps/'
+    save_name: 'vale_map.html'
+
 
 
 ms_table:

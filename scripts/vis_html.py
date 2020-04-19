@@ -69,29 +69,29 @@ def create_cards(df_states, vale, br, config_embed):
             if var in final_lines[i]:
                 final_lines[i] = final_lines[i].replace(var,str(replace_vars[var]))
 
-    css = []
-    with open(r'{}'.format(config_embed['path'] + config_embed['css_name']), mode='r') as f:
-        for line in f.readlines():
-            css.append(line)
-    final_html = []
-    for line in final_lines:
-        if "getCSS" in line:
-            for cssLine in css:
-                final_html.append("    "+cssLine)
+    # css = []
+    # with open(r'{}'.format(config_embed['path'] + config_embed['css_name']), mode='r') as f:
+    #     for line in f.readlines():
+    #         css.append(line)
+    # final_html = []
+    # for line in final_lines:
+    #     if "getCSS" in line:
+    #         for cssLine in css:
+    #             final_html.append("    "+cssLine)
             
-            final_html.append('\n')
-        else:
-            final_html.append(line)
+    #         final_html.append('\n')
+    #     else:
+    #         final_html.append(line)
             
         
     with open(r'{}'.format(config_embed['path'] + config_embed['save_name']), mode='w') as new_f:
 
-        new_f.writelines(final_html)
+        new_f.writelines(final_lines)
 
-    io.to_storage(bucket=config_embed['bucket'],
-            bucket_folder=config_embed['bucket_folder'],
-            file_name=config_embed['save_name'],
-            path_to_file=config_embed['path']+config_embed['save_name'])
+    # io.to_storage(bucket=config_embed['bucket'],
+    #         bucket_folder=config_embed['bucket_folder'],
+    #         file_name=config_embed['save_name'],
+    #         path_to_file=config_embed['path']+config_embed['save_name'])
 
     print("Embed html uploaded!")
     

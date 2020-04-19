@@ -170,10 +170,10 @@ def br_cumulative_generate_upload(df_states,config_cumulative, themes):
                 name= f"{config_cumulative['save_name']}".format(var)
                 path= f"{config_cumulative['path_save']}{name}"
                 plot(fig, filename=path, auto_open=False)
-                to_storage(bucket=config_cumulative['bucket'],
-                              bucket_folder=config_cumulative['bucket_folder'],
-                              file_name=name,
-                              path_to_file=path)
+                # to_storage(bucket=config_cumulative['bucket'],
+                #               bucket_folder=config_cumulative['bucket_folder'],
+                #               file_name=name,
+                #               path_to_file=path)
             else:
                 pass
 
@@ -193,10 +193,10 @@ def br_daily_genarete_upload(df_states,config_daily,themes):
         plot(fig, filename=path, auto_open=False)
     
     
-        to_storage(bucket=config_daily['bucket'],
-                      bucket_folder=config_daily['bucket_folder'],
-                      file_name=name,
-                      path_to_file=path)
+        # to_storage(bucket=config_daily['bucket'],
+        #               bucket_folder=config_daily['bucket_folder'],
+        #               file_name=name,
+        #               path_to_file=path)
 
 
 def update_ms_data():
