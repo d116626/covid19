@@ -40,4 +40,5 @@ ms_table:
         'obitosNovos':'new_deaths',
         'obitosAcumulados':'deaths'
         }
-    date_format: "%Y-%m-%d"
+    # date_format: "%Y-%m-%d"
+    date_format: "%d/%m/%Y"

@@ -284,13 +284,17 @@ def taubate_update_html(tb_cases, config_embed, save=False):
     todaySuspects     = today_data['em_analise'].values[0]
     todayNewSuspects  = today_data['em_analise_day'].values[0]
     todaySuspectsPerc = todayNewSuspects/(todaySuspects - todayNewSuspects)
-
-
+    
+    if todayNewSuspects >=0:
+        todayNewSuspects = "{:,d}".format(todayNewSuspects)
+        todayNewSuspects = "+{}".format(todayNewSuspects)
+    else:
+        todayNewSuspects = "{:,d}".format(todayNewSuspects)
 
     replace_vars = {'daysOutbreak':daysOutbreak, "todayDate":todayDate,
                     'todayNewCases':"{:,d}".format(todayNewCases),'todayCasesPerc':"{:.1%}".format(todayCasesPerc), "todayCases":"{:,d}".format(todayCases),
                     'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths),
-                    'todayNewSuspects':"{:,d}".format(todayNewSuspects),'todaySuspectsPerc':"{:.1%}".format(todaySuspectsPerc), "todaySuspects":"{:,d}".format(todaySuspects),
+                    'todayNewSuspects': todayNewSuspects,'todaySuspectsPerc':"{:.1%}".format(todaySuspectsPerc), "todaySuspects":"{:,d}".format(todaySuspects),
                     'todayNewRecover':"{:,d}".format(todayNewRecover),'todayRecoverPerc':"{:.1%}".format(todayRecoverPerc), "todayRecover":"{:,d}".format(todayRecover),
                     
                     }
