@@ -7,9 +7,6 @@ embed_html:
 br_cumulative:
     path_save: '../site/sv_br_vale/coronavirus/images/cumulative/'
     save_name: 'brasil_por_estado_{}.html' ##get a format by var_options
-    var_options: [confirmed, deaths]
-    in_cities: ['BRASIL','BRASIL SEM SP','SP', 'RJ']
-    color_options: ['novo', 'novo_storage']
 
 br_daily:
     path_save: '../site/sv_br_vale/coronavirus/images/daily/'
@@ -35,10 +32,10 @@ ms_table:
         'região':"regiao", 
         'estado':'state',
         "data":'date',
-        'casosNovos':'new_cases',
+        'casosNovos':'new_confirmed',
         'casosAcumulados':'confirmed',
         'obitosNovos':'new_deaths',
         'obitosAcumulados':'deaths'
         }
-    # date_format: "%Y-%m-%d"
-    date_format: "%d/%m/%Y"
+    date_format: "%Y-%m-%d"
+    # date_format: "%d/%m/%Y"

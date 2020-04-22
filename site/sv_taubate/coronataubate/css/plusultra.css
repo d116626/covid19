@@ -96,10 +96,14 @@ body {
 .cards {
     font-family: 'Montserrat', sans-serif;
     margin-top: 3.5%;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     margin-bottom: 1.0%;
     text-align: center;
+}
+
+.back-margin {
+    margin-top: -3px;
 }
 
 .card-dias {
@@ -131,6 +135,29 @@ body {
     background-color: green;
 }
 
+.card-internado {
+    border-radius: 5px;
+    background-color: purple;
+}
+
+.card-enf {
+    border-radius: 5px;
+    background-color: #AE87D0;
+}
+
+.enf {
+    color: #AE87D0;
+}
+
+.card-uti {
+    border-radius: 5px;
+    background-color: #330066;
+}
+
+.uti {
+    color: #330066;
+}
+
 .card-top {
     text-align: center;
     padding: .5rem;
@@ -141,14 +168,14 @@ body {
 .card-mid {
     text-align: center;
     padding: .5rem;
-    font-size: 7rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .card-bot {
     text-align: center;
     padding: .5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
 }
 

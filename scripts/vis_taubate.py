@@ -70,7 +70,8 @@ def taubate_cum(df, themes, adjusts, config_cumulative, save=False):
             marker=dict(color=themes['data']['marker']['color'],size=themes['data']['marker']['size']),
             line=dict(width=themes['data']['line_width'], color=adjusts[status]['cor']),
             mode='lines+markers',
-            hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size']))   
+            hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
+            visible = adjusts[status]['visible']
         )
         
         data.append(trace)
@@ -271,7 +272,7 @@ def taubate_update_html(tb_cases, config_embed, save=False):
     todayDeathsPerc = todayNewDeaths/(todayDeaths -todayNewDeaths)
 
     today_data = tb_cases.query(f"data=='{lastDay}'")
-    todayCases     = today_data['confirmado'].values[0] - todayDeaths
+    todayCases     = today_data['confirmado'].values[0]
     todayNewCases  = today_data['confirmado_day'].values[0]
     todayCasesPerc = todayNewCases/(todayCases - todayNewCases)
 
@@ -290,13 +291,29 @@ def taubate_update_html(tb_cases, config_embed, save=False):
         todayNewSuspects = "+{}".format(todayNewSuspects)
     else:
         todayNewSuspects = "{:,d}".format(todayNewSuspects)
+        
+    todayInternados     = today_data['internado'].values[0]
+    todayNewInternados  = today_data['internado_day'].values[0]
+    todayInternadosPerc = todayNewInternados/(todayInternados - todayNewInternados)
 
+    if todayNewInternados >=0:
+        todayNewInternados = "{:,d}".format(todayNewInternados)
+        todayNewInternados = "+{}".format(todayNewInternados)
+    else:
+        todayNewInternados = "{:,d}".format(todayNewInternados)
+       
+     
+    todayTaxaEnf = today_data['taxa_enfermaria'].values[0] / 100
+    todayTaxaUTI = today_data['taxa_uti'].values[0] / 100
+
+        
     replace_vars = {'daysOutbreak':daysOutbreak, "todayDate":todayDate,
                     'todayNewCases':"{:,d}".format(todayNewCases),'todayCasesPerc':"{:.1%}".format(todayCasesPerc), "todayCases":"{:,d}".format(todayCases),
                     'todayNewDeaths':"{:,d}".format(todayNewDeaths),'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc), "todayDeaths":"{:,d}".format(todayDeaths),
                     'todayNewSuspects': todayNewSuspects,'todaySuspectsPerc':"{:.1%}".format(todaySuspectsPerc), "todaySuspects":"{:,d}".format(todaySuspects),
                     'todayNewRecover':"{:,d}".format(todayNewRecover),'todayRecoverPerc':"{:.1%}".format(todayRecoverPerc), "todayRecover":"{:,d}".format(todayRecover),
-                    
+                    'todayNewInternados':todayNewInternados,'todayInternadosPerc':"{:.1%}".format(todayInternadosPerc), "todayInternados":"{:,d}".format(todayInternados),
+                    'todayTaxaEnf':"{:.1%}".format(todayTaxaEnf), 'todayTaxaUTI':"{:.1%}".format(todayTaxaUTI)
                     }
 
 

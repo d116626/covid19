@@ -20,7 +20,7 @@ def create_cards(df_states, vale, br, config_embed):
 
     today_data = df_states.query(f"state=='BRASIL' & date=='{lastDay}'")
     todayCases     = today_data['confirmed'].values[0]
-    todayNewCases  = today_data['new_cases'].values[0]
+    todayNewCases  = today_data['new_confirmed'].values[0]
     todayCasesPerc = todayNewCases/(todayCases -todayNewCases)
 
     todayDeaths   = today_data['deaths'].values[0]

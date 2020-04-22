@@ -14,6 +14,8 @@ def get_layout(themes, title='', x_name='', y_name='', tipo=None):
                     b=themes['margin']['b']),
         
         barmode=themes['barmode'],
+        hovermode=themes['hovermode'],
+
         autosize=True,
         
         # automargin=True,
@@ -125,10 +127,10 @@ def get_layout(themes, title='', x_name='', y_name='', tipo=None):
 
 
 
-def get_layout_new(themes,var, tipo):
+def get_layout_new(themes,var, scale):
 
     layout = go.Layout(
-        hovermode='x unified',
+        hovermode=themes['hovermode'],
         
         margin=dict(l=themes['margin']['l'],
                     r=themes['margin']['r'],
@@ -164,8 +166,8 @@ def get_layout_new(themes,var, tipo):
         linecolor=themes['axis_legend']['gridcolor'],
         # linewidth=2,
         # mirror=True,
-        tickformat =themes['axis_legend']['x'][tipo],
-        type=list(themes['axis_legend']['x'].keys())[0],
+        tickformat =themes['axis_legend']['scale'][scale]['x']['tickformat'],
+        type=themes['axis_legend']['scale'][scale]['x']['type'],
 
         ),
         
@@ -181,8 +183,8 @@ def get_layout_new(themes,var, tipo):
             zerolinecolor=themes['axis_legend']['gridcolor'],
             # linecolor=themes['axis_legend']['gridcolor'],
             # linewidth=2,
-            tickformat=themes['axis_legend']['y'][tipo],
-            type=tipo,
+        tickformat =themes['axis_legend']['scale'][scale]['y']['tickformat'],
+        type=themes['axis_legend']['scale'][scale]['y']['type']
         ),
         
         
@@ -252,7 +254,7 @@ def get_layout_new(themes,var, tipo):
 def get_layout_bar(themes):
 
     layout = go.Layout(
-        hovermode='x unified',
+        hovermode=themes['hovermode'],
 
         margin=dict(l=themes['margin']['l'],
                     r=themes['margin']['r'],
@@ -273,7 +275,8 @@ def get_layout_bar(themes):
         linecolor=themes['axis_legend']['gridcolor'],
         # linewidth=2,
         # mirror=True,
-        tickformat =themes['axis_legend']['x']['linear'],
+        tickformat=themes['axis_legend']['scale']['linear']['x']['tickformat'],
+        type=themes['axis_legend']['scale']['linear']['x']['type'],
 
         ),
         
@@ -288,7 +291,8 @@ def get_layout_bar(themes):
             zerolinecolor=themes['axis_legend']['gridcolor'],
             # linecolor=themes['axis_legend']['gridcolor'],
             # linewidth=2,
-            tickformat=themes['axis_legend']['y']['linear'],
+            tickformat=themes['axis_legend']['scale']['linear']['y']['tickformat'],
+            type=themes['axis_legend']['scale']['linear']['y']['type'],
         ),
         
         

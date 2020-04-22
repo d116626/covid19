@@ -151,33 +151,6 @@ def load_total_table():
 
 
 
-def br_cumulative_generate_upload(df_states,config_cumulative, themes):
-    for theme_option in config_cumulative['color_options']:
-        if theme_option == 'novo_storage':
-            save = False
-        else:
-            save=True
-
-        for var in config_cumulative['var_options']:
-            fig = vis_graphs.brasil_vis(df_states,
-                             var,
-                             in_cities=config_cumulative['in_cities'],
-                             today=today,
-                             save=save,
-                             themes=themes[theme_option])
-
-            if theme_option == 'novo_storage':
-                name= f"{config_cumulative['save_name']}".format(var)
-                path= f"{config_cumulative['path_save']}{name}"
-                plot(fig, filename=path, auto_open=False)
-                # to_storage(bucket=config_cumulative['bucket'],
-                #               bucket_folder=config_cumulative['bucket_folder'],
-                #               file_name=name,
-                #               path_to_file=path)
-            else:
-                pass
-
-
 def br_daily_genarete_upload(df_states,config_daily,themes):
     
     brasil = df_states[df_states['state']=='BRASIL']

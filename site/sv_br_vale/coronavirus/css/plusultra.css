@@ -115,6 +115,14 @@ body {
     color: #EF4136
 }
 
+.br {
+    color: #FA7609
+}
+
+.sp {
+    color: #1D8179
+}
+
 .card-casos {
     border-radius: 5px;
     background-color: #0393D0;

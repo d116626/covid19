@@ -56,7 +56,7 @@ def create_all_country_total_data(df, vars):
     df['date'] = pd.to_datetime(df['date'])
     df      = df.sort_values(by=['countryname','date'])
     
-    df['active'] = df['confirmed'] - df['recovered']
+    df['active'] = df['confirmed'] - df['recovered'] - df['deaths']
 
     df['countryname_shift'] = df['countryname'].shift(1)
     
@@ -70,8 +70,6 @@ def create_all_country_total_data(df, vars):
         new_vars.append(var)
         new_vars.append(f"new_{var}")
 
-
-
     cols             = ['date','countrycode','countryname','population'] + new_vars
     df               = df[cols]
 
@@ -80,97 +78,6 @@ def create_all_country_total_data(df, vars):
     
     return df
 
-def create_single_country_data(df):
-    
-    df['date'] = pd.to_datetime(df['date'])
-    df = df.sort_values(by=['countryname','date'])
-
-
-    df['confirmed_shift']   = df['confirmed'].shift(1)
-    df['deaths_shift']      = df['deaths'].shift(1)
-    df['recovered_shift']   = df['recovered'].shift(1)
-    df['countryname_shift'] = df['countryname'].shift(1)
-
-    df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_confirmed']       = df['confirmed'] - df['confirmed_shift']
-
-    df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
-    df['new_deaths']   = df['deaths'] - df['deaths_shift']
-
-    df['recovered_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['recovered_shift'])
-    df['new_recovered']   = df['recovered'] - df['recovered_shift']
-
-    cols = ['date','countrycode','countryname','population','confirmed','new_confirmed','deaths','new_deaths','recovered','new_recovered']
-    df   = df[cols]
-
-    df['confirmed_pop']     = df['confirmed'] / df['population'] * 10**5
-    df['new_confirmed_pop'] = df['new_confirmed'] / df['population'] * 10**5
-
-    df = df.sort_values(by=['countryname'], ascending=False)
-    df = df.sort_values(by=['date'])
-
-    return(df)
-
-def create_bar_compare_data(df):
-    
-    df['date'] = pd.to_datetime(df['date'])
-    df         = df.sort_values(by=['countryname','date'])
-
-
-    df['confirmed_shift']   = df['confirmed'].shift(1)
-    df['deaths_shift']      = df['deaths'].shift(1)
-    df['recovered_shift']   = df['recovered'].shift(1)
-    df['countryname_shift'] = df['countryname'].shift(1)
-
-    df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_confirmed']       = df['confirmed'] - df['confirmed_shift']
-
-    df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
-    df['new_deaths']   = df['deaths'] - df['deaths_shift']
-
-    df['recovered_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['recovered_shift'])
-    df['new_recovered']   = df['recovered'] - df['recovered_shift']
-
-
-    cols = ['date','countrycode','countryname','population','confirmed','new_confirmed','deaths','new_deaths','recovered','new_recovered']
-    df   = df[cols]
-
-    df['confirmed_pop']     = df['confirmed'] / df['population'] * 10**5
-    df['new_confirmed_pop'] = df['new_confirmed'] / df['population'] * 10**5
-
-    df = df.sort_values(by=['countryname'], ascending=False)
-    df = df.sort_values(by=['date'])
-
-    return df
-
-def manipule_bar_compare_data(df,country,paises):
-    pais_comp      = country
-    pais_comp_name = paises[country]
-
-    pais      = 'BR'
-    pais_name = 'Brasil'
-
-    mask = ((df['confirmed']>=100) & (df['countrycode'] == pais_comp))
-    it   = df[mask]
-
-    it_days = len(it)
-
-
-    mask    = ((df['confirmed']>=100) & (df['countrycode'] == pais))
-    br      = df[mask]
-    br_days = len(br)
-
-    it['date'] = pd.DatetimeIndex(it['date']) + pd.DateOffset(it_days-br_days)
-
-    br_it = pd.concat([br,it],axis=0)
-
-
-    br_it['count'] = 1
-
-    since_first_day          = br_it[['count','countrycode']].groupby(by = ['countrycode',]).cumsum()['count'].tolist()
-    br_it['since_first_day'] = since_first_day
-    
-    return br_it, pais, pais_name, pais_comp, pais_comp_name
 
 def manipule_mytable(df,config_mstable):
     rename_cols = config_mstable['rename_cols']

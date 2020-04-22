@@ -23,7 +23,8 @@ taubate:
       color: 
     hoverlabel_size: 22
 
-  barmode: 'group'
+  barmode: 'stack'
+  hovermode: 'x unified'
 
   colors: ['#FA7609','#0D485A','#1D8179','#585858']
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
@@ -67,7 +68,7 @@ taubate:
   legend:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 10
+    size: 12
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
@@ -92,6 +93,9 @@ taubate:
 
 #novo
 taubate_pie:
+
+  hovermode: 'x unified'
+
   data:
     line_width: 2
     marker:
@@ -101,7 +105,9 @@ taubate_pie:
 
   barmode: 'group'
 
-  colors: ['#5768D2', '#C51162']
+  # colors: ['#5768D2', '#C51162']
+  colors: ['#C51162', '#5768D2']
+
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
   # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
   
@@ -169,6 +175,9 @@ taubate_pie:
 
 
 taubate_faixas:
+  hovermode: 'y'
+
+
   data:
     line_width: 2
     marker:
