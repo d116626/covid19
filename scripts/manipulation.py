@@ -14,36 +14,66 @@ def remove_acentos(s):
     
     return ss.lower().replace(' ','_')
 
+def manipulate_eucenter(df):
+    rename_cols = {
+        'dateRep':'date',
+        'cases':'new_confirmed',
+        'deaths':'new_deaths',
+        'countriesAndTerritories':'countryname',
+        'geoId':'countrycode',
+        'popData2018':'population',
+        'continentExp':'continent',
+    }
+    
+    df = df.rename(columns=rename_cols)
+    
+    cols = ['date','countrycode','countryname','population','new_confirmed','new_deaths']
+    
+    df = df[cols]
+    
+    
+    df['date'] = pd.to_datetime(df['date'])
+    df      = df.sort_values(by=['countryname','date'])
+    
+    df['confirmed'] = df[['countryname','new_confirmed']].groupby(by='countryname').cumsum()
+    
+    df['deaths'] = df[['countryname','new_deaths']].groupby(by='countryname').cumsum()
+
+    cols             = ['date','countrycode','countryname','population','confirmed','new_confirmed','deaths','new_deaths']
+    df = df[cols]
+    
+    df = df.sort_values(by=['countryname'], ascending=False)
+    df = df.sort_values(by=['date'])
+    
+    
+    return df
+    
 
 
-
-def create_all_country_total_data(df):
+def create_all_country_total_data(df, vars):
     df.columns = normalize_cols(df.columns)
 
     df['date'] = pd.to_datetime(df['date'])
     df      = df.sort_values(by=['countryname','date'])
+    
+    df['active'] = df['confirmed'] - df['recovered']
 
-
-    df['confirmed_shift']   = df['confirmed'].shift(1)
-    df['deaths_shift']      = df['deaths'].shift(1)
-    df['recovered_shift']   = df['recovered'].shift(1)
     df['countryname_shift'] = df['countryname'].shift(1)
+    
+    new_vars = []
+    
+    for var in vars:
+        df[f'{var}_shift']   = df[f'{var}'].shift(1)
+        df[f'{var}_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df[f'{var}_shift'])
+        df[f'new_{var}']       = df[f'{var}'] - df[f'{var}_shift']
+        
+        new_vars.append(var)
+        new_vars.append(f"new_{var}")
 
-    df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_cases']       = df['confirmed'] - df['confirmed_shift']
-
-    df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
-    df['new_deaths']   = df['deaths'] - df['deaths_shift']
-
-    df['recovered_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['recovered_shift'])
-    df['new_recovered']   = df['recovered'] - df['recovered_shift']
 
 
-    cols             = ['date','countrycode','countryname','population','confirmed','new_cases','deaths','new_deaths','recovered','new_recovered']
+    cols             = ['date','countrycode','countryname','population'] + new_vars
     df               = df[cols]
-    df['confirmed_pop'] = df['confirmed'] / df['population'] * 10**5
-
-    df['new_confirmed_pop'] = df['new_cases'] / df['population'] * 10**5
 
     df = df.sort_values(by=['countryname'], ascending=False)
     df = df.sort_values(by=['date'])
@@ -62,7 +92,7 @@ def create_single_country_data(df):
     df['countryname_shift'] = df['countryname'].shift(1)
 
     df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_cases']       = df['confirmed'] - df['confirmed_shift']
+    df['new_confirmed']       = df['confirmed'] - df['confirmed_shift']
 
     df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
     df['new_deaths']   = df['deaths'] - df['deaths_shift']
@@ -70,11 +100,11 @@ def create_single_country_data(df):
     df['recovered_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['recovered_shift'])
     df['new_recovered']   = df['recovered'] - df['recovered_shift']
 
-    cols = ['date','countrycode','countryname','population','confirmed','new_cases','deaths','new_deaths','recovered','new_recovered']
+    cols = ['date','countrycode','countryname','population','confirmed','new_confirmed','deaths','new_deaths','recovered','new_recovered']
     df   = df[cols]
 
     df['confirmed_pop']     = df['confirmed'] / df['population'] * 10**5
-    df['new_confirmed_pop'] = df['new_cases'] / df['population'] * 10**5
+    df['new_confirmed_pop'] = df['new_confirmed'] / df['population'] * 10**5
 
     df = df.sort_values(by=['countryname'], ascending=False)
     df = df.sort_values(by=['date'])
@@ -93,7 +123,7 @@ def create_bar_compare_data(df):
     df['countryname_shift'] = df['countryname'].shift(1)
 
     df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_cases']       = df['confirmed'] - df['confirmed_shift']
+    df['new_confirmed']       = df['confirmed'] - df['confirmed_shift']
 
     df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
     df['new_deaths']   = df['deaths'] - df['deaths_shift']
@@ -102,11 +132,11 @@ def create_bar_compare_data(df):
     df['new_recovered']   = df['recovered'] - df['recovered_shift']
 
 
-    cols = ['date','countrycode','countryname','population','confirmed','new_cases','deaths','new_deaths','recovered','new_recovered']
+    cols = ['date','countrycode','countryname','population','confirmed','new_confirmed','deaths','new_deaths','recovered','new_recovered']
     df   = df[cols]
 
     df['confirmed_pop']     = df['confirmed'] / df['population'] * 10**5
-    df['new_confirmed_pop'] = df['new_cases'] / df['population'] * 10**5
+    df['new_confirmed_pop'] = df['new_confirmed'] / df['population'] * 10**5
 
     df = df.sort_values(by=['countryname'], ascending=False)
     df = df.sort_values(by=['date'])
@@ -150,7 +180,7 @@ def manipule_mytable(df,config_mstable):
     last_update = df['last_update'].values[0]
     
     
-    for col in ['confirmed','new_cases','deaths','new_deaths']:
+    for col in ['confirmed','new_confirmed','deaths','new_deaths']:
         df[col] = pd.to_numeric(df[col])
 
     df_states         = df.sort_values(by=['date','confirmed'], ascending=False)
@@ -223,7 +253,7 @@ def manipulate_for_br_maps(df,municipios,maps, df_states,ufs):
     rename_cols = {
         'confirmed' : 'Confirmados',
         'deaths'    : 'Óbitos',
-        'new_cases' : 'Novos Casos',
+        'new_confirmed' : 'Novos Casos',
         'new_deaths': 'Novas Mortes',
         'date'      : 'Data do Boletim'
         }
@@ -315,12 +345,12 @@ def create_br_not_sp(df):
 
 
     df['confirmed_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['confirmed_shift'])
-    df['new_cases']       = df['confirmed'] - df['confirmed_shift']
+    df['new_confirmed']       = df['confirmed'] - df['confirmed_shift']
 
     df['deaths_shift'] = np.where(df['countryname_shift']!=df['countryname'], 0 , df['deaths_shift'])
     df['new_deaths']   = df['deaths'] - df['deaths_shift']
     ''
-    cols = ['city','city_ibge_code', 'date', 'confirmed','new_cases','deaths','new_deaths', 'estimated_population_2019','place_type','state']
+    cols = ['city','city_ibge_code', 'date', 'confirmed','new_confirmed','deaths','new_deaths', 'estimated_population_2019','place_type','state']
     df   = df[cols]
 
     return df

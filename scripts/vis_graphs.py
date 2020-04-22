@@ -9,8 +9,58 @@ today = datetime.today().strftime('%Y-%m-%d')
 date_time = datetime.today().strftime('%Y-%m-%d-%H-%M')
 
 from vis_layout import get_layout
+import vis_layout
 from manipulation import normalize_cols, remove_acentos
 
+
+
+
+
+def all_countrys(dd,var,tipo,theme,save=False):
+    mask = ((dd[f'{var}']!=0) & (dd[f'{var}'] > theme['vars'][var]['since_var']))
+    dd = dd[mask]
+    dd['count'] = 1
+
+    since_first_day = dd[['count','countrycode']].groupby(by = ['countrycode',]).cumsum()['count'].tolist()
+    dd['since_first_day'] = since_first_day
+
+    dd = dd.sort_values(by=['countryname'], ascending=False)
+    dd = dd.sort_values(by=['date'])
+
+    countrys = list(dd['countrycode'].unique())
+    countrys.sort(reverse=True)
+    
+
+    data = []
+    for geoid in countrys:
+        mask = (dd['countrycode']==geoid)
+        dc = dd[mask]
+        dc[var] = dc[var].rolling(theme['vars'][var]['roling_window']).mean()
+        mask = (dc[var].notnull())
+        dc = dc[mask]
+        trace = go.Scatter(
+            name=dc['countryname'].str.replace('_',' ').tolist()[0],
+            x=dc['since_first_day'], 
+            y=dc[var],
+        #     line=dict(color='#a14900', width=wid),
+            line=dict(width=theme['data']['line_width']),
+            mode='lines+markers',
+            marker=dict(size=theme['data']['marker_size']),
+            hoverlabel=dict(namelength=-1, font=dict(size=theme['data']['hoverlabel_size']))   
+            )
+        data.append(trace)
+
+    layout = vis_layout.get_layout_new(theme, var, tipo)
+    
+    
+    fig = go.Figure(data=data, layout=layout)
+    
+    
+    return fig
+
+
+# 
+    
 
 def total_casos(df,mask_countrys, themes,escala='lin',var='cases',date=today, save=False):
     mask = df['new_{}'.format(var)]!=0
