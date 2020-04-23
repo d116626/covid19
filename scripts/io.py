@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import pandas as pd
+import numpy as np
 import pandas_gbq
 import pydata_google_auth
 import gspread
@@ -151,25 +152,109 @@ def load_total_table():
 
 
 
-def br_daily_genarete_upload(df_states,config_daily,themes):
-    
-    brasil = df_states[df_states['state']=='BRASIL']
-    brasil['countrycode'] = 'Brasil'
-    brasil['countryname'] = 'Brasil'
-    
-    for var in config_daily['var_options'].keys():
+def load_cities(brio_raw):
+    #sp
 
-        fig = vis_graphs.total_by_country(df = brasil, save=True,geoid='Brasil', var=var,themes = themes['novo_storage'])
-        
-        name = config_daily['var_options'][var]
-        path= f"{config_daily['path_save']}{name}"
-        plot(fig, filename=path, auto_open=False)
+    citys =[3550308]
+
+    mask = brio_raw['city_ibge_code'].isin(citys)
+
+    cols = ['last_available_date','city','last_available_confirmed','new_confirmed','new_deaths']
+
+    sp = brio_raw[mask][cols]
+    sp['death'] = sp['new_deaths'].cumsum()
+
+    rename_cols = {
+        'last_available_date':'date',
+        'last_available_confirmed':'confirmed',
+        'new_confirmed':'new_confirmed',
+        'death':'deaths',
+        'new_deaths':'new_deaths',
+    }
+
+    sp = sp.rename(columns = rename_cols)
+
+    cols = ['date','city','confirmed','new_confirmed','deaths','new_deaths']
+
+    sp = sp[cols]
+
+
+    # taubate
+    tb_cases = read_sheets('covid19_taubate', 'evolucao')
+    tb_cases['data'] = pd.to_datetime(tb_cases['data'], format = "%d/%m/%Y")
+    tb_cases = tb_cases.sort_values(by='data', ascending=True)
+
+    for col in tb_cases.columns[1:]:
+        tb_cases[col] = pd.to_numeric(tb_cases[col])
+
+    for col in ['analise','confirmado','descartado','obito','internado','em_analise']:
+
+        tb_cases[f'{col}_day'] = tb_cases[col] - tb_cases[col].shift(1).fillna(0)
+        tb_cases[f'{col}_day'] = tb_cases[f'{col}_day'].astype(int)
+
+    cols = ['data'] + np.sort(tb_cases.columns[1:]).tolist()
+    tb_cases = tb_cases[cols]
+    tb_cases['city'] = 'Taubaté'
+
+    cols = ['data','city','confirmado', 'confirmado_day','obito','obito_day']
+
+    tb = tb_cases[cols]
+
+    rename_cols = {
+        'data':'date',
+        'confirmado':'confirmed',
+        'confirmado_day':'new_confirmed',
+        'obito':'deaths',
+        'obito_day':'new_deaths',
+    }
+
+    tb = tb.rename(columns = rename_cols)
+
+
+    sjc = read_sheets('covid19_sjc')
+
+    cols =  ['data','confirmado','obito']
+    sjc = sjc[cols]
+
+    sjc['data'] = pd.to_datetime(sjc['data'], format = "%d/%m/%Y")
+
+
+    for col in sjc.columns[1:]:
+        sjc[col] = pd.to_numeric(sjc[col])
+
+
+    sjc['city'] = 'São José dos Campos'
+
+    sjc = sjc.sort_values(by='data')
+    sjc = sjc.fillna(method='ffill')
+
+    for var in ['confirmado','obito']:
+        sjc[f'{var}_shift']   = sjc[f'{var}'].shift(1)
+        sjc[f'new_{var}']       = sjc[f'{var}'] - sjc[f'{var}_shift']
+
+    cols = ['data','city','confirmado','new_confirmado', 'obito', 'new_obito']
+    sjc = sjc[cols]
+
+    rename_cols = {
+        'data':'date',
+        'confirmado':'confirmed',
+        'new_confirmado':'new_confirmed',
+        'obito':'deaths',
+        'new_obito':'new_deaths',
+    }
+
+    sjc = sjc.rename(columns = rename_cols)
+    sjc = sjc.fillna(0)
+
+
+
+    cities = pd.concat([sp,tb,sjc])
+    cities['date'] = pd.to_datetime(cities['date'])
+    cities = cities.reset_index(drop=True)
     
-    
-        # to_storage(bucket=config_daily['bucket'],
-        #               bucket_folder=config_daily['bucket_folder'],
-        #               file_name=name,
-        #               path_to_file=path)
+    return cities
+
+
 
 
 def update_ms_data():

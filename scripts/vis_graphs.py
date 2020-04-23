@@ -85,7 +85,11 @@ def unique_country(dd,themes):
 def brasil_vis_cum(dd, var,scale ,themes):
     dd = dd[dd['confirmed']>0]
     
-    in_cities=themes['vars'][var]['in_cities']
+    
+    if themes['vars'][var]['in_cities'][0] == 'all':
+        in_cities = dd['state'].unique()
+    else:
+        in_cities=themes['vars'][var]['in_cities']
     
     colors =  themes['data']['colors']
     factor = int(np.ceil(len(in_cities)/len(colors)))    
