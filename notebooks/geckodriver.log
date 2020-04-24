@@ -381,3 +381,326 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 Exiting due to channel error.
+1587680127247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4Q85C1"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680194052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6lJL3a"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680237209	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1MfF4n"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680279366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyEF5HD"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680439012	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileR3PHYJ"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+/home/m/Downloads/geckodriver: error: Found argument '-e' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver -v
+
+For more information try --help
+
+1587680767341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9BS1Un"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680787343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5Mgl4Q"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680884101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PGR8pzGYeJs7"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680933014	geckodriver	INFO	geckodriver 0.21.0
+1587680933018	geckodriver	INFO	Listening on 127.0.0.1:39057
+1587680934021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HB7NgpVVOcuE"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587680967908	geckodriver	INFO	geckodriver 0.21.0
+1587680967911	geckodriver	INFO	Listening on 127.0.0.1:54791
+1587680968926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oLIRrPvqKQGc"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681044219	geckodriver	INFO	geckodriver 0.21.0
+1587681044223	geckodriver	INFO	Listening on 127.0.0.1:43231
+1587681045224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lBc0EtU28HEf"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681260018	geckodriver	INFO	geckodriver 0.21.0
+1587681260021	geckodriver	INFO	Listening on 127.0.0.1:53491
+1587681261025	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RhIkT918JSXy"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681391613	geckodriver	INFO	geckodriver 0.21.0
+1587681391616	geckodriver	INFO	Listening on 127.0.0.1:47869
+1587681392621	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FBJjSdBM8qsZ"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681436326	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8bQKhV"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681587635	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOhOf00"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681632305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileY93vqW"
+1587681632306	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:37545
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681632407	mozrunner::runner	DEBUG	Killing process 18728
+1587681632408	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587681752570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledkRt8o"
+1587681752571	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:35473
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681752671	mozrunner::runner	DEBUG	Killing process 18850
+1587681752671	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587681956905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWx3boG"
+1587681956905	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:41047
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587681957006	mozrunner::runner	DEBUG	Killing process 18979
+1587681957006	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587682041626	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledd2Cli"
+1587682041627	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:34663
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587682041727	mozrunner::runner	DEBUG	Killing process 19125
+1587682041727	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587682310738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefM1SL0"
+1587682310739	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:39727
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587682310839	mozrunner::runner	DEBUG	Killing process 19440
+1587682310840	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587682541715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqDUdG7"
+1587682541716	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:37403
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587682541816	mozrunner::runner	DEBUG	Killing process 19821
+1587682541816	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587682817065	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeuIZdc"
+1587682817065	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1:40007
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587682817166	mozrunner::runner	DEBUG	Killing process 20161
+1587682817166	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"invalid argument: can't kill an exited process","stacktrace":""}}
+1587682850325	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeaoe1x"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587682883893	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejqlqtW"
+/usr/bin/firefox: error: Found argument '-m' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    firefox [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1587684081949	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL4wzYz"
+1587684082333	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587684082717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587684082717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587684082717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587684082718	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587684083951	Marionette	INFO	Listening on port 37751
+1587684083960	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587684088786	Marionette	INFO	Stopped listening on port 37751
+1587684319112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile57qSHD"
+1587684319425	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587684320015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587684320016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587684320016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587684320016	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587684321235	Marionette	INFO	Listening on port 34407
+1587684321318	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587684324453	Marionette	INFO	Stopped listening on port 34407
+1587684423947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTKFQsD"
+1587684424239	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587684424256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587684424256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587684424256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587684424256	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587684425405	Marionette	INFO	Listening on port 33601
+1587684425453	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x37012B,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x37012B,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x59000D,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+1587685537974	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5UgEEH"
+1587685538275	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587685538292	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587685538292	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587685538292	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587685538292	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587685539452	Marionette	INFO	Listening on port 33879
+1587685539478	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587685555805	Marionette	INFO	Stopped listening on port 33879
+1587686035847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile20Ectd"
+1587686036150	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587686036167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587686036167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587686036167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587686036167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587686037557	Marionette	INFO	Listening on port 35571
+1587686037652	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587686046399	Marionette	INFO	Stopped listening on port 35571
