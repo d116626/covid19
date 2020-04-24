@@ -44,9 +44,9 @@ def create_cards(df_states, vale, br, config_embed):
                     'todayCasesPerc':"{:.1%}".format(todayCasesPerc),
                     "todayCases":"{:,d}".format(todayCases),
                     
-                    'todayNewDeaths':"{:,d}".format(todayNewDeaths),
+                    'todayNewDeaths':"{:,d}".format(int(todayNewDeaths)),
                     'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc),
-                    "todayDeaths":"{:,d}".format(todayDeaths),
+                    "todayDeaths":"{:,d}".format(int(todayDeaths)),
                     
                     "todayNewRecover":"{:,d}".format(todayNewRecover),
                     'todayRecoverPerc':"{:.1%}".format(todayRecoverPerc),
@@ -57,6 +57,7 @@ def create_cards(df_states, vale, br, config_embed):
                     "todayValeDeaths":"{:,d}".format(todayValeDeaths),
                     'todayValeRecover':"{:,d}".format(todayValeRecover)
                     }
+
 
 
     final_lines = []

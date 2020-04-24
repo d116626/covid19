@@ -83,7 +83,12 @@ def manipule_mytable(df,config_mstable):
     rename_cols = config_mstable['rename_cols']
     df = df.rename(columns=rename_cols)
 
-    df['date'] = pd.to_datetime(df['date'], format = config_mstable['date_format'])
+    df = df[df['deaths'].notnull()]
+    try:
+        df['date'] = pd.to_datetime(df['date'], format = config_mstable['date_format'][0])
+    except:
+        df['date'] = pd.to_datetime(df['date'], format = config_mstable['date_format'][1])
+
     last_update = df['last_update'].values[0]
     
     

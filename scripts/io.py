@@ -302,6 +302,6 @@ def update_ms_data():
     today = datetime.today().strftime('%Y-%m-%d-%H-%M')    
     new_file = [file for file in now_files if file not in initial_files][0]
     os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.csv')
-    df = pd.read_csv(path+f'/{today}_ms_covid19.csv', sep=';')
+    df = pd.read_csv(path+f'/{today}_ms_covid19.csv', encoding='iso-8859-9', sep=';')
     df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')  
     df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
