@@ -753,3 +753,12 @@ IPDL protocol error: Handler returned error code!
 1587763618929	Marionette	INFO	Listening on port 39081
 1587763619004	Marionette	WARN	TLS certificate errors will be ignored for this session
 1587763628531	Marionette	INFO	Stopped listening on port 39081
+1587850277181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenfBXv6"
+1587850277479	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1587850277497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1587850277497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1587850277497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1587850277497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1587850278699	Marionette	INFO	Listening on port 42827
+1587850278786	Marionette	WARN	TLS certificate errors will be ignored for this session
+1587850300475	Marionette	INFO	Stopped listening on port 42827
