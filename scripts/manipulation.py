@@ -177,37 +177,29 @@ def manipulate_for_br_maps(df,municipios,maps, df_states,ufs):
     return final, estados
 
 def manipulate_vale_data(df):
-    cols = ['suspeitas','suspeitas_internados','confirmados','descartados','mortes','recuperados']
+    cols = ['suspeitas','suspeitas_internados','confirmados_internados','confirmados','descartados','mortes','recuperados']
     for col in cols:
         df[col] = pd.to_numeric(df[col], errors='coerce')
-        
+       
+    df['internados'] = df['suspeitas_internados'] + df['confirmados_internados'].fillna(0)
+ 
     df = df.fillna('-').replace('','-')
+    
+    df['ocupacao_uti'] = df['ocupacao_uti'].apply(lambda x: f"{x}%" if x!='-' else '-')
+    df['ocupacao_enfermaria'] = df['ocupacao_enfermaria'].apply(lambda x: f"{x}%" if x!='-' else '-')
     
     df['nome_municipio'] = df['municipio']
     
     return df
 
-def manipulate_for_vale_maps(df, municipios_sp, estados):
+def manipulate_for_vale_maps(df, municipios_sp, estados, config):
     
     vale = pd.merge(df,municipios_sp[['nome_municipio','geometry']],on='nome_municipio', how='left')
     vale = vale[vale['geometry'].notnull()]
     vale = gpd.GeoDataFrame(vale)
     vale.crs = {'init' :'epsg:4326'}
-
-    col_rename ={
-        'municipio'             : 'Município',
-        'confirmados'           : 'Confirmados',
-        'confirmados_internados': 'Confirmados Internados',
-        'mortes'                : 'Óbitos',
-        'suspeitas'             : 'Suspeitos',
-        'suspeitas_internados'  : 'Suspeitos Internados',
-        'mortes_investigação'   : 'Óbitos Suspeitos',
-        'descartados'           : 'Descartados',
-        'recuperados'           : 'Recuperados',
-        'fonte'                 : 'Fonte',
-        'ultimo_boletim'        : 'Data do Boletim',
-        
-    }
+    
+    col_rename =config['col_rename']
 
     vale = vale.rename(columns=col_rename)
     vale['Estado'] = 'São Paulo'

@@ -1,7 +1,7 @@
 import folium
 import folium
-from folium.plugins import MarkerCluster
-from folium.plugins import HeatMap
+
+
 
 import branca.colormap as cm
 import branca

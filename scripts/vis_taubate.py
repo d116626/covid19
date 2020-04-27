@@ -18,8 +18,12 @@ from scripts import io
 
 import folium
 import folium
+
+import folium.plugins as plugins
+
 from folium.plugins import MarkerCluster
 from folium.plugins import HeatMap
+
 
 import branca.colormap as cm
 import branca
@@ -218,7 +222,7 @@ def get_map_taubate(df,status_adjusts, config_map, save=False):
             bairro_row = bairro_table[mask]
             
              
-            r   = int(bairro_row['count'].values[0])*40
+            r   = int(bairro_row['count'].values[0])*60
             lat = bairro_row['lat'].values[0]
             lon = bairro_row['lon'].values[0]
 
@@ -364,7 +368,7 @@ def get_legenda():
     template = """
     {% macro html(this, kwargs) %}
     <!doctype html>
-    <html lang="en">
+    <html lang="pt-br">
 
     <head>
         <meta charset="utf-8">
