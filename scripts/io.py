@@ -259,8 +259,8 @@ def load_cities(brio_raw):
 
 def update_ms_data():
 
-    path=os.getcwd().split('9')[0]+ '9/' + 'data/ministerio_da_saude'
-
+    path= os.getcwd().split('covid19')[0] + 'covid19/data/ministerio_da_saude' 
+    
     initial_files = listdir(path)
 
     profile = webdriver.FirefoxProfile()
@@ -305,3 +305,4 @@ def update_ms_data():
     df = pd.read_csv(path+f'/{today}_ms_covid19.csv', encoding='iso-8859-9', sep=';')
     df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')  
     df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
+    

@@ -35,7 +35,7 @@ def create_cards(df_states, vale, br, config_embed):
     todayValeSuspects   = vale['suspeitas'].astype(int).sum()
     todayValeCases   = vale['confirmados'].astype(int).sum()
     todayValeDeaths   = vale['mortes'].astype(int).sum()
-    todayValeDate = max(vale['ultima_atualizaçao'])
+    todayValeDate = vale['ultima_atualizaçao'][0]
     todayValeRecover =  vale['recuperados'].astype(int).sum()
 
     replace_vars = {'daysOutbreak':daysOutbreak, 'todayDate':todayDate, 'todayValeDate':todayValeDate,
