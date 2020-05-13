@@ -40,7 +40,7 @@ def create_cards(df_states, vale, br, config_embed):
 
     replace_vars = {'daysOutbreak':daysOutbreak, 'todayDate':todayDate, 'todayValeDate':todayValeDate,
                     
-                    'todayNewCases':"{:,d}".format(todayNewCases),
+                    'todayNewCases':"{:,d}".format(int(todayNewCases)),
                     'todayCasesPerc':"{:.1%}".format(todayCasesPerc),
                     "todayCases":"{:,d}".format(todayCases),
                     

@@ -79,7 +79,38 @@ def create_all_country_total_data(df, vars):
     return df
 
 
+
+def get_mytable_old_format(df):
+    mask = (df['estado'].notnull()) & (df['municipio'].isnull()) & (df['codmun'].isnull())
+    df = df[mask]
+
+    vars = ['casosAcumulado','obitosAcumulado']
+
+    df['data'] = pd.to_datetime(df['data'])
+    df      = df.sort_values(by=['estado','data'])
+
+    df['countryname_shift'] = df['estado'].shift(1)
+
+    new_vars = []
+
+    for var in vars:
+        df[f'{var}_shift']   = df[f'{var}'].shift(1)
+        df[f'{var}_shift'] = np.where(df['countryname_shift']!=df['estado'], 0 , df[f'{var}_shift'])
+        df[f'new_{var}']       = df[f'{var}'] - df[f'{var}_shift']
+
+        new_vars.append(var)
+        new_vars.append(f"new_{var}")
+        
+    cols = ['regiao','estado','data','new_casosAcumulado','casosAcumulado','new_obitosAcumulado','obitosAcumulado','last_update']
+
+    df = df[cols]
+    df = df.rename(columns={'new_casosAcumulado':'casosNovos','new_obitosAcumulado':'obitosNovos'})
+
+    return df
+
+
 def manipule_mytable(df,config_mstable):
+    df = get_mytable_old_format(df)
     rename_cols = config_mstable['rename_cols']
     df = df.rename(columns=rename_cols)
 

@@ -51,9 +51,9 @@ ms_table:
         'estado':'state',
         "data":'date',
         'casosNovos':'new_confirmed',
-        'casosAcumulados':'confirmed',
+        'casosAcumulado':'confirmed',
         'obitosNovos':'new_deaths',
-        'obitosAcumulados':'deaths'
+        'obitosAcumulado':'deaths'
         }
     date_format: ["%Y-%m-%d", "%d/%m/%Y"]
     # date_format: "%d/%m/%Y"
