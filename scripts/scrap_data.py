@@ -49,62 +49,61 @@ def load_data():
 
     for row in table_contents[0].find_all('tr'):
         cells = row.find_all('td')
-        if len(cells[0].find_all('a')) >= 1:
-            CountryName.append(cells[0].find_all('a')[0].contents[0])
-        elif len(cells[0].find_all('span')) >= 1:
-            CountryName.append(cells[0].find_all('span')[0].contents[0])   
+
+        if len(cells[1].find_all('a')) >= 1:
+            CountryName.append(cells[1].find_all('a')[0].contents[0])
+        elif len(cells[1].find_all('span')) >= 1:
+            CountryName.append(cells[1].find_all('span')[0].contents[0])   
         else:
-            CountryName.append(cells[0].contents[0])
+            CountryName.append(cells[1].contents[0])
         
-        
-        if len(cells[1].contents) >=1:
-            TotalCases.append(cells[1].contents[0])
+        if len(cells[2].contents) >=1:
+            TotalCases.append(cells[2].contents[0])
         else:
             TotalCases.append(0)
         
-        if len(cells[2].contents) >= 1:
-            NewCases.append(cells[2].contents[0])
+        if len(cells[3].contents) >= 1:
+            NewCases.append(cells[3].contents[0])
         else:
             NewCases.append(0)
             
         
-        if len(cells[3].contents) >= 1:
-            TotalDeaths.append(cells[3].contents[0])
+        if len(cells[4].contents) >= 1:
+            TotalDeaths.append(cells[4].contents[0])
         else:
             TotalDeaths.append(0)
 
         
-        if len(cells[4].contents) >= 1:
-            NewDeaths.append(cells[4].contents[0])
+        if len(cells[5].contents) >= 1:
+            NewDeaths.append(cells[5].contents[0])
         else:
             NewDeaths.append(0)
         
-        if len(cells[5].contents) >= 1:
-            TotalRecovered.append(cells[5].contents[0])
+        if len(cells[6].contents) >= 1:
+            TotalRecovered.append(cells[6].contents[0])
         else:
             TotalRecovered.append(0)
             
-        if len(cells[6].contents) >= 1:
-            ActiveCases.append(cells[6].contents[0])
+        if len(cells[7].contents) >= 1:
+            ActiveCases.append(cells[7].contents[0])
         else:
             ActiveCases.append(0)
         
-        if len(cells[7].contents) >= 1:
-            SeriousCritical.append(cells[7].contents[0])
+        if len(cells[8].contents) >= 1:
+            SeriousCritical.append(cells[8].contents[0])
         else:
             SeriousCritical.append(0)
             
             
-    CaseTable = pd.DataFrame({header[0]: CountryName,
-                            header[1]: TotalCases,
-                            header[2]: NewCases,
-                            header[3]: TotalDeaths,
-                            header[4]: NewDeaths,                          
-                            header[5]: TotalRecovered,
-                            header[6]: ActiveCases,
-                            header[7]: SeriousCritical,
+    CaseTable = pd.DataFrame({header[1]: CountryName,
+                            header[2]: TotalCases,
+                            header[3]: NewCases,
+                            header[4]: TotalDeaths,
+                            header[5]: NewDeaths,                          
+                            header[6]: TotalRecovered,
+                            header[7]: ActiveCases,
+                            header[8]: SeriousCritical,
                             })  
-
 
     caseTableSimple = CaseTable[[CaseTable.columns[0], CaseTable.columns[1], CaseTable.columns[3], CaseTable.columns[5]]]
     caseTableSimple.columns = ['Country/Region', 'Confirmed', 'Deaths', 'Recovered']
