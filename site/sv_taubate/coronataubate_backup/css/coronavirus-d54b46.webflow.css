@@ -2284,8 +2284,8 @@ blockquote {
 
 .banner-section {
     min-height: 550px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url('../images/banner_coronavirus_TAUBATE2.jpg');
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('../images/banner_coronavirus_TAUBATE2.jpg');
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url('../images/banner_coronavirus-TAUBATE.png');
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('../images/banner_coronavirus-TAUBATE.png');
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
@@ -2315,6 +2315,7 @@ blockquote {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ec7024;
+    display: none;
 }
 
 .nav-link {
@@ -2381,7 +2382,6 @@ blockquote {
     font-size: 48px;
     line-height: 1.2;
     text-align: center;
-    margin-top: 300px;
 }
 
 .banner-heading.anout-hero-heading {
