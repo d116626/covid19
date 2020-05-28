@@ -102,6 +102,11 @@ def brasil_vis_cum(dd, var,scale ,themes):
         mask =dd['city']==city
         dc = dd[mask]
         
+        dc[var] = dc[var].rolling(themes['vars'][var]['roling_window']).mean()
+        mask = (dc[var].notnull())
+        dc = dc[mask]
+        
+        
         trace = go.Scatter(
             name=city,
             x=dc['date'], 

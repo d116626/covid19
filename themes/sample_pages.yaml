@@ -638,7 +638,7 @@ cities:
       x_title: ''
       y_title: 'Óbitos Confirmados'
       since_var: 1
-      roling_window: 3
+      roling_window: 7
       in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
 
 
@@ -655,7 +655,7 @@ cities:
       x_title: ''
       y_title: 'Casos Confirmados'
       since_var: 1
-      roling_window: 3
+      roling_window: 7
       in_cities: ['São Paulo', 'Taubaté', 'São José dos Campos']
 
 
