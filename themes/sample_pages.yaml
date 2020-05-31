@@ -360,7 +360,7 @@ brasil_vis_cumulative:
     marker_size: 4
     hoverlabel_size: 15
     hoverlabel_bgcolor: 'rgba(0,0,0,0)'
-    colors: ['#FA7609','#0D485A','#1D8179','#585858']
+    colors: ['#516FA7','#FB8B00','#F03651','#63BBB2','#2BAF4E','#EBD43A','#BA69A0','#FF8CA3','#9E735D','#B9AEAA']
 
   
 
@@ -664,7 +664,7 @@ cities:
     marker_size: 4
     hoverlabel_size: 15
     hoverlabel_bgcolor: 'rgba(0,0,0,0)'
-    colors: ['#FA7609','#0D485A','#1D8179','#585858']
+    colors: ['#516FA7','#FB8B00','#F03651','#63BBB2','#2BAF4E','#EBD43A','#BA69A0','#FF8CA3','#9E735D','#B9AEAA']
 
   
 

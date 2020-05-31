@@ -18,6 +18,11 @@ import pandas as pd
 import numpy as np
 
 
+import plotly.graph_objs as go
+from scripts import vis_layout
+
+
+
 def plot_rt(result, ax, state_name):
     
     """
@@ -104,3 +109,78 @@ def plot_rt(result, ax, state_name):
     ax.margins(0)
     ax.set_ylim(0.0, 5.0)
     ax.set_xlim(pd.Timestamp('2020-03-01'), result.index.get_level_values('last_updated')[-1]+pd.Timedelta(days=1)) 
+    
+    
+    
+
+
+
+def plot_rt_bars(df, title, place_type='state'):
+    
+    df['color'] = np.where(df['Rt_most_likely'] > 1.2,
+                           'rgba(242,185,80,1)',
+                           np.where(df['Rt_most_likely'] > 1, 
+                                    'rgba(132,217,217,1)',
+                                    '#0A96A6'))
+
+    fig = go.Figure(go.Bar(x=df[place_type],
+                          y=df['Rt_most_likely'],
+                          marker_color=df['color'],
+                          error_y=dict(
+                            type='data',
+                            symmetric=False,
+                            array=df['Rt_most_likely'] - df['Rt_low_95'],
+                            arrayminus=df['Rt_most_likely'] - df['Rt_low_95'])))
+    
+    fig.add_shape(
+        # Line Horizontal
+            type="line",
+            x0=-1,
+            x1=len(df[place_type]),
+            y0=1,
+            y1=1,
+            line=dict(
+                color="#E5E5E5",
+                width=2,
+                dash="dash",
+            ),
+    )
+
+    fig.update_layout({'template': 'plotly_white', 
+                       'title': title})
+    
+    return fig.update_layout(hovermode = 'x unified')
+
+
+def plot_rt_plotly(dd, themes):
+    colors =  themes['data']['colors']
+    factor = int(np.ceil(len(dd['nome_municipio'])/len(colors)))    
+    colors = factor * colors
+    
+    data = []
+    i=0
+    
+    for city in dd['nome_municipio'].unique():
+        mask =dd['nome_municipio']==city
+        dc = dd[mask]
+
+        
+        
+        trace = go.Scatter(
+            name=city,
+            x=dc['last_updated'], 
+            y=dc['Rt_most_likely'],
+            line=dict(color=colors[i], width=themes['data']['line_width']),
+            mode='lines+markers',
+            marker=dict(size=themes['data']['marker_size']),
+            hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
+        )
+        data.append(trace)
+        i+=1
+
+    
+    layout = vis_layout.get_layout_new(themes,var = 'Rt_most_likely',scale='linear')
+
+    fig = go.Figure(data=data, layout=layout)
+    
+    return fig
