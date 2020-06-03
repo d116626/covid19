@@ -117,15 +117,19 @@ def plot_rt(result, ax, state_name):
 
 def plot_rt_bars(df, title, place_type='state'):
     
-    df['color'] = np.where(df['Rt_most_likely'] > 1.2,
-                           'rgba(242,185,80,1)',
-                           np.where(df['Rt_most_likely'] > 1, 
-                                    'rgba(132,217,217,1)',
-                                    '#0A96A6'))
+    
+    line_color = '#E0E0E0'
+    bar_color  = '#D8514E'
+    
+    # df['color'] = np.where(df['Rt_most_likely'] > 1.2,
+    #                        'rgba(242,185,80,1)',
+    #                        np.where(df['Rt_most_likely'] > 1, 
+    #                                 'rgba(242,185,80,1)',
+    #                                 '#0A96A6'))
 
     fig = go.Figure(go.Bar(x=df[place_type],
                           y=df['Rt_most_likely'],
-                          marker_color=df['color'],
+                          marker_color=bar_color,
                           error_y=dict(
                             type='data',
                             symmetric=False,
@@ -140,7 +144,7 @@ def plot_rt_bars(df, title, place_type='state'):
             y0=1,
             y1=1,
             line=dict(
-                color="#E5E5E5",
+                color=line_color,
                 width=2,
                 dash="dash",
             ),

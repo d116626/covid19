@@ -298,10 +298,12 @@ def update_ms_data():
 
     now_files = listdir(path)
 
-
+    print('downloaded')
     today = datetime.today().strftime('%Y-%m-%d-%H-%M')    
     new_file = [file for file in now_files if file not in initial_files][0]
     os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.xlsx')
+    print('renamed')
+
     df = pd.read_excel(path+f'/{today}_ms_covid19.xlsx')
     df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')
         
@@ -313,4 +315,6 @@ def update_ms_data():
     # df = pd.concat([df,dd], 0)
     
     df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
+    print('saved')
+
     

@@ -175,7 +175,7 @@ taubate_pie:
 
 
 taubate_faixas:
-  hovermode: 'y'
+  hovermode: 'y unified'
 
 
   data:
@@ -185,7 +185,7 @@ taubate_faixas:
       color: 'red'
     hoverlabel_size: 25
 
-  barmode: 'group'
+  barmode: 'stack'
 
   colors: ['blue', 'red']
   # ['#FA7609','#0D485A','#1D8179','#585858']
@@ -230,17 +230,17 @@ taubate_faixas:
   legend:
     family: 'Courier New, monospace'
     color: '#000000'
-    size: 22
+    size: 16
     bgcolor: 'rgba(0,0,0,0)'
     bordercolor: 'rgba(0,0,0,0)'
     borderwidth: 0
     traceorder: 'reversed' #reverse or normal
     orientation: 'h' #vertical
     position:
-      x: 0.37
+      x:
       y:
-      xanchor: "center"
-      yanchor: 'top'
+      xanchor: 
+      yanchor: 
   source:
     text: ' '
     family: 'Courier New, monospace'

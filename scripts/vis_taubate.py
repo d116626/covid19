@@ -102,7 +102,9 @@ def taubate_cum(df, themes, adjusts, config_cumulative, save=False):
 def taubate_faixas(confirmados, themes, config, save=False):
     
     bins = pd.IntervalIndex.from_tuples([(0, 20), (20, 30), (30, 40), (40, 50), (50, 60), (60, 70), (70, 80),(80, 90),(90, 200)])
-    bined = pd.cut(confirmados['idade'].astype(int), bins).value_counts()
+    
+    mask = confirmados['status']=='confirmado'
+    bined = pd.cut(confirmados[mask]['idade'].astype(int), bins).value_counts()
 
     idades = pd.DataFrame(data = bined.index.tolist(), columns=['faixa'])
     idades['quantidade'] = bined.values.tolist()
@@ -111,19 +113,48 @@ def taubate_faixas(confirmados, themes, config, save=False):
 
     labels = ['0 a 20', '21 a 30', '31 a 40', '41 a 50',' 51 a 60',' 61 a 70',' 71 a 80',' 81 a 90','+91']
     idades['faixa'] = labels
+    idades['Status'] = 'Confirmados'
     
-    trace = go.Bar(
-        # name=,
-        x=idades['quantidade'], 
-        y=idades['faixa'],
-        marker=dict(color=themes['data']['marker']['color'],
-                   line=dict(color='rgba(58, 71, 80, 1.0)', width=3)
-                   ),
-        hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
-        orientation='h'
-    )
+    
+    
+    mask = confirmados['status']=='obito'
+    bined = pd.cut(confirmados[mask]['idade'].astype(int), bins).value_counts()
+    idades_obt = pd.DataFrame(data = bined.index.tolist(), columns=['faixa'])
+    idades_obt['quantidade'] = bined.values.tolist()
 
-    data = [trace]
+    idades_obt = idades_obt.sort_values(by='faixa')
+
+    labels = ['0 a 20', '21 a 30', '31 a 40', '41 a 50',' 51 a 60',' 61 a 70',' 71 a 80',' 81 a 90','+91']
+    idades_obt['faixa'] = labels
+    idades_obt['Status'] = 'Óbitos'
+
+    
+    idades = pd.concat([idades,idades_obt],0)
+    
+    colors = ['red','black']
+
+    data = []
+    i=0
+    
+
+    for status in idades['Status'].unique():
+        ds = idades[idades['Status']== status]
+        print(colors[i])
+    
+        trace = go.Bar(
+            name=status,
+            x=ds['quantidade'], 
+            y=ds['faixa'],
+            marker=dict(
+                    color= colors[i],
+                    line=dict(color='rgba(58, 71, 80, 1.0)', width=3)
+                    ),
+            hoverlabel=dict(namelength=-1, font=dict(size=themes['data']['hoverlabel_size'])),
+            orientation='h'
+        )
+
+        data.append(trace)
+        i += 1
 
 
     from scripts import vis_layout
@@ -144,8 +175,9 @@ def taubate_faixas(confirmados, themes, config, save=False):
         #                 bucket_folder=config['bucket_folder'],
         #                 file_name=name,
         #                 path_to_file=path)
-
-    return fig
+    
+    
+    return fig, idades
 
 
 

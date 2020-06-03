@@ -42,7 +42,7 @@ def create_cards(df_states, vale, br, config_embed):
                     
                     'todayNewCases':"{:,d}".format(int(todayNewCases)),
                     'todayCasesPerc':"{:.1%}".format(todayCasesPerc),
-                    "todayCases":"{:,d}".format(todayCases),
+                    "todayCases":"{:,d}".format(int(todayCases)),
                     
                     'todayNewDeaths':"{:,d}".format(int(todayNewDeaths)),
                     'todayDeathsPerc':"{:.1%}".format(todayDeathsPerc),
