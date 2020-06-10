@@ -110,7 +110,7 @@ def read_sheets(sheet_name, workSheet=0):
 
 def load_brasilIO():
     ####### IMPORT DATA ######
-    brio = pd.read_csv('https://data.brasil.io/dataset/covid19/caso_full.csv.gz')
+    brio = pd.read_csv('../data/brIO/caso_full.csv')
 
 
     mask = ((brio['is_last']==True) & (brio['place_type']=='city') & (brio['last_available_confirmed_per_100k_inhabitants'].notnull()))
@@ -287,12 +287,12 @@ def update_ms_data():
     firefox.get(url)
     # firefox.request('POST', url,)
 
-    time.sleep(5)
+    time.sleep(7)
 
     download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[1]/div[2]/ion-button[1]')[0]
     download_button.click()
 
-    time.sleep(3)
+    time.sleep(7)
 
     firefox.quit()
 
