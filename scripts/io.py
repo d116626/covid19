@@ -44,14 +44,14 @@ def _get_credentials_gbq():
 
 
 def to_gbq(df, 
-            table_name, 
-            schema_name = 'simula_corona',
-            project_id  = 'robusta-lab',
-            **kwargs):
+        table_name, 
+        schema_name = 'simula_corona',
+        project_id  = 'robusta-lab',
+        **kwargs):
     """
     write a dataframe in Google BigQuery
     """
-    
+
     destination_table = f'{schema_name}.{table_name}'
 
     pandas_gbq.to_gbq(
@@ -63,8 +63,8 @@ def to_gbq(df,
     )
 
 def read_gbq(query, 
-            project_id='robusta-lab', 
-            **kwargs):
+        project_id='robusta-lab', 
+        **kwargs):
     """
     write a dataframe in Google BigQuery
     """
@@ -74,20 +74,20 @@ def read_gbq(query,
         project_id,
         credentials=_get_credentials_gbq(),
         **kwargs)
-    
-    
+
+
 
 
 def to_storage(bucket,bucket_folder,file_name,path_to_file):
-    
+
     client = storage.Client(project='gavinete-sv')
     bucket = client.get_bucket(f'{bucket}')
     blob   = bucket.blob(f'{bucket_folder}/{file_name}')
     blob.upload_from_filename(f'{path_to_file}')
-    
+
     print('Done!')
-    
-    
+
+
 
 def read_sheets(sheet_name, workSheet=0):
 
@@ -126,7 +126,7 @@ def load_wcota():
     df['state'] = df['state'].str.replace('TOTAL','BRASIL')
     # df.to_csv('brasil_states.csv', index=False)
     dd          = df.drop(['country','deaths'],1)
-    
+
     return dd
 
 
@@ -147,7 +147,7 @@ def load_total_table():
     df = pd.merge(df,df_pop,on='countryname', how='left')
     mask = ((df['population'].notnull()) & (df['countrycode'].notnull()))
     df = df[mask]
-    
+
     return df
 
 
@@ -251,7 +251,7 @@ def load_cities(brio_raw):
     cities = pd.concat([sp,tb,sjc])
     cities['date'] = pd.to_datetime(cities['date'])
     cities = cities.reset_index(drop=True)
-    
+
     return cities
 
 
@@ -260,7 +260,7 @@ def load_cities(brio_raw):
 def update_ms_data():
 
     path= os.getcwd().split('covid19')[0] + 'covid19/data/ministerio_da_saude' 
-    
+
     initial_files = listdir(path)
 
     profile = webdriver.FirefoxProfile()
@@ -308,13 +308,13 @@ def update_ms_data():
     df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')
         
     # dd = pd.read_csv("../data/ministerio_da_saude/last_data_ms_covid19.csv")
-    
+
     # today = datetime.today().strftime('%Y-%m-%d')
     # mask = dd['data']!=today
     # dd = dd[mask]
     # df = pd.concat([df,dd], 0)
-    
+
     df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
     print('saved')
 
-    
+
