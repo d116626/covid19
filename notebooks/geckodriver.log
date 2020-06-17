@@ -2004,3 +2004,27 @@ IPDL protocol error: Handler returned error code!
 1592178759337	Marionette	INFO	Listening on port 44581
 1592178759421	Marionette	WARN	TLS certificate errors will be ignored for this session
 1592178778993	Marionette	INFO	Stopped listening on port 44581
+1592264335610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekGlSr9"
+1592264337438	Marionette	INFO	Listening on port 37013
+1592264337563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592264355978	Marionette	INFO	Stopped listening on port 37013
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1592356915120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileb73Rse"
+1592356916973	Marionette	INFO	Listening on port 41841
+1592356917048	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592356942009	Marionette	INFO	Stopped listening on port 41841
+1592435228802	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerBNxuW"
+1592435230631	Marionette	INFO	Listening on port 33751
+1592435230709	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592435249279	Marionette	INFO	Stopped listening on port 33751
