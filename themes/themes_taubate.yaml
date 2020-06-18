@@ -13,6 +13,7 @@ pale: ['#24306C',"#BB4140",'#559F7A','#2C0226' ,'#585858']
 #novo
 novo: ['#FA7609','#0D485A','#1D8179','#585858']
 
+redAndBlue: ['#DF718A','#5DB7EB']
 
 #novo
 taubate:
@@ -106,7 +107,7 @@ taubate_pie:
   barmode: 'group'
 
   # colors: ['#5768D2', '#C51162']
-  colors: ['#C51162', '#5768D2']
+  colors: ['#5DB7EB', '#DF718A']
 
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
   # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']

@@ -1,3 +1,6 @@
+redAndBlue: ['#DF718A','#5DB7EB']
+
+
 layout:
   height: 500
   legend:

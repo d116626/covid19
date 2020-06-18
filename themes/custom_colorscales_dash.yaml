@@ -1,3 +1,7 @@
+
+redAndBlue: ['#DF718A','#5DB7EB']
+
+
 all_world_dash:
   data:
     line_width     : 5
