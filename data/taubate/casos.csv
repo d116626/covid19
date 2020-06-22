@@ -1,1001 +1,1201 @@
 ,data,sexo,idade,bairro,historico_de_viagem,status
-0,13/06/2020,F,66,Pq São Cristovão,Sem registro de contato ou viagem,Em análise (I)
-1,13/06/2020,M,62,Cecap,Sem registro de contato ou viagem,Em análise (I)
-2,12/06/2020,M,22,Jardim das Bandeiras,Sem registro de contato ou viagem,Em análise
-3,12/06/2020,M,34,Jaraguá,Sem registro de contato ou viagem,Em análise
-4,12/06/2020,M,51,Esplanada Independencia,Profissional da Saúde,Em análise
-5,12/06/2020,M,45,Chácara do Visconde,Profissional da Saúde,Em análise
-6,12/06/2020,M,27,Chácara Silvestre,Profissional da Saúde,Em análise
-7,12/06/2020,M,73,Centro,Profissional da Saúde,Em análise
-8,12/06/2020,M,22,Jardim das Bandeiras,Profissional da Saúde,Em análise
-9,12/06/2020,M,45,Chácara do Visconde,Profissional da Saúde,Em análise
-10,12/06/2020,M,73,Centro,Profissional da Saúde,Em análise
-11,12/06/2020,M,27,Chácara do Visconde,Sem registro de contato ou viagem,Em análise
-12,12/06/2020,F,42,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-13,11/06/2020,M,7,Vila Aparecida,Sem registro de contato ou viagem,Em análise (I)
-14,11/06/2020,M,28,Vila São José,Segurança Pública,Em análise
-15,11/06/2020,M,34,Centro,Profissional da Saúde,Em análise
-16,11/06/2020,M,32,Esplanada Independencia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-17,11/06/2020,M,1,Vila São Geraldo,Sem registro de contato ou viagem,Em análise (I)
-18,11/06/2020,M,37,Granja Daniel,Sem registro de contato ou viagem,Em análise (I)
-19,10/06/2020,F,67,Pq Três Marias,Sem registro de contato ou viagem,Em análise
-20,10/06/2020,F,46,Vila Bela,Sem registro de contato ou viagem,Em análise
-21,10/06/2020,F,21,Pq Aeroporto,Sem registro de contato ou viagem,Em análise
-22,10/06/2020,M,39,Chácara Flórida,Sem registro de contato ou viagem,Em análise
-23,10/06/2020,F,52,Barreiro,Sem registro de contato ou viagem,Em análise
-24,10/06/2020,F,35,Pq Piratininga,Sem registro de contato ou viagem,Em análise
-25,10/06/2020,F,43,Santa Luzia,Sem registro de contato ou viagem,Em análise
-26,10/06/2020,F,67,Chácara Silvestre,Sem registro de contato ou viagem,Em análise
-27,10/06/2020,F,23,Jd Sônia Maria,Sem registro de contato ou viagem,Em análise
-28,10/06/2020,F,85,Barranco,Sem registro de contato ou viagem,Em análise (I)
-29,10/06/2020,F,57,Independência,Sem registro de contato ou viagem,Em análise
-30,10/06/2020,F,44,São Gonçalo,Sem registro de contato ou viagem,Em análise
-31,09/06/2020,F,63,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-32,09/06/2020,F,36,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-33,09/06/2020,F,35,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-34,09/06/2020,F,36,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-35,09/06/2020,M,39,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-36,09/06/2020,M,42,Pq São Cristovão,Sem registro de contato ou viagem,Descartado (Óbito)
-37,09/06/2020,M,39,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-38,09/06/2020,M,38,Estoril,Sem registro de contato ou viagem,Em análise
-39,09/06/2020,M,62,Pq Santo Antônio,Sem registro de contato ou viagem,Em análise
-40,09/06/2020,F,42,Cataguá,Sem registro de contato ou viagem,Em análise (Óbito)
-41,09/06/2020,F,31,Jardim América,Profissional da Saúde,Em análise
-42,09/06/2020,M,40,Gurilândia,Sem registro de contato ou viagem,Em análise
-43,09/06/2020,M,56,Abaeté,Sem registro de contato ou viagem,Em análise
-44,09/06/2020,M,77,Centro,Sem registro de contato ou viagem,Em análise
-45,09/06/2020,F,58,Vila São José,Sem registro de contato ou viagem,Em análise (Óbito)
-46,09/06/2020,M,66,São Gonçalo,Sem registro de contato ou viagem,Em análise
-47,09/06/2020,F,27,Vila São José,Profissional da Saúde,Em análise
-48,09/06/2020,M,19,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-49,09/06/2020,M,41,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-50,08/06/2020,F,21,Água Quente,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-51,08/06/2020,F,32,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-52,08/06/2020,F,93,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-53,08/06/2020,F,44,Jardim Morumbi,Profissional da Saúde,Em análise
-54,08/06/2020,F,40,Chácara do Visconde,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-55,08/06/2020,F,38,Residencial Sítio Santo Antônio,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-56,08/06/2020,F,37,Jaraguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-57,08/06/2020,F,31,Monjolinho,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-58,08/06/2020,M,28,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-59,08/06/2020,F,32,Vila Costa,Profissional da Saúde,Em análise
-60,08/06/2020,F,85,Centro,Sem registro de contato ou viagem,Em análise
-61,08/06/2020,F,55,Terra Nova,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-62,08/06/2020,F,38,Stefan Luba,Profissional da Saúde,Em análise
-63,08/06/2020,M,25,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-64,08/06/2020,F,44,Campos Eliseos,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-65,08/06/2020,M,59,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-66,07/06/2020,M,40,Piracangaguá,Sem registro de contato ou viagem,Em análise
-67,07/06/2020,M,30,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-68,07/06/2020,M,34,Ana Rosa,Sem registro de contato ou viagem,Em análise
-69,07/06/2020,F,38,Pq Piratininga,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-70,07/06/2020,F,82,Jd Sônia Maria,Sem registro de contato ou viagem,Em análise
-71,07/06/2020,F,27,Vila São José,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-72,07/06/2020,F,31,Água Quente,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-73,07/06/2020,M,26,Vila Aparecida,Sem registro de contato ou viagem,Descartado
-74,07/06/2020,M,72,Chácara Flórida,Sem registro de contato ou viagem,Descartado
-75,07/06/2020,M,77,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-76,07/06/2020,M,41,Vila Edmundo,Sem registro de contato ou viagem,Descartado
-77,07/06/2020,F,52,Estiva,Sem registro de contato ou viagem,Em análise
-78,07/06/2020,M,26,Vila Aparecida,Profissional da Saúde,Descartado
-79,06/06/2020,F,25,Pq Aeroporto,Profissional da Saúde,Em análise
-80,06/06/2020,F,35,Vila São José,Sem registro de contato ou viagem,Descartado
-81,06/06/2020,M,48,Vila Nogueira,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-82,06/06/2020,M,5,Jardim California,Sem registro de contato ou viagem,Descartado
-83,06/06/2020,F,25,Pq Aeroporto,Profissional da Saúde,Descartado
-84,06/06/2020,F,5,Novo Horizonte,Sem registro de contato ou viagem,Descartado
-85,06/06/2020,M,79,Jardim Canuto Borges,Sem registro de contato ou viagem,Em análise
-86,05/06/2020,F,40,Cecap,Profissional da Saúde,Descartado
-87,05/06/2020,M,32,Perpetuo Socorro,Profissional da Saúde,Descartado
-88,05/06/2020,F,60,Novo Horizonte,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-89,05/06/2020,M,45,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-90,05/06/2020,F,63,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-91,05/06/2020,M,55,São Gonçalo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-92,05/06/2020,M,51,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-93,05/06/2020,F,41,Gurilândia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-94,05/06/2020,F,3,Gurilândia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-95,05/06/2020,F,46,San Marino,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-96,05/06/2020,F,79,Piracangaguá,Sem registro de contato ou viagem,Descartado
-97,05/06/2020,F,32,Perpetuo Socorro,Profissional da Saúde,Descartado
-98,05/06/2020,F,20,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-99,05/06/2020,,78,Residencial Paraiso,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-100,05/06/2020,M,51,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
-101,05/06/2020,F,30,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-102,05/06/2020,F,33,Pq Bandeirantes,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-103,05/06/2020,M,3,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-104,04/06/2020,M,56,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-105,04/06/2020,M,65,Pq São Luis,Sem registro de contato ou viagem,Descartado
-106,04/06/2020,F,93,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-107,04/06/2020,M,50,Vila Santos,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-108,04/06/2020,F,51,São Gonçalo,Profissional da Saúde,Descartado
-109,04/06/2020,F,32,Monte Belo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-110,04/06/2020,F,60,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-111,04/06/2020,M,39,Vila Nogueira,Sem registro de contato ou viagem,Descartado
-112,04/06/2020,F,45,Cidade Jardim,Sem registro de contato ou viagem,Descartado
-113,04/06/2020,M,46,Independência,Sem registro de contato ou viagem,Descartado
-114,04/06/2020,M,69,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-115,04/06/2020,F,49,Centro,Profissional da Saúde,Descartado
-116,04/06/2020,F,36,Centro,Profissional da Saúde,Descartado
-117,04/06/2020,F,2,Piracangaguá,Sem registro de contato ou viagem,Descartado
-118,04/06/2020,M,55,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-119,04/06/2020,F,55,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-120,04/06/2020,M,31,Jardim California,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-121,04/06/2020,M,73,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-122,04/06/2020,F,27,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-123,03/06/2020,M,36,Bonfim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-124,03/06/2020,F,39,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-125,03/06/2020,F,54,Estiva,Sem registro de contato ou viagem,Descartado
-126,03/06/2020,M,24,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-127,03/06/2020,M,30,Centro,Profissional da Saúde,Descartado
-128,03/06/2020,M,40,Gurilândia,Sem registro de contato ou viagem,Descartado
-129,03/06/2020,F,35,Jardim Bela Vista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-130,03/06/2020,M,39,Santa Catatina,Profissional da Saúde,Descartado
-131,03/06/2020,F,31,Água Quente,Sem registro de contato ou viagem,Descartado
-132,03/06/2020,F,54,Residencial Paraiso,Sem registro de contato ou viagem,Descartado
-133,03/06/2020,F,43,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-134,03/06/2020,F,55,Residencial Paraiso,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-135,03/06/2020,F,40,Vila Paulista,Profissional da Saúde,Descartado
-136,03/06/2020,F,2,Monte Belo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-137,03/06/2020,M,50,Chácara do Visconde,Sem registro de contato ou viagem,Descartado
-138,03/06/2020,M,37,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-139,03/06/2020,F,46,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-140,03/06/2020,M,41,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-141,03/06/2020,F,67,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-142,03/06/2020,F,66,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-143,02/06/2020,M,32,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-144,02/06/2020,M,9 m,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-145,02/06/2020,M,3,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-146,02/06/2020,F,62,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-147,02/06/2020,F,18,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-148,02/06/2020,F,62,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-149,02/06/2020,M,28,Vila Marli,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-150,02/06/2020,F,58,Pq Três Marias,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-151,02/06/2020,F,50,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-152,02/06/2020,M,36,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-153,02/06/2020,F,65,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-154,02/06/2020,F,94,Mourisco,Sem registro de contato ou viagem,Em análise
-155,02/06/2020,F,10 m,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-156,02/06/2020,M,41,Jardim das Nações,Profissional da Saúde,Descartado
-157,02/06/2020,F,45,Gurilândia,Profissional da Saúde,Descartado
-158,02/06/2020,M,34,Vila São José,Sem registro de contato ou viagem,Descartado
-159,02/06/2020,F,40,Jaraguá,Profissional da Saúde,Descartado
-160,02/06/2020,F,40,Jd Sandra Maria,Profissional da Saúde,Descartado
-161,02/06/2020,F,24,Jaraguá,Profissional da Saúde,Descartado
-162,02/06/2020,M,71,Baronesa,Sem registro de contato ou viagem,Descartado
-163,02/06/2020,M,52,Quiririm,Sem registro de contato ou viagem,Descartado
-164,02/06/2020,F,49,Independência,Segurança Pública,Descartado
-165,02/06/2020,F,88,Jabuticabeiras,Sem registro de contato ou viagem,Descartado
-166,02/06/2020,F,44,Cataguá,Sem registro de contato ou viagem,Descartado
-167,02/06/2020,M,72,Centro,Sem registro de contato ou viagem,Descartado
-168,02/06/2020,F,42,Centro,Profissional da Saúde,Descartado
-169,02/06/2020,F,50,Centro,Profissional da Saúde,Descartado
-170,02/06/2020,M,44,Terra Nova,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-171,02/06/2020,M,35,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-172,02/06/2020,F,39,Jardim do Sol,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-173,02/06/2020,F,6,Ana Rosa,Sem registro de contato ou viagem,Descartado
-174,01/06/2020,F,35,Cidade de Deus,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-175,01/06/2020,M,74,Jardim dos Estados,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-176,01/06/2020,F,19,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-177,01/06/2020,M,37,Flamboyant,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-178,01/06/2020,F,37,Granja Santa Terezinha,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-179,01/06/2020,F,22,Pq Três Marias,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-180,01/06/2020,M,56,Estiva,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-181,01/06/2020,F,46,Piratininga,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-182,01/06/2020,F,17,Vila Bela,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-183,01/06/2020,M,46,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-184,01/06/2020,F,50,Ana Rosa,Sem registro de contato ou viagem,Descartado
-185,01/06/2020,F,03 D,Mourisco,Sem registro de contato ou viagem,Descartado
-186,01/06/2020,M,30,Centro,Sem registro de contato ou viagem,Descartado
-187,01/06/2020,F,57,Jardim Sônia Maria,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-188,01/06/2020,F,67,Cataguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-189,01/06/2020,F,6,Ana Rosa,Sem registro de contato ou viagem,Descartado
-190,01/06/2020,F,45,Barranco,Sem registro de contato ou viagem,Descartado
-191,01/06/2020,F,40,Pq São Luis,Profissional da Saúde,Descartado
-192,01/06/2020,F,94,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
-193,01/06/2020,M,22,Chácara do Visconde,Sem registro de contato ou viagem,Descartado
-194,01/06/2020,F,40,Alto São Pedro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-195,01/06/2020,F,68,Pq Paduan,Sem registro de contato ou viagem,Descartado
-196,31/05/2020,M,32,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-197,31/05/2020,F,34,Santa Fé,Sem registro de contato ou viagem,Descartado
-198,31/05/2020,M,24,Independência,Sem registro de contato ou viagem,Descartado
-199,31/05/2020,M,78,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-200,31/05/2020,M,16,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
-201,31/05/2020,F,32,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
-202,30/05/2020,M,52,Jardim Russi,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-203,30/05/2020,F,80,Pq Três Marias,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-204,30/05/2020,M,63,São Gonçalo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-205,30/05/2020,M,29,Água Grande,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-206,30/05/2020,M,63,São Gonçalo,Sem registro de contato ou viagem,Descartado
-207,30/05/2020,M,29,Água Quente,Sem registro de contato ou viagem,Descartado
-208,30/05/2020,M,76,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-209,30/05/2020,M,36,Cidade de Deus,Sem registro de contato ou viagem,Descartado
-210,30/05/2020,F,40,Vila Paulista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-211,30/05/2020,M,34,Vila São José,Sem registro de contato ou viagem,Descartado
-212,30/05/2020,F,43,Gurilândia,Sem registro de contato ou viagem,Descartado
-213,30/05/2020,M,76,Cecap,Sem registro de contato ou viagem,Descartado
-214,30/05/2020,F,35,Vila São José,Profissional da Saúde,Descartado
-215,30/05/2020,F,31,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
-216,30/05/2020,F,80,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-217,30/05/2020,M,75,Cidade Jardim,Sem registro de contato ou viagem,Descartado
-218,30/05/2020,M,52,Jardim Russi,Sem registro de contato ou viagem,Descartado
-219,30/05/2020,F,34,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
-220,29/05/2020,M,43,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-221,29/05/2020,M,44,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-222,29/05/2020,M,43,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-223,29/05/2020,M,65,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-224,29/05/2020,F,36,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-225,29/05/2020,F,65,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-226,29/05/2020,M,67,Ana Emilía,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-227,29/05/2020,F,49,Jd Santa Clara,Profissional da Saúde,Descartado
-228,29/05/2020,F,36,Granja Daniel,Sem registro de contato ou viagem,Descartado
-229,29/05/2020,F,72,Independência,Sem registro de contato ou viagem,Descartado
-230,29/05/2020,M,45,Imaculada,Funcionário Público,Descartado
-231,29/05/2020,M,28,Residencial Estorial,Sem registro de contato ou viagem,Descartado
-232,29/05/2020,F,43,Bonfim,Profissional da Saúde,Descartado
-233,29/05/2020,F,30,Independência,Profissional da Saúde,Descartado
-234,29/05/2020,F,44,Jardim Sônia Maria,Profissional da Saúde,Descartado
-235,29/05/2020,F,36,Pq Paduan,Sem registro de contato ou viagem,Descartado
-236,29/05/2020,F,47,Ana Rosa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-237,29/05/2020,F,34,Chácara Flórida,Profissional da Saúde,Descartado
-238,28/05/2020,M,36,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-239,28/05/2020,F,66,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-240,28/05/2020,M,42,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-241,28/05/2020,F,43,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-242,28/05/2020,F,42,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-243,28/05/2020,M,38,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-244,28/05/2020,M,45,Jardim California,Sem registro de contato ou viagem,Descartado
-245,28/05/2020,M,22,Santa Cruz do Areão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-246,28/05/2020,M,57,Pq Urupês,Sem registro de contato ou viagem,Descartado
-247,28/05/2020,F,34,Estiva,Sem registro de contato ou viagem,Descartado
-248,28/05/2020,F,26,Morador de rua,Sem registro de contato ou viagem,Descartado
-249,28/05/2020,F,28,Independência,Segurança Pública,Descartado
-250,28/05/2020,M,36,Jardim das Nações,Segurança Pública,Descartado
-251,28/05/2020,M,46,Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-252,28/05/2020,F,27,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-253,28/05/2020,F,74,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-254,28/05/2020,F,4,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-255,28/05/2020,F,37,Jaraguá,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-256,28/05/2020,M,45,Novo Horizonte,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-257,27/05/2020,F,51,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-258,27/05/2020,M,54,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-259,27/05/2020,F,50,Vila IAPI,Sem registro de contato ou viagem,Descartado
-260,27/05/2020,F,38,Centro,Sem registro de contato ou viagem,Descartado
-261,27/05/2020,F,60,Pq São Jorge,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-262,27/05/2020,F,48,Pq das Flores,Sem registro de contato ou viagem,Descartado
-263,27/05/2020,F,73,Centro,Sem registro de contato ou viagem,Descartado
-264,27/05/2020,F,38,Centro,Sem registro de contato ou viagem,Descartado
-265,27/05/2020,F,20,Vila Nogueira,Sem registro de contato ou viagem,Descartado
-266,27/05/2020,F,46,Itaim,Sem registro de contato ou viagem,Descartado
-267,27/05/2020,F,71,Centro,Sem registro de contato ou viagem,Descartado
-268,27/05/2020,F,34,Chácara Flórida,Profissional da Saúde,Descartado
-269,27/05/2020,F,22,Gurilândia,Profissional da Saúde,Descartado
-270,27/05/2020,F,37,Jd Ana Emília,Profissional da Saúde,Descartado
-271,27/05/2020,M,31,Vila São José,Segurança Pública,Descartado
-272,27/05/2020,F,48,Vila São José,Segurança Pública,Descartado
-273,27/05/2020,M,75,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-274,27/05/2020,M,42,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-275,27/05/2020,F,59,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-276,27/05/2020,F,82,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-277,27/05/2020,M,34,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-278,27/05/2020,F,58,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-279,26/05/2020,F,18,Residêncial Sítio Santo Antônio,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-280,26/05/2020,F,33,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-281,26/05/2020,F,49,Residêncial Sítio Santo Antônio,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-282,26/05/2020,F,42,Jardim Garcez,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-283,26/05/2020,F,20,Mourisco,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-284,26/05/2020,M,62,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-285,26/05/2020,M,68,Cataguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-286,26/05/2020,F,40,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-287,26/05/2020,M,28,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-288,26/05/2020,F,21,Residencial Sítio Santo Antônio,Sem registro de contato ou viagem,Descartado
-289,26/05/2020,M,38,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-290,26/05/2020,F,90,Vila Marli,Sem registro de contato ou viagem,Descartado
-291,26/05/2020,F,51,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-292,26/05/2020,F,27,Barranco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-293,26/05/2020,F,33,Monção,Profissional da Saúde,Descartado
-294,26/05/2020,F,25,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-295,26/05/2020,F,49,Esplanada Independencia,Profissional da Saúde,Descartado
-296,26/05/2020,F,33,Jardim dos Estados,Profissional da Saúde,Descartado
-297,26/05/2020,F,24,Barreiro,Sem registro de contato ou viagem,Descartado
-298,26/05/2020,F,45,Vila Marli,Profissional da Saúde,Descartado
-299,26/05/2020,F,29,Continental I,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-300,26/05/2020,M,53,San Marino,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-301,25/05/2020,M,72,Jardim da Luz,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-302,25/05/2020,M,28,Estiva,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-303,25/05/2020,M,35,Jabuticabeiras,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-304,25/05/2020,F,72,Jardim da Luz,Sem registro de contato ou viagem,Descartado
-305,25/05/2020,M,58,Jd Santa Clara,Sem registro de contato ou viagem,Descartado
-306,25/05/2020,M,22,Jd Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-307,25/05/2020,M,65,San Marino,Sem registro de contato ou viagem,Descartado
-308,25/05/2020,F,75,San Marino,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-309,25/05/2020,M,28,Estiva,Sem registro de contato ou viagem,Descartado
-310,24/05/2020,F,55,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-311,24/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-312,24/05/2020,F,55,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-313,24/05/2020,F,32,Gurilândia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-314,24/05/2020,F,48,Ana Emilía,Profissional da Saúde,Descartado
-315,24/05/2020,F,54,Monção,Profissional da Saúde,Descartado
-316,24/05/2020,M,38,Chácara Flórida,Sem registro de contato ou viagem,Descartado
-317,24/05/2020,M,76,Centro,Sem registro de contato ou viagem,Descartado
-318,24/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-319,24/05/2020,M,35,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-320,24/05/2020,M,33,Granjas Panorama,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-321,24/05/2020,F,30,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-322,24/05/2020,M,38,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
-323,24/05/2020,F,54,Jardim das Nações,Profissional da Saúde,Descartado
-324,23/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-325,23/05/2020,F,40,Jardim Garcez,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-326,23/05/2020,F,39,Chácara do Visconde,Profissional da Saúde,Descartado
-327,23/05/2020,M,84,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-328,23/05/2020,F,35,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-329,22/05/2020,M,42,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-330,22/05/2020,F,48,Cataguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-331,22/05/2020,M,59,Baronesa,Sem registro de contato ou viagem,Descartado
-332,22/05/2020,F,20,Jardim Santa Tereza,Sem registro de contato ou viagem,Descartado
-333,22/05/2020,M,40,Residêncial San Marino,Profissional da Saúde,Descartado
-334,22/05/2020,M,42,Pq São Luis,Profissional da Saúde,Descartado
-335,22/05/2020,M,36,Piratininga,Profissional da Saúde,Descartado
-336,22/05/2020,F,63,Barranco,Sem registro de contato ou viagem,Descartado
-337,22/05/2020,M,43,Vila São José,Sem registro de contato ou viagem,Descartado
-338,22/05/2020,M,59,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-339,22/05/2020,M,20,Santa Tereza,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-340,22/05/2020,M,56,Novo Horizonte,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-341,22/05/2020,M,36,Piratininga,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-342,22/05/2020,M,65,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-343,22/05/2020,F,26,Vila das Graças,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-344,22/05/2020,F,20,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
-345,22/05/2020,M,43,Pq São Luis,Sem registro de contato ou viagem,Descartado
-346,22/05/2020,M,40,Chácara do Visconde,Segurança Pública,Descartado
-347,22/05/2020,F,52,Jardim dos Estados,Segurança Pública,Descartado
-348,22/05/2020,F,61,Vila das Graças,Segurança Pública,Descartado
-349,22/05/2020,F,44,Jardim Sônia Maria,Profissional da Saúde,Descartado
-350,22/05/2020,M,56,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
-351,22/05/2020,M,19,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-352,22/05/2020,M,56,Novo Horizonte,Sem registro de contato ou viagem,Descartado
-353,21/05/2020,M,5 D,Areão,Sem registro de contato ou viagem,Descartado (Óbito)
-354,21/05/2020,F,26,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-355,21/05/2020,M,34,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-356,21/05/2020,M,34,Chácaras Reunidas Brasil,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-357,21/05/2020,F,25,Jd Sônia Maria,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-358,21/05/2020,F,47,Jardim Russi,Sem registro de contato ou viagem,Descartado
-359,21/05/2020,M,11,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-360,21/05/2020,F,24,Chácara Silvestre,Profissional da Saúde,Descartado
-361,21/05/2020,F,36,Jaraguá,Profissional da Saúde,Descartado
-362,21/05/2020,M,24,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-363,21/05/2020,F,30,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-364,21/05/2020,M,37,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-365,21/05/2020,F,71,Cecap,Sem registro de contato ou viagem,Descartado (Óbito)
-366,21/05/2020,M,37,Centro,Sem registro de contato ou viagem,Descartado
-367,20/05/2020,M,35,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-368,20/05/2020,M,43,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-369,20/05/2020,M,48,Vila São Geraldo,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-370,20/05/2020,M,58,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-371,20/05/2020,M,32,Jardim dos Estados,Segurança Pública,Descartado
-372,20/05/2020,M,41,Santa Helena,Sem registro de contato ou viagem,Descartado
-373,20/05/2020,M,38,Gurilândia,Sem registro de contato ou viagem,Descartado
-374,20/05/2020,F,19,Piracangaguá,Sem registro de contato ou viagem,Descartado
-375,20/05/2020,F,15,Vila São José,Sem registro de contato ou viagem,Descartado
-376,20/05/2020,F,23,Comerciários,Profissional da Saúde,Descartado
-377,20/05/2020,M,39,Jaraguá,Profissional da Saúde,Descartado
-378,20/05/2020,F,28,Quiririm,Sem registro de contato ou viagem,Descartado
-379,20/05/2020,M,71,Cidade de Deus,Sem registro de contato ou viagem,Descartado
-380,20/05/2020,M,78,São Jorge,Sem registro de contato ou viagem,Descartado
-381,20/05/2020,M,39,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-382,19/05/2020,M,6,Jardim Santa Tereza,Sem registro de contato ou viagem,Descartado
-383,19/05/2020,M,22,Jaraguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-384,19/05/2020,M,51,Estiva,Sem registro de contato ou viagem,Descartado
-385,19/05/2020,F,28,Quiririm,Profissional da Saúde,Descartado
-386,19/05/2020,M,42,Pq São Cristovão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-387,19/05/2020,F,30,São Gonçalo,Sem registro de contato ou viagem,Descartado
-388,19/05/2020,F,50,Centro,Profissional da Saúde,Descartado
-389,19/05/2020,M,4,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
-390,19/05/2020,F,23,Comerciários,Profissional da Saúde,Descartado
-391,19/05/2020,M,65,Alto São Pedro,Sem registro de contato ou viagem,Descartado
-392,19/05/2020,M,28,Residencial Paraiso,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-393,19/05/2020,F,37,Jd Sônia Maria,Profissional da Saúde,Descartado
-394,19/05/2020,M,29,Bosque da Saúde,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-395,19/05/2020,F,57,Vila São Geraldo,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-396,19/05/2020,M,13,Chácara do Visconde,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-397,19/05/2020,M,59,Chácara do Visconde,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-398,19/05/2020,F,48,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
-399,18/05/2020,F,31,Chácara do Visconde,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-400,18/05/2020,M,39,Campos Eliseos,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-401,18/05/2020,F,37,Jd Sônia Maria,Profissional da Saúde,Descartado
-402,18/05/2020,F,42,Centro,Sem registro de contato ou viagem,Descartado
-403,18/05/2020,M,33,Vila Paulista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-404,18/05/2020,M,39,Jd Continental,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-405,18/05/2020,F,39,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-406,18/05/2020,M,29,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-407,18/05/2020,F,71,Vila São José,Sem registro de contato ou viagem,Descartado
-408,18/05/2020,F,48,Jd Santa Isabel,Profissional da Saúde,Descartado
-409,18/05/2020,F,57,Pq Aeroporto,Profissional da Saúde,Descartado
-410,18/05/2020,F,51,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-411,18/05/2020,F,51,Continental I,Sem registro de contato ou viagem,Descartado
-412,18/05/2020,F,72,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-413,18/05/2020,M,14,Jardim Resende,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
-414,18/05/2020,F,7,Jardim Resende,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
-415,17/05/2020,M,46,Ana Rosa,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-416,17/05/2020,M,52,Cataguá,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-417,17/05/2020,F,73,Residencial Colim,Sem registro de contato ou viagem,Descartado
-418,17/05/2020,F,37,Vila Prosperidade,Sem registro de contato ou viagem,Descartado
-419,17/05/2020,F,51,Jardim Paulista,Sem registro de contato ou viagem,Descartado
-420,16/05/2020,F,26,Terra Nova,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-421,16/05/2020,M,41,Jardim do Sol,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-422,16/05/2020,M,37,Marlene Miranda,Profissional da Saúde,Descartado
-423,16/05/2020,F,29,Pq Urupês,Profissional da Saúde,Descartado
-424,16/05/2020,F,51,Piracangaguá,Sem registro de contato ou viagem,Descartado
-425,16/05/2020,F,70,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
-426,16/05/2020,M,51,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
-427,16/05/2020,M,31,Morada do Vale,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-428,16/05/2020,F,20,Esplanada Santa Terezinha,Profissional da Saúde,Descartado
-429,16/05/2020,M,34,Gurilândia,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-430,15/05/2020,M,1,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-431,15/05/2020,F,1,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-432,15/05/2020,M,30,Belém,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-433,15/05/2020,F,51,Barreiro,Sem registro de contato ou viagem,Descartado
-434,15/05/2020,M,45,Vila Aparecida,Segurança Pública,Descartado
-435,15/05/2020,M,68,Centro,Profissional da Saúde,Descartado
-436,15/05/2020,F,72,Jardim das Nações,Profissional da Saúde,Descartado
-437,15/05/2020,F,72,Gurilândia,Sem registro de contato ou viagem,Descartado
-438,15/05/2020,M,35,Gurilândia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-439,15/05/2020,F,33,Água Quente,Profissional da Saúde,Descartado
-440,15/05/2020,F,49,Jardim das Nações,Profissional da Saúde,Descartado
-441,15/05/2020,F,32,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
-442,15/05/2020,M,17,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-443,15/05/2020,M,70,Terra Nova,Sem registro de contato ou viagem,Descartado
-444,14/05/2020,M,43,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-445,14/05/2020,M,41,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-446,14/05/2020,M,69,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
-447,14/05/2020,M,33,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
-448,14/05/2020,F,49,Jardim das Nações,Profissional da Saúde,Descartado
-449,14/05/2020,F,51,Ana Emilía,Profissional da Saúde,Descartado
-450,14/05/2020,F,21,Gurilândia,Profissional da Saúde,Descartado
-451,14/05/2020,M,69,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
-452,14/05/2020,F,33,Água Quente,Profissional da Saúde,Descartado
-453,14/05/2020,F,45,Gurilândia,Sem registro de contato ou viagem,Descartado
-454,14/05/2020,F,31,Centro,Profissional da Saúde,Descartado
-455,14/05/2020,M,70,Terra Nova,Sem registro de contato ou viagem,Descartado
-456,14/05/2020,F,41,Jd Mesquita,Profissional da Saúde,Descartado
-457,14/05/2020,F,95,Gurilândia,Sem registro de contato ou viagem,Descartado
-458,14/05/2020,M,75,Pq Urupês,Sem registro de contato ou viagem,Descartado (Óbito)
-459,14/05/2020,F,84,Chácara Ingrid,Sem registro de contato ou viagem,Descartado
-460,13/05/2020,F,32,Portal da Mantiqueira,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-461,13/05/2020,F,64,Pq Paduan,Sem registro de contato ou viagem,Descartado
-462,13/05/2020,M,35,São Judas Tadeu,Segurança Pública,Descartado
-463,13/05/2020,F,60,Cecap 2,Sem registro de contato ou viagem,Descartado
-464,13/05/2020,M,61,Vila das Graças,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-465,13/05/2020,M,54,Taubaté Village,Profissional da Saúde,Descartado
-466,13/05/2020,F,41,Jardim Mesquita,Profissional da Saúde,Descartado
-467,13/05/2020,F,51,Jardim Ana Emília,Profissional da Saúde,Descartado
-468,13/05/2020,F,33,Gurilândia,Profissional da Saúde,Descartado
-469,13/05/2020,F,43,Cecap,Profissional da Saúde,Descartado
-470,13/05/2020,F,45,Jardim Julieta,Profissional da Saúde,Descartado
-471,12/05/2020,M,68,Pinheirinho,Sem registro de contato ou viagem,Descartado
-472,12/05/2020,M,47,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-473,12/05/2020,M,94,Centro,Sem registro de contato ou viagem,Descartado
-474,12/05/2020,F,43,Cecap,Profissional da Saúde,Descartado
-475,12/05/2020,F,33,Gurilândia,Profissional da Saúde,Descartado
-476,12/05/2020,M,54,Taubaté Village,Profissional da Saúde,Descartado
-477,12/05/2020,M,38,Pq Paduan,Sem registro de contato ou viagem,Descartado
-478,12/05/2020,F,43,Jardim Julieta,Profissional da Saúde,Descartado
-479,12/05/2020,F,56,Bonfim,Sem registro de contato ou viagem,Descartado
-480,12/05/2020,M,75,Monção,Profissional da Saúde,Descartado
-481,12/05/2020,F,61,Bonfim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-482,12/05/2020,M,65,Vila Aparecida,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
-483,12/05/2020,F,40,Gurilândia,Profissional da Saúde,Descartado
-484,11/05/2020,M,64,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-485,11/05/2020,M,21,Estoril,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-486,11/05/2020,M,31,Morador de rua,Morador de rua,Descartado
-487,11/05/2020,F,33,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-488,11/05/2020,F,46,Piracangaguá,Sem registro de contato ou viagem,Descartado
-489,11/05/2020,F,37,Independência,Profissional da Saúde,Descartado
-490,11/05/2020,F,21,Gurilândia,Profissional da Saúde,Descartado
-491,11/05/2020,F,37,Terra Nova,Sem registro de contato ou viagem,Descartado
-492,11/05/2020,M,27,Centro,Sem registro de contato ou viagem,Descartado
-493,11/05/2020,F,44,Jaraguá,Sem registro de contato ou viagem,Descartado
-494,11/05/2020,F,62,Terra Nova,Sem registro de contato ou viagem,Descartado
-495,10/05/2020,F,63,Bonfim,Profissional da Saúde,Descartado
-496,10/05/2020,F,30,Res. Portal da Mantiqueira,Profissional da Saúde,Descartado
-497,10/05/2020,F,90,Vila das Graças,Sem registro de contato ou viagem,Descartado
-498,10/05/2020,M,38,Chácara Flórida,Sem registro de contato ou viagem,Descartado
-499,09/05/2020,F,71,Mourisco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-500,09/05/2020,F,32,Centro,Profissional da Saúde,Descartado
-501,09/05/2020,M,49,Jardim das Nações,Profissional da Saúde,Descartado
-502,09/05/2020,M,69,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-503,08/05/2020,F,52,Barranco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-504,08/05/2020,F,26,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-505,08/05/2020,F,59,Chácara do Visconde,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-506,08/05/2020,M,54,Jardim Sônia Maria,Sem registro de contato ou viagem,Descartado
-507,08/05/2020,F,24,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado
-508,08/05/2020,M,57,Vila Marli,Sem registro de contato ou viagem,Descartado
-509,08/05/2020,M,41,Chácara Cataguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-510,08/05/2020,F,44,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-511,08/05/2020,F,46,Continental I,Profissional da Saúde,Descartado
-512,08/05/2020,F,37,Terra Nova,Profissional da Saúde,Descartado
-513,08/05/2020,F,36,Vila São José,Profissional da Saúde,Descartado
-514,08/05/2020,F,38,Barreiro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-515,08/05/2020,M,59,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-516,08/05/2020,M,59,Jardim Sônia Maria,Sem registro de contato ou viagem,Descartado
-517,08/05/2020,F,34,Shalon,Profissional da Saúde,Descartado
-518,08/05/2020,M,71,Alto São Pedro,Sem registro de contato ou viagem,Descartado
-519,07/05/2020,F,89,Granja Daniel,Sem registro de contato ou viagem,Descartado
-520,07/05/2020,F,44,Cecap,Profissional da Saúde,Descartado
-521,07/05/2020,M,57,Centro,Sem registro de contato ou viagem,Descartado
-522,07/05/2020,F,39,Gurilândia,Profissional da Saúde,Descartado
-523,07/05/2020,F,56,Jardim California,Sem registro de contato ou viagem,Descartado
-524,07/05/2020,M,43,Bonfim,Sem registro de contato ou viagem,Descartado
-525,07/05/2020,M,59,Mourisco,Sem registro de contato ou viagem,Descartado
-526,07/05/2020,F,62,Vila São José,Sem registro de contato ou viagem,Descartado
-527,07/05/2020,M,53,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-528,07/05/2020,F,56,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-529,07/05/2020,M,32,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-530,06/05/2020,F,51,São Gonçalo,Profissional da Saúde,Descartado
-531,06/05/2020,F,97,Cecap 2,Sem registro de contato ou viagem,Descartado
-532,06/05/2020,M,90,Jardim Mansur,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-533,06/05/2020,M,63,Alto São Pedro,Sem registro de contato ou viagem,Descartado
-534,06/05/2020,M,97,Baronesa,Sem registro de contato ou viagem,Descartado (Óbito)
-535,06/05/2020,F,73,Baronesa,Sem registro de contato ou viagem,Descartado
-536,06/05/2020,F,74,Terra Nova,Sem registro de contato ou viagem,Descartado
-537,06/05/2020,F,97,Quiririm,Sem registro de contato ou viagem,Descartado
-538,05/05/2020,M,47,Jardim Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-539,05/05/2020,F,56,Vila São José,Profissional da Saúde,Descartado
-540,05/05/2020,F,40,Piracangaguá,Sem registro de contato ou viagem,Descartado
-541,05/05/2020,F,68,Vila Nogueira,Sem registro de contato ou viagem,Descartado (Óbito)
-542,05/05/2020,M,34,Bonfim,Profissional da Saúde,Descartado
-543,05/05/2020,M,38,Pq Paduan,Profissional da Saúde,Descartado
-544,05/05/2020,M,45,Jd dos Estados,Profissional da Saúde,Descartado
-545,05/05/2020,F,46,Gurilândia,Profissional da Saúde,Descartado
-546,05/05/2020,F,21,Pq São Luis,Profissional da Saúde,Descartado
-547,05/05/2020,F,52,Gurilândia,Profissional da Saúde,Descartado
-548,04/05/2020,F,28,Taubaté Village,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-549,04/05/2020,F,37,Gurilândia,Profissional da Saúde,Descartado
-550,04/05/2020,F,36,São Judas Tadeu,Profissional da Saúde,Descartado
-551,04/05/2020,M,21,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
-552,04/05/2020,M,45,Jd dos Estados,Profissional da Saúde,Descartado
-553,04/05/2020,F,21,Quiririm,Sem registro de contato ou viagem,Descartado
-554,04/05/2020,M,42,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado
-555,04/05/2020,F,46,Gurilândia,Profissional da Saúde,Descartado
-556,03/05/2020,F,47,Areão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-557,03/05/2020,M,34,Gurilândia,Profissional da Saúde,Descartado
-558,03/05/2020,M,39,Vila São José,Sem registro de contato ou viagem,Descartado
-559,03/05/2020,F,27,Jardim América,Profissional da Saúde,Descartado
-560,02/05/2020,M,40,Areão,Profissional da Saúde,Descartado
-561,02/05/2020,M,30,Chácara Silvestre,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-562,02/05/2020,F,42,Vila Costa,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-563,02/05/2020,M,32,Estoril,Sem registro de contato ou viagem,Descartado
-564,02/05/2020,M,75,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-565,02/05/2020,F,72,Gurilândia,Sem registro de contato ou viagem,Descartado
-566,01/05/2020,M,73,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
-567,29/04/2020,M,73,Imaculada,Sem registro de contato ou viagem,Descartado
-568,29/04/2020,F,74,São Gonçalo,Profissional da Saúde,Descartado
-569,29/04/2020,M,34,Chácara Santa Luzia,Sem registro de contato ou viagem,Descartado
-570,29/04/2020,F,28,Jardim das Nações,Profissional da Saúde,Descartado
-571,29/04/2020,M,54,Chácara Silvestre,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-572,29/04/2020,F,27,Pq Três Marias,Auxiliar de Enfermagem,Descartado
-573,29/04/2020,F,34,Centro,Sem registro de contato ou viagem,Descartado
-574,29/04/2020,M,53,Alto São Pedro,Sem registro de contato ou viagem,Descartado
-575,28/04/2020,M,5,Estoril,Sem registro de contato ou viagem,Descartado
-576,28/04/2020,F,27,Jd Sandra Maria,Profissional da Saúde,Descartado
-577,28/04/2020,F,7,Areão,Sem registro de contato ou viagem,Descartado
-578,28/04/2020,M,26,Água Quente,Profissional da Saúde,Descartado
-579,28/04/2020,M,37,Vila das Graças,Profissional da Saúde,Descartado
-580,28/04/2020,M,59,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-581,28/04/2020,F,59,Vila São José,Sem registro de contato ou viagem,Descartado (Óbito)
-582,28/04/2020,M,52,São Charbel,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-583,28/04/2020,F,55,Jd América,Sem registro de contato ou viagem,Descartado
-584,27/04/2020,F,36,Jardim do Lago,Profissional da Saúde,Descartado
-585,27/04/2020,F,35,Centro,Profissional da Saúde,Descartado
-586,27/04/2020,F,80,Centro,Sem registro de contato ou viagem,Descartado
-587,27/04/2020,F,44,Esplanada Santa Terezinha,Profissional da Saúde,Descartado
-588,27/04/2020,F,80,Centro,Sem registro de contato ou viagem,Descartado
-589,27/04/2020,M,42,Piracangaguá,Contato com pesssoas que estivem no aeroporto de SP.,Detectável novo Coronavírus (2019-nCoV)
-590,26/04/2020,F,44,Esplanada Independencia,Profissional da Saúde,Descartado
-591,26/04/2020,F,39,Jardim dos Passos,Profissional da Saúde,Descartado
-592,25/04/2020,M,70,Itapecirica,Sem registro de contato ou viagem,Descartado
-593,25/04/2020,F,34,Esplanada Independencia,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-594,25/04/2020,F,44,Vila Marli,Profissional da Saúde,Descartado
-595,25/04/2020,M,80,Pq Paduan,Sem registro de contato ou viagem,Descartado (Óbito)
-596,25/04/2020,M,37,Estiva,Sem registro de contato ou viagem,Descartado
-597,24/04/2020,F,25,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
-598,24/04/2020,M,21,Jd Santa Tereza,Profissional da Saúde,Descartado
-599,24/04/2020,F,32,Esplanada Independencia,Profissional da Saúde,Descartado
-600,24/04/2020,M,51,Esplanada Independencia,Profissional da Saúde,Descartado
-601,24/04/2020,M,53,Alto São Pedro,Sem registro de contato ou viagem,Descartado
-602,24/04/2020,F,28,Monção,Profissional da Saúde,Descartado
-603,24/04/2020,M,49,Monção,Sem registro de contato ou viagem,Descartado
-604,24/04/2020,M,58,Gurilândia,Sem registro de contato ou viagem,Descartado
-605,23/04/2020,M,62,Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado
-606,23/04/2020,F,37,Quiririm,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
-607,23/04/2020,M,41,Vila Edmundo,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
-608,23/04/2020,M,2,Vila Edmundo,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
-609,23/04/2020,F,48,Recanto dos Coquerais,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-610,23/04/2020,F,43,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-611,22/04/2020,M,48,Jardim do Sol,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-612,22/04/2020,F,51,Quiririm,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-613,22/04/2020,F,79,Jardim das Nações,Profissional da Saúde,Descartado
-614,22/04/2020,M,78,Pq Aeroporto,Sem registro de contato ou viagem,Descartado (Óbito)
-615,22/04/2020,M,77,Vila Aparecida,Sem registro de contato ou viagem,Descartado
-616,21/04/2020,M,66,Estiva,Sem registro de contato ou viagem,Descartado
-617,21/04/2020,M,34,Jardim das Nações,Profissional da Saúde,Descartado
-618,21/04/2020,F,28,Vila Edmundo,Profissional da Saúde,Descartado
-619,21/04/2020,F,77,Vila Aparecida,Sem registro de contato ou viagem,Descartado
-620,21/04/2020,M,66,Emecal,Sem registro de contato ou viagem,Descartado
-621,21/04/2020,M,57,Jardim Morumbi,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-622,20/04/2020,F,79,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-623,20/04/2020,F,77,Residencial Bom Conselho,Sem registro de contato ou viagem,Descartado (Óbito)
-624,20/04/2020,M,20,Vila Bela,Profissional da Saúde,Descartado
-625,19/04/2020,M,60,Res. Arco Íris,Sem registro de contato ou viagem,Descartado
-626,19/04/2020,M,20,Vila Bela,Profissional da Saúde,Descartado
-627,19/04/2020,M,32,Jardim do Sol,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-628,19/04/2020,M,74,Marlene Miranda,Sem registro de contato ou viagem,Descartado
-629,19/04/2020,F,74,Mourisco,Sem registro de contato ou viagem,Descartado
-630,19/04/2020,F,58,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
-631,18/04/2020,F,31,Quiririm,Sem registro de contato ou viagem,Descartado
-632,18/04/2020,F,1,Itaim,Sem registro de contato ou viagem,Descartado
-633,18/04/2020,F,58,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
-634,18/04/2020,F,75,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
-635,17/04/2020,M,55,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-636,17/04/2020,M,3,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-637,17/04/2020,M,62,Imaculada,Sem registro de contato ou viagem,Descartado
-638,17/04/2020,F,62,Marlene Miranda,Sem registro de contato ou viagem,Descartado
-639,17/04/2020,F,63,Gurilândia,Sem registro de contato ou viagem,Descartado
-640,17/04/2020,M,83,Pinheirinho,Sem registro de contato ou viagem,Descartado
-641,17/04/2020,M,60,Barranco,Sem registro de contato ou viagem,Descartado
-642,16/04/2020,M,44 D,Jd Continental,Sem registro de contato ou viagem,Descartado (Óbito)
-643,16/04/2020,F,15,Jd Ana Lúcia,Sem registro de contato ou viagem,Descartado
-644,16/04/2020,F,50,Gurilândia,Sem registro de contato ou viagem,Descartado
-645,16/04/2020,F,30,Pq São Luis,Sem registro de contato ou viagem,Descartado
-646,16/04/2020,M,72,Centro,Sem registro de contato ou viagem,Descartado
-647,16/04/2020,F,75,Independência,Sem registro de contato ou viagem,Descartado
-648,16/04/2020,F,32,Jd dos Passáros,Sem registro de contato ou viagem,Descartado
-649,16/04/2020,F,35,Centro,Profissional da Saúde,Descartado
-650,16/04/2020,F,53,Chácara do Visconde,Profissional da Saúde,Descartado
-651,16/04/2020,F,44,Res. Ouro Ville,Profissional da Saúde,Descartado
-652,16/04/2020,F,53,Alto São Pedro,Profissional da Saúde,Descartado
-653,16/04/2020,F,77,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado
-654,15/04/2020,F,13,Centro,Contato com pessoas que viajaram para exteriror,Detectável novo Coronavírus (2019-nCoV)
-655,15/04/2020,M,49,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-656,15/04/2020,M,46,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-657,15/04/2020,M,64,Monte Belo,Sem registro de contato ou viagem,Descartado
-658,15/04/2020,F,41,Taubaté Village,"Deslocameto para Itália, Portugual e Milão",Detectável novo Coronavírus (2019-nCoV)
-659,15/04/2020,F,75,Vila Prosperidade,Sem registro de contato ou viagem,Descartado
-660,15/04/2020,F,74,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-661,15/04/2020,M,65,Ana Rosa,Sem registro de contato ou viagem,Descartado
-662,15/04/2020,F,15,Jd Ana Lúcia,Sem registro de contato ou viagem,Descartado
-663,15/04/2020,M,4,Água Quente,Sem registro de contato ou viagem,Descartado
-664,15/04/2020,F,77,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado (Óbito)
-665,15/04/2020,F,02 D,Pq São Luis,Sem registro de contato ou viagem,Descartado
-666,15/04/2020,F,31,Marlene Miranda,Profissional da Saúde,Descartado
-667,15/04/2020,F,78,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
-668,15/04/2020,M,66,Jd Eulália,Sem registro de contato ou viagem,Descartado (Óbito)
-669,15/04/2020,F,51,Vila Olímpia,Sem registro de contato ou viagem,Descartado
-670,14/04/2020,F,28,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-671,14/04/2020,M,64,Monte Belo,Sem registro de contato ou viagem,Descartado (Óbito)
-672,14/04/2020,M,66,Jd Eulália,Sem registro de contato ou viagem,Descartado (Óbito)
-673,14/04/2020,F,42,Barreiro,Profissional da Saúde,Descartado
-674,14/04/2020,F,49,Barranco,Sem registro de contato ou viagem,Descartado
-675,14/04/2020,F,75,Vila Prosperidade,Sem registro de contato ou viagem,Descartado (Óbito)
-676,14/04/2020,F,27,Centro,Profissional da Saúde,Descartado
-677,14/04/2020,M,93,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado (Óbito)
-678,14/04/2020,F,57,Independência,Profissional da Saúde,Descartado
-679,14/04/2020,F,41,Jd do Lago,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-680,14/04/2020,F,49,Jd Resende,Profissional da Saúde,Descartado
-681,14/04/2020,F,78,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
-682,14/04/2020,M,37,Morada dos Nobres,Profissional da Saúde,Descartado
-683,14/04/2020,F,39,Pq São Luis,Profissional da Saúde,Descartado
-684,14/04/2020,F,41,Quiririm,Profissional da Saúde,Descartado
-685,14/04/2020,F,30,Vila das Graças,Profissional da Saúde,Descartado
-686,14/04/2020,M,36,Vila dos Comerciários,Profissional da Saúde,Descartado
-687,14/04/2020,F,70,Vila Nogueira,Sem registro de contato ou viagem,Descartado
-688,13/04/2020,F,83,Belém,Sem registro de contato ou viagem,Descartado (Óbito)
-689,13/04/2020,F,38,Jd Sônia Maria,Profissional da Saúde,Descartado
-690,13/04/2020,F,41,Quiririm,Profissional da Saúde,Descartado
-691,13/04/2020,F,51,Vila Olímpia,Sem registro de contato ou viagem,Descartado
-692,13/04/2020,F,50,São Gonçalo,Sem registro de contato ou viagem,Descartado (Óbito)
-693,13/04/2020,M,59,Vila São José,Sem registro de contato ou viagem,Descartado (Óbito)
-694,13/04/2020,F,42,Barreiro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-695,12/04/2020,F,80,Belém,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-696,12/04/2020,F,37,Morada dos Nobres,Profissional da Saúde,Descartado
-697,12/04/2020,M,28,Barranco,Sem registro de contato ou viagem,Descartado
-698,12/04/2020,F,83,Belém,Sem registro de contato ou viagem,Descartado (Óbito)
-699,11/04/2020,F,29,Campos Eliseos,Profissional da Saúde,Descartado
-700,11/04/2020,F,41,Chácara Hipólito,Profissional da Saúde,Descartado
-701,11/04/2020,F,20,Pq São Luis,Sem registro de contato ou viagem,Descartado
-702,11/04/2020,F,44,Pq Aeroporto,Profissional da Saúde,Descartado
-703,10/04/2020,F,64,Granja Santa Terezinha,Sem registro de contato ou viagem,Descartado (Óbito)
-704,10/04/2020,M,83,Pq Três Marias,Sem registro de contato ou viagem,Descartado (Óbito)
-705,10/04/2020,M,51,Terra Nova,Sem registro de contato ou viagem,Descartado
-706,09/04/2020,F,25,Baronesa,Trabalha no H.Policlin (cozinha),Detectável novo Coronavírus (2019-nCoV)
-707,09/04/2020,M,40,Jd Santa Isabel,Sem registro de contato ou viagem,Descartado
-708,09/04/2020,M,38,Vila São José,Profissional da Saúde,Descartado
-709,09/04/2020,F,35,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-710,09/04/2020,M,36,Centro,Profissional da Saúde,Descartado
-711,09/04/2020,M,31,Terra Nova,Sem registro de contato ou viagem,Descartado
-712,08/04/2020,M,53,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-713,08/04/2020,F,30,Bosque da Saúde,Deslocamento para Irlanda (13/03 - 29/03/2020),Detectável novo Coronavírus (2019-nCoV)
-714,08/04/2020,F,39,Jd Continental,Profissional da Saúde,Descartado
-715,08/04/2020,F,35,Morada dos Nobres,Sem registro de contato ou viagem,Descartado
-716,08/04/2020,M,54,Centro,Profissional da Saúde,Descartado
-717,08/04/2020,M,69,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-718,08/04/2020,F,29,Jd Santa Tereza,Profissional da Saúde,Descartado
-719,07/04/2020,F,54,Belém,Sem registro de contato ou viagem,Descartado
-720,07/04/2020,F,7,Cecap 4,Sem registro de contato ou viagem,Descartado
-721,07/04/2020,F,69,Centro,Sem registro de contato ou viagem,Descartado
-722,07/04/2020,M,36,Jardim das Nações,Profissional da Saúde,Descartado
-723,07/04/2020,F,37,Vila dos Comerciários II,Contato com positivo para COVID-19 (marido),Detectável novo Coronavírus (2019-nCoV)
-724,06/04/2020,F,35,Baronesa,Profissional da Saúde,Descartado
-725,06/04/2020,F,34,Jardim das Nações,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-726,06/04/2020,M,36,Jardim das Nações,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-727,06/04/2020,M,30,Baronesa,Deslocamento PARANÁ,Detectável novo Coronavírus (2019-nCoV)
-728,06/04/2020,F,54,Belém,Profissional da Saúde,Descartado
-729,06/04/2020,F,51,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-730,06/04/2020,M,33,Jabuticabeiras,Deslocamento PARANÁ,Detectável novo Coronavírus (2019-nCoV)
-731,06/04/2020,F,45,Jd Ana Emília,Profissional da Saúde,Descartado
-732,06/04/2020,F,34,Belém,Sem registro de contato ou viagem,Descartado
-733,06/04/2020,F,22,Jd Santa Isabel,Profissional da Saúde,Descartado
-734,06/04/2020,F,40,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
-735,06/04/2020,M,76,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-736,06/04/2020,F,40,Chácaras Reunidas Brasil,Profissional da Saúde,Descartado
-737,06/04/2020,F,33,São Gonçalo,Sem registro de contato ou viagem,Descartado
-738,06/04/2020,F,25,Vila São Geraldo,Profissional da Saúde,Descartado
-739,05/04/2020,F,40,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
-740,05/04/2020,F,25,Vila São Geraldo,Profissional da Saúde,Descartado
-741,05/04/2020,M,76,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-742,04/04/2020,M,69,Estiva,Sem registro de contato ou viagem,Descartado (Óbito)
-743,04/04/2020,F,33,São Gonçalo,Sem registro de contato ou viagem,Descartado
-744,04/04/2020,M,44,Monte Belo,Sem registro de contato ou viagem,Descartado
-745,04/04/2020,M,34,San Marino,Deslocamento para São Paulo,Descartado
-746,03/04/2020,M,100,Campos Eliseos,Sem registro de contato ou viagem,Descartado
-747,03/04/2020,F,81,Jardim das Nações,Sem registro de contato ou viagem,Descartado (Óbito)
-748,03/04/2020,F,41,Jardim das Nações,Profissional da Saúde,Descartado
-749,03/04/2020,F,38,Bosque da Saúde,Profissional da Saúde,Descartado
-750,03/04/2020,M,9,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
-751,03/04/2020,F,46,Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado (Óbito)
-752,02/04/2020,M,70,Campos Eliseos,Profissional da Saúde,Descartado (Óbito)
-753,02/04/2020,M,70,Cataguá,Sem registro de contato ou viagem,Descartado
-754,02/04/2020,M,65,Centro,Profissional da Saúde,Descartado
-755,02/04/2020,F,15,Quiririm,Sem registro de contato ou viagem,Descartado
-756,02/04/2020,F,69,Centro,Sem registro de contato ou viagem,Descartado
-757,02/04/2020,M,52,Centro,Sem registro de contato ou viagem,Descartado
-758,02/04/2020,F,69,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-759,02/04/2020,F,84,Monjolinho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-760,01/04/2020,F,31,Bosque da Saúde,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-761,01/04/2020,M,42,Vila dos Comerciários,Contato com positivo para COVID-19 (óbito),Detectável novo Coronavírus (2019-nCoV)
-762,01/04/2020,M,67,Centro,Sem registro de contato ou viagem,Descartado
-763,01/04/2020,M,38,Independência,Sem registro de contato ou viagem,Descartado
-764,01/04/2020,F,44,Centro,Profissional da Saúde,Descartado
-765,01/04/2020,M,65,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-766,01/04/2020,F,60,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-767,01/04/2020,F,55,São Gonçalo,Profissional da Saúde,Descartado
-768,31/03/2020,F,26,Ana Rosa,Sem registro de contato ou viagem,Descartado
-769,31/03/2020,M,38,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
-770,31/03/2020,M,32,Chácara Flórida,Profissional da Saúde,Descartado
-771,31/03/2020,M,39,Gurilândia,Profissional da Saúde,Descartado
-772,31/03/2020,F,26,São Gonçalo,Profissional da Saúde,Descartado
-773,31/03/2020,M,38,Independência,Sem registro de contato ou viagem,Descartado
-774,31/03/2020,F,36,Independência,Profissional da Saúde,Descartado
-775,31/03/2020,M,48,Jd Bom Conselho,Profissional da Saúde,Descartado
-776,31/03/2020,F,39,Quiririm,Profissional da Saúde,Descartado
-777,31/03/2020,F,55,São Gonçalo,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-778,31/03/2020,F,39,Vila Edmundo,Profissional da Saúde,Descartado
-779,31/03/2020,M,46,Vila São José,Profissional da Saúde,Descartado
-780,30/03/2020,F,35,São Gonçalo,Profissional da Saúde,Descartado
-781,29/03/2020,F,65,Centro,Sem registro de contato ou viagem,Descartado (Óbito)
-782,29/03/2020,F,75,Jd Humaita,Sem registro de contato ou viagem,Descartado (Óbito)
-783,29/03/2020,F,22,Terra Nova,Sem registro de contato ou viagem,Descartado
-784,29/03/2020,F,30,Chácaras Reunidas Brasil,Sem registro de contato ou viagem,Descartado
-785,29/03/2020,F,16,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-786,29/03/2020,F,15,Quiririm,Sem registro de contato ou viagem,Descartado
-787,29/03/2020,F,30,São Gonçalo,Sem registro de contato ou viagem,Descartado
-788,28/03/2020,F,5,Campos Eliseos,Sem registro de contato ou viagem,Descartado
-789,28/03/2020,M,84,Alto São João,Sem registro de contato ou viagem,Descartado
-790,28/03/2020,F,83,Estiva,Sem registro de contato ou viagem,Descartado (Óbito)
-791,28/03/2020,M,38,Jardim das Nações,Profissional da Saúde,Descartado
-792,27/03/2020,M,61,Água Quente,Sem registro de contato ou viagem,Descartado (Óbito)
-793,27/03/2020,F,84,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-794,27/03/2020,M,55,Centro,Profissional da Saúde,Descartado
-795,27/03/2020,F,33,Independência,Profissional da Saúde,Descartado
-796,27/03/2020,F,2,Terra Nova,Sem registro de contato ou viagem,Descartado
-797,27/03/2020,F,46,Jabuticabeiras,Profissional da Saúde,Descartado
-798,27/03/2020,F,49,Jd Mourisco,Sem registro de contato ou viagem,Descartado
-799,27/03/2020,F,2 meses,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
-800,27/03/2020,F,36,Pq Urupês,Sem registro de contato ou viagem,Descartado
-801,27/03/2020,M,84,Quiririm,Sem registro de contato ou viagem,Descartado
-802,27/03/2020,F,67,São Gonçalo,Sem registro de contato ou viagem,Descartado
-803,26/03/2020,F,44,Bosque da Saúde,Profissional da Saúde,Descartado
-804,26/03/2020,M,72,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-805,26/03/2020,F,53,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-806,26/03/2020,M,9,Centro,Sem registro de contato ou viagem,Descartado
-807,26/03/2020,F,44,Chafariz,Profissional da Saúde,Descartado
-808,26/03/2020,F,42,Residencial Jd Oásis,Profissional da Saúde,Descartado
-809,26/03/2020,F,53,Jabuticabeiras,Profissional da Saúde,Descartado
-810,26/03/2020,F,27,Jardim das Nações,Profissional da Saúde,Descartado
-811,26/03/2020,F,33,Vila São Geraldo,Profissional da Saúde,Descartado
-812,26/03/2020,F,37,Jardim California,Profissional da Saúde,Descartado
-813,26/03/2020,M,43,Vila Costa,Profissional da Saúde,Descartado
-814,26/03/2020,M,43,Pq Urupês,Profissional da Saúde,Descartado
-815,26/03/2020,F,48,Vila São José,Profissional da Saúde,Descartado
-816,26/03/2020,F,73,Vila São José,Sem registro de contato ou viagem,Descartado
-817,25/03/2020,F,3,Bonfim,Sem registro de contato ou viagem,Descartado
-818,25/03/2020,M,15,Cataguá,Sem registro de contato ou viagem,Descartado
-819,25/03/2020,F,41,Cecap 3,Profissional da Saúde,Descartado
-820,25/03/2020,F,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-821,25/03/2020,F,29,Residencial São Francisco,Profissional da Saúde,Descartado
-822,25/03/2020,F,62,Centro,Profissional da Saúde,Descartado
-823,25/03/2020,M,43,Chácara Felix,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-824,25/03/2020,F,62,Estiva,Sem registro de contato ou viagem,Descartado
-825,25/03/2020,F,49,Independência,Profissional da Saúde,Descartado
-826,25/03/2020,F,33,Independência,Profissional da Saúde,Descartado
-827,25/03/2020,F,72,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-828,25/03/2020,F,39,Jardim das Nações,Profissional da Saúde,Descartado
-829,25/03/2020,F,45,Jd Ana Emília,Sem registro de contato ou viagem,Descartado
-830,25/03/2020,F,29,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
-831,24/03/2020,F,32,Campos Eliseos,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-832,24/03/2020,M,68,Independência,Sem registro de contato ou viagem,Descartado
-833,24/03/2020,F,39,Jardim das Nações,Profissional da Saúde,Descartado
-834,24/03/2020,F,41,Cecap 3,Profissional da Saúde,Descartado
-835,24/03/2020,M,3,Bonfim,Sem registro de contato ou viagem,Descartado
-836,24/03/2020,F,43,Jd Eliete,Profissional da Saúde,Descartado
-837,24/03/2020,F,27,Estiva,Profissional da Saúde,Descartado
-838,24/03/2020,F,44,Ana Rosa,Profissional da Saúde,Descartado
-839,24/03/2020,F,45,Jd Ana Emília,Profissional da Saúde,Descartado
-840,24/03/2020,F,33,Independência,Profissional da Saúde,Descartado
-841,24/03/2020,F,52,Pq Aeroporto,Profissional da Saúde,Descartado
-842,24/03/2020,F,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-843,24/03/2020,M,62,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-844,24/03/2020,F,54,São Gonçalo,Profissional da Saúde,Descartado
-845,24/03/2020,F,21,Terra Nova,Profissional da Saúde,Descartado
-846,23/03/2020,F,37,Centro,Profissional da Saúde,Descartado
-847,23/03/2020,F,31,Chácara do Visconde,Profissional da Saúde,Descartado
-848,23/03/2020,M,32,Chácara Flórida,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-849,23/03/2020,M,33,Gurilândia,Contato com caso suspeito - SP,Descartado
-850,23/03/2020,F,68,Independência,Sem registro de contato ou viagem,Descartado (Óbito)
-851,23/03/2020,F,43,Jd Eliete,Profissional da Saúde,Descartado
-852,23/03/2020,F,52,Pq Aeroporto,Profissional da Saúde,Descartado
-853,23/03/2020,M,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-854,23/03/2020,F,62,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-855,23/03/2020,F,54,São Gonçalo,Profissional da Saúde,Descartado
-856,22/03/2020,F,32,Granjas Panorama,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
-857,22/03/2020,F,66,Barranco,Profissional da Saúde,Descartado
-858,22/03/2020,M,27,Independência,Profissional da Saúde,Descartado
-859,22/03/2020,F,46,Recanto dos Coquerais,Profissional da Saúde,Descartado
-860,21/03/2020,M,76,Barranco,Sem registro de contato ou viagem,Descartado (Óbito)
-861,21/03/2020,F,65,Chácara Cataguá,Contato com caso suspeito - SP,Descartado
-862,21/03/2020,F,39,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
-863,21/03/2020,M,67,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
-864,21/03/2020,F,40,Jd do Sol,Europa,Descartado
-865,21/03/2020,M,80,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
-866,21/03/2020,M,42,Pq Três Marias,Sem registro de contato ou viagem,Descartado
-867,21/03/2020,F,64,Sitio Santo Antônio,Contato com caso suspeito - SP,Descartado
-868,20/03/2020,F,49,Caminho Novo,Profissional da Saúde,Descartado
-869,20/03/2020,M,25,Chácara Guisard,Sem registro de contato ou viagem,Descartado
-870,20/03/2020,F,55,Gurilândia,Sem registro de contato ou viagem,Descartado
-871,20/03/2020,F,42,Jd Eulália,Profissional da Saúde,Descartado
-872,20/03/2020,M,6,Jd Santa Clara,Sem registro de contato ou viagem,Descartado
-873,20/03/2020,F,39,Novo Horizonte,Contato com caso suspeito,Descartado
-874,20/03/2020,M,48,Pq Três Marias,Contato com caso suspeito - SP,Descartado
-875,19/03/2020,F,25,Baronesa,Sem registro de contato ou viagem,Descartado
-876,19/03/2020,M,2,Barranco,Sem registro de contato ou viagem,Descartado
-877,19/03/2020,F,26,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
-878,19/03/2020,M,30,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
-879,19/03/2020,M,34,Independência,Sem registro de contato ou viagem,Descartado
-880,19/03/2020,M,20,Jardim dos Passos,Contato com caso suspeito,Descartado
-881,19/03/2020,F,27,Jd Colombia,Sem registro de contato ou viagem,Descartado
-882,19/03/2020,M,21,Jd Mourisco,Contato com caso suspeito,Descartado
-883,19/03/2020,F,21,Quiririm,Sem registro de contato ou viagem,Descartado
-884,19/03/2020,F,35,Vila Aparecida,Sem registro de contato ou viagem,Descartado
-885,19/03/2020,M,5,Vila Bela,Contato com Alemão,Descartado
-886,19/03/2020,F,37,Vila IAPI,Sem registro de contato ou viagem,Descartado
-887,19/03/2020,F,82,Vila São José,Sem registro de contato ou viagem,Descartado
-888,19/03/2020,M,21,Vila São José,Paraguai,Descartado
-889,18/03/2020,F,37,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
-890,18/03/2020,F,48,Cond. Vila Verde,Sem registro de contato ou viagem,Descartado
-891,18/03/2020,F,24,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
-892,18/03/2020,F,39,Esplanada Santa Terezinha,Contato com caso suspeito,Descartado
-893,18/03/2020,F,41,Flamboyant,Argentina,Descartado
-894,18/03/2020,F,67,Flor do Vale,Sem registro de contato ou viagem,Descartado
-895,18/03/2020,F,30,Gurilândia,Sem registro de contato ou viagem,Descartado
-896,18/03/2020,F,27,Gurilândia,Sem registro de contato ou viagem,Descartado
-897,18/03/2020,F,2,Independência,França,Descartado
-898,18/03/2020,F,65,Jabuticabeiras,Sem registro de contato ou viagem,Descartado
-899,18/03/2020,F,26,Jabuticabeiras,EUA,Descartado
-900,18/03/2020,M,37,Jaraguá,Contato com caso suspeito,Descartado
-901,18/03/2020,F,42,Jaraguá,Alemanhã,Descartado
-902,18/03/2020,F,34,Jaraguá,Itália,Descartado
-903,18/03/2020,F,13,Jaraguá,Itália,Descartado
-904,18/03/2020,F,34,Jardim das Nações,Portugal,Descartado
-905,18/03/2020,M,27,Jd América,Itália,Descartado
-906,18/03/2020,F,46,Jd do Lago,Sem registro de contato ou viagem,Descartado
-907,18/03/2020,M,1,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
-908,18/03/2020,M,5,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
-909,18/03/2020,F,24,Jd Santa Clara,Itália,Descartado
-910,18/03/2020,F,25,Jd Santa Clara,Itália,Descartado
-911,18/03/2020,F,12,Jd Santa Isabel,Sem registro de contato ou viagem,Descartado
-912,18/03/2020,F,41,Pq São Luis,Sem registro de contato ou viagem,Descartado
-913,18/03/2020,F,15,Santa Helena,Argentina,Descartado
-914,18/03/2020,M,34,Vale das Flores,Sem registro de contato ou viagem,Descartado
-915,18/03/2020,M,29,Vila Aparecida,Contato com caso suspeito,Descartado
-916,18/03/2020,F,38,Vila Bela,Contato com caso suspeito,Descartado
-917,18/03/2020,F,45,Vila dos Comerciarios,Itália,Descartado
-918,18/03/2020,F,50,Vila dos Comerciarios,Sem registro de contato ou viagem,Descartado
-919,18/03/2020,M,19,Vila IAPI,Portugal,Descartado
-920,18/03/2020,F,60,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
-921,18/03/2020,F,23,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
-922,17/03/2020,F,36,Barreiro,EUA,Descartado
-923,17/03/2020,F,33,Bom Conselho,São Paulo,Descartado
-924,17/03/2020,F,26,Centro,EUA,Descartado
-925,17/03/2020,F,34,Centro,São Paulo,Descartado
-926,17/03/2020,F,27,Esplanada Santa Helena,Sem registro de contato ou viagem,Descartado
-927,17/03/2020,F,23,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
-928,17/03/2020,F,20,Flamboyant,Sem registro de contato ou viagem,Descartado
-929,17/03/2020,F,26,Independência,Contato com caso suspeito,Descartado
-930,17/03/2020,F,23,Independência,Canadá,Descartado
-931,17/03/2020,F,62,Jardim das Nações,Sem registro de contato ou viagem,Descartado
-932,17/03/2020,F,9,Jardim das Nações,Canadá,Descartado
-933,17/03/2020,F,34,Jd América,Contato com caso suspeito,Descartado
-934,17/03/2020,F,44,Jd Mourisco,Sem registro de contato ou viagem,Descartado
-935,17/03/2020,F,49,Jd Mourisco,Contato com caso suspeito,Descartado
-936,17/03/2020,F,23,Jd Neusa Maria,Chicago,Descartado
-937,17/03/2020,F,45,Pq Arco Iris,Sem registro de contato ou viagem,Descartado
-938,17/03/2020,M,21,Pq São Luis,EUA,Descartado
-939,17/03/2020,F,49,Pq São Luis,EUA,Descartado
-940,17/03/2020,F,41,Pq São Luis,EUA,Descartado
-941,17/03/2020,F,20,Pq Três Marias,São Paulo,Descartado
-942,17/03/2020,M,17,Terra Nova,África,Descartado
-943,16/03/2020,F,27,Alto São Pedro,EUA,Descartado
-944,16/03/2020,M,48,Centro,Sem registro de contato ou viagem,Descartado
-945,16/03/2020,M,32,Centro,Belo Horizonte,Descartado
-946,16/03/2020,F,53,Centro,EUA,Descartado
-947,16/03/2020,F,9,Centro,Itália,Descartado
-948,16/03/2020,F,42,Centro,Itália,Descartado
-949,16/03/2020,F,30,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
-950,16/03/2020,F,72,Estiva,Califórnia,Descartado
-951,16/03/2020,F,30,Independência,Itália,Descartado
-952,16/03/2020,F,33,Jardim das Nações,EUA,Descartado
-953,16/03/2020,F,39,Jardim das Nações,Espanha,Descartado
-954,16/03/2020,M,24,Jd California,Sem registro de contato ou viagem,Descartado
-955,16/03/2020,M,6,Quiririm,Portugal,Descartado
-956,16/03/2020,M,8,Quiririm,Sem registro de contato ou viagem,Descartado
-957,16/03/2020,F,2,Quiririm,Portugal,Descartado
-958,16/03/2020,M,42,Vila São Geraldo,Itália,Descartado
-959,15/03/2020,F,21,Centro,EUA,Descartado
-960,15/03/2020,M,23,Estiva,Sem registro de contato ou viagem,Descartado
-961,15/03/2020,M,25,Independência,Europa,Descartado
-962,15/03/2020,F,34,Independência,França,Descartado
-963,15/03/2020,F,59,Jardim das Nações,EUA,Descartado
-964,15/03/2020,F,34,Jd Mourisco,França,Descartado
-965,15/03/2020,F,26,Novo Horizonte,Itália,Descartado
-966,15/03/2020,F,19,Santa Iês,Iolanda,Descartado
-967,15/03/2020,F,21,São Gonçalo,Alemanhã,Descartado
-968,15/03/2020,F,45,Vila São José,Califórnia,Descartado
-969,14/03/2020,F,3,Cataguá,França,Descartado
-970,14/03/2020,M,33,Centro,Carnaval MG,Descartado
-971,14/03/2020,M,75,Centro,EUA,Descartado
-972,14/03/2020,F,1,Chácara Silvestre,EUA,Descartado
-973,14/03/2020,F,20,Estiva,EUA,Descartado
-974,14/03/2020,F,24,Jd Ana Emília,Irlanda,Descartado
-975,14/03/2020,F,16,Jd Mourisco,Itália,Descartado
-976,13/03/2020,F,35,Areão,EUA,Descartado
-977,13/03/2020,F,26,Centro,Califórnia,Descartado
-978,13/03/2020,F,71,Chácara Santa Luzia,Madri,Descartado
-979,13/03/2020,F,39,Independência,Itália,Descartado
-980,13/03/2020,F,19,Jardim das Nações,Itália,Descartado
-981,13/03/2020,F,17,Pq São Luis,Califórnia,Descartado
-982,13/03/2020,F,37,Vila Rica,EUA,Descartado
-983,13/03/2020,F,25,Vila São José,"Austria, Alemanha, e República Tcheca",Descartado
-984,12/03/2020,F,35,Centro,"Barcelona, Espanha.",Detectável novo Coronavírus (2019-nCoV)
-985,12/03/2020,F,15,Esplanada Independencia,Califórnia,Descartado
-986,12/03/2020,F,21,Esplanada Independencia,Califórnia,Descartado
-987,12/03/2020,F,52,Esplanada Independencia,Califórnia,Descartado
-988,12/03/2020,F,16,Vila São José,"Nova York, Losangeles",Descartado
-989,11/03/2020,F,01 a 1 meses,Bonfim,Itália (Toscana),Descartado
-990,11/03/2020,F,35,Bonfim,Itália (Toscana),Descartado
-991,09/03/2020,F,34,Gurilândia,Itália,Descartado
-992,09/03/2020,F,36,Jabuticabeiras,EUA,Detectável para Influeza B
-993,09/03/2020,F,23,Jaraguá,Itália (Toscana),Descartado
-994,09/03/2020,F,52,Vila São José,Itália,Descartado
-995,09/03/2020,F,23,Vila São José,Itália,Descartado
-996,07/03/2020,F,25,Esplanada Santa Terezinha,EUA,Descartado
-997,06/03/2020,F,23,Ana Rosa,"Itália, Roma e Barcelona",Descartado
-998,02/03/2020,M,27,Pq Aeroporto,Londres,Descartado
-999,01/03/2020,M,45,Vila São Geraldo,Roma,Descartado
+0,19/06/2020,F,91,Centro,Sem registro de contato ou viagem,Em análise (I)
+1,19/06/2020,F,76,Cecap,Sem registro de contato ou viagem,Em análise (I)
+2,19/06/2020,M,43,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+3,19/06/2020,M,44,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+4,19/06/2020,M,66,Campos Eliseos,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+5,19/06/2020,F,40,Pq São Luis,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+6,19/06/2020,F,37,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+7,19/06/2020,M,33,Jd Sônia Maria,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+8,19/06/2020,F,1,Jd Sônia Maria,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+9,19/06/2020,F,33,Jd Sônia Maria,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+10,19/06/2020,M,5,Jd Sônia Maria,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+11,19/06/2020,F,61,Jd Sônia Maria,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+12,19/06/2020,F,55,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+13,19/06/2020,M,38,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+14,18/06/2020,F,39,Jd Santa Clara,Profissional da Saúde,Em análise
+15,18/06/2020,F,38,Baronesa,Profissional da Saúde,Em análise
+16,18/06/2020,F,43,Gurilândia,Profissional da Saúde,Em análise
+17,18/06/2020,F,22,Residencial San marino,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+18,18/06/2020,F,9,Continental,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+19,18/06/2020,M,1,Chácara do Visconde,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+20,18/06/2020,M,64,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+21,18/06/2020,F,33,Jardim das Nações,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+22,18/06/2020,F,59,Estiva,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+23,18/06/2020,M,21,Novo Horizonte,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+24,18/06/2020,F,43,Estoril,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+25,18/06/2020,F,50,Continental,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+26,18/06/2020,F,27,Continental,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+27,18/06/2020,F,58,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+28,18/06/2020,M,26,Residencial San Marino,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+29,18/06/2020,M,28,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+30,18/06/2020,F,41,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+31,18/06/2020,F,25,Residencial Sítio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+32,18/06/2020,F,34,Vila Olimpia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+33,18/06/2020,F,47,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+34,18/06/2020,F,44,Jaraguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+35,18/06/2020,F,40,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+36,18/06/2020,F,51,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+37,18/06/2020,F,25,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+38,18/06/2020,F,30,Jd Santa Catarina,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+39,18/06/2020,F,27,Jd Columbia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+40,17/06/2020,F,56,Jd Ana Emília,Sem registro de contato ou viagem,Em análise
+41,17/06/2020,F,40,Vila São Geraldo,Sem registro de contato ou viagem,Em análise
+42,17/06/2020,F,3,Pq Aeroporto,Sem registro de contato ou viagem,Em análise (I)
+43,17/06/2020,M,46,Jardim das Bandeiras,Sem registro de contato ou viagem,Em análise
+44,17/06/2020,F,43,Jardim das Bandeiras,Sem registro de contato ou viagem,Em análise
+45,17/06/2020,M,33,Cidade de Deus,Sem registro de contato ou viagem,Em análise
+46,17/06/2020,M,56,Vila São Carlos,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+47,17/06/2020,M,25,Granjas Rurais Reunidas,Sem registro de contato ou viagem,Em análise
+48,17/06/2020,M,38,Pq São Luis,Sem registro de contato ou viagem,Em análise
+49,17/06/2020,M,23,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Em análise
+50,17/06/2020,F,83,Vila Aparecida,Sem registro de contato ou viagem,Em análise
+51,17/06/2020,M,11,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+52,17/06/2020,F,78,Centro,Sem registro de contato ou viagem,Em análise
+53,17/06/2020,M,79,Ana Rosa,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+54,17/06/2020,M,38,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+55,17/06/2020,F,64,Jardim Eulália,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+56,17/06/2020,M,60,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+57,17/06/2020,M,33,Independência,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+58,17/06/2020,M,33,Cidade de Deus,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+59,17/06/2020,M,74,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+60,17/06/2020,F,38,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+61,17/06/2020,F,39,Pq Urupês,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+62,17/06/2020,M,23,Jd Sandra Maria,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+63,17/06/2020,M,33,Jd Bela Vista,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+64,17/06/2020,M,48,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+65,17/06/2020,F,43,Jd Garcez,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+66,17/06/2020,F,32,Jardim California,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+67,17/06/2020,M,33,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+68,17/06/2020,F,44,Mourisco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+69,17/06/2020,M,44,Residêncial Sítio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+70,17/06/2020,M,70,Vila Bela,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+71,17/06/2020,F,30,Terra Nova,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+72,17/06/2020,F,26,Jardim Rezende,Profissional da Saúde,Em análise
+73,17/06/2020,F,66,Pq São Cristovão,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+74,16/06/2020,M,20,Vila Costa,Sem registro de contato ou viagem,Em análise
+75,16/06/2020,F,29,Chácara Guisard,Sem registro de contato ou viagem,Em análise
+76,16/06/2020,F,75,Jardim Oasis,Sem registro de contato ou viagem,Em análise (Óbito)
+77,16/06/2020,M,52,Baronesa,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+78,16/06/2020,F,28,Pq Três Marias,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+79,16/06/2020,M,18,Jaraguá,Sem registro de contato ou viagem,Em análise
+80,16/06/2020,M,45,Residencial Paraiso,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+81,16/06/2020,F,40,São Gonçalo,Profissional da Saúde,Em análise
+82,16/06/2020,M,34,Taubaté Village,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+83,16/06/2020,M,50,Jardim Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+84,16/06/2020,M,55,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+85,16/06/2020,F,37,Barranco,Profissional da Saúde,Em análise
+86,16/06/2020,F,25,Cecap,Profissional da Saúde,Em análise
+87,15/06/2020,F,18,Gurilândia,Sem registro de contato ou viagem,Em análise
+88,15/06/2020,F,92,Vila IAPI,Sem registro de contato ou viagem,Em análise (I)
+89,15/06/2020,F,40,Vila São José,Profissional da Saúde,Em análise
+90,15/06/2020,F,25,Gurilândia,Profissional da Saúde,Em análise
+91,15/06/2020,M,35,São Gonçalo,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+92,15/06/2020,F,43,Campos Eliseos,Profissional da Saúde,Em análise
+93,15/06/2020,M,20,Pq Bandeirantes,Profissional da Saúde,Em análise
+94,15/06/2020,F,34,Esplanda Independência,Profissional da Saúde,Em análise
+95,15/06/2020,M,62,Jardim Garcez,Profissional da Saúde,Em análise
+96,15/06/2020,F,43,Bonfim,Profissional da Saúde,Em análise
+97,15/06/2020,F,35,Gurilândia,Profissional da Saúde,Em análise
+98,15/06/2020,F,33,Pq Três Marias,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+99,15/06/2020,M,21,Centro,Sem registro de contato ou viagem,Em análise
+100,15/06/2020,F,30,Vista Alegre,Profissional da Saúde,Em análise
+101,15/06/2020,M,64,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+102,15/06/2020,M,53,Residêncial Sítio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+103,15/06/2020,F,40,Vila das Graças,Profissional da Saúde,Em análise
+104,15/06/2020,F,43,Esplanada Santa Terezinha,Profissional da Saúde,Em análise
+105,15/06/2020,M,18,Cidade de Deus,Sem registro de contato ou viagem,Em análise
+106,15/06/2020,F,26,Morada dos Nobres,Sem registro de contato ou viagem,Em análise
+107,15/06/2020,M,34,Jd Maria Augusta,Sem registro de contato ou viagem,Em análise
+108,15/06/2020,M,32,Portal da Mantiqueira,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+109,15/06/2020,F,19,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+110,15/06/2020,F,28,Ana Emilía,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+111,15/06/2020,M,29,Centro,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+112,15/06/2020,M,49,Comerciários,Profissional da Saúde,Em análise
+113,15/06/2020,F,76,Centro,Sem registro de contato ou viagem,Em análise
+114,15/06/2020,F,28,Pq São Cristovão,Profissional da Saúde,Em análise
+115,15/06/2020,F,60,Jd Sônia Maria,Profissional da Saúde,Em análise
+116,15/06/2020,M,43,Barreiro,Sem registro de contato ou viagem,Em análise
+117,15/06/2020,F,55,Baronesa,Sem registro de contato ou viagem,Em análise
+118,15/06/2020,M,83,Pinheirinho,Sem registro de contato ou viagem,Em análise (I)
+119,15/06/2020,F,82,Vila Costa,Sem registro de contato ou viagem,Em análise (I)
+120,15/06/2020,M,22,Mourisco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+121,15/06/2020,M,61,Baronesa,Sem registro de contato ou viagem,Em análise
+122,15/06/2020,F,61,São Gonçalo,Sem registro de contato ou viagem,Em análise
+123,15/06/2020,M,43,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+124,14/06/2020,F,32,Jardim Russi,Sem registro de contato ou viagem,Em análise (I)
+125,14/06/2020,F,76,Cecap,Sem registro de contato ou viagem,Em análise (I)
+126,14/06/2020,M,2,Comerciários,Sem registro de contato ou viagem,Em análise (I)
+127,14/06/2020,F,27,Residêncial Arco Íris,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+128,14/06/2020,M,64,Baronesa,Sem registro de contato ou viagem,Em análise (I)
+129,14/05/2020,F,27,Residencial Arco Iris,Profissional da Saúde,Em análise
+130,14/06/2020,F,43,Granjas Panorama,Profissional da Saúde,Em análise
+131,14/06/2020,F,55,Bonfim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+132,14/06/2020,M,70,Vista Alegre,Sem registro de contato ou viagem,Descartado
+133,14/06/2020,M,39,Estiva,Sem registro de contato ou viagem,Descartado
+134,13/06/2020,M,57,Continental I,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+135,13/06/2020,M,44,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+136,13/06/2020,F,66,Pq São Cristovão,Sem registro de contato ou viagem,Em análise (I)
+137,13/06/2020,M,52,São Gonçalo,Sem registro de contato ou viagem,Em análise (I)
+138,13/06/2020,M,52,São Gonçalo,Sem registro de contato ou viagem,Em análise (I)
+139,13/06/2020,F,50,Flamboyant,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+140,13/06/2020,M,59,Monção,Sem registro de contato ou viagem,Em análise (I)
+141,13/06/2020,M,61,Cecap,Sem registro de contato ou viagem,Em análise (I)
+142,13/06/2020,M,12,Jabuticabeiras,Sem registro de contato ou viagem,Descartado
+143,13/06/2020,F,33,Centro,Profissional da Saúde,Em análise
+144,13/06/2020,F,43,Vila São José,Profissional da Saúde,Em análise
+145,13/06/2020,F,41,Bonfim,Profissional da Saúde,Em análise
+146,13/06/2020,F,23,Comerciários,Sem registro de contato ou viagem,Descartado
+147,13/06/2020,F,54,Cecap,Sem registro de contato ou viagem,Em análise (I)
+148,13/06/2020,M,52,Mourisco,Sem registro de contato ou viagem,Em análise (I)
+149,13/06/2020,M,28,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+150,13/06/2020,M,75,Vila Bela,Sem registro de contato ou viagem,Em análise (I)
+151,13/06/2020,M,62,Cecap,Sem registro de contato ou viagem,Em análise (I)
+152,13/06/2020,M,11,Jabuticabeiras,Sem registro de contato ou viagem,Em análise
+153,12/06/2020,F,49,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+154,12/06/2020,F,43,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+155,12/06/2020,M,22,Jardim das Bandeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+156,12/06/2020,F,86,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+157,12/06/2020,M,64,Barranco,Sem registro de contato ou viagem,Em análise (I)
+158,12/06/2020,M,69,Vila Aparecida,Sem registro de contato ou viagem,Em análise (I)
+159,12/06/2020,F,27,Jaraguá,Profissional da Saúde,Em análise
+160,12/06/2020,F,61,Independência,Profissional da Saúde,Em análise
+161,12/06/2020,F,53,Santa Clara,Profissional da Saúde,Em análise
+162,12/06/2020,F,38,Esplanada Independencia,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+163,12/06/2020,F,50,Estiva,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+164,12/06/2020,F,40,Baronesa,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+165,12/06/2020,M,24,Centro,Profissional da Saúde,Em análise
+166,12/06/2020,M,28,Pq Três Marias,Profissional de Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+167,12/06/2020,M,34,Jaraguá,Sem registro de contato ou viagem,Em análise
+168,12/06/2020,M,54,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+169,12/06/2020,F,57,Pq Ipanema,Sem registro de contato ou viagem,Descartado (I)
+170,12/06/2020,M,51,Esplanada Independencia,Profissional da Saúde,Em análise
+171,12/06/2020,M,27,Chácara Silvestre,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+172,12/06/2020,M,73,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+173,12/06/2020,M,22,Jardim das Bandeiras,Profissional da Saúde,Em análise
+174,12/06/2020,M,45,Chácara do Visconde,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+175,12/06/2020,M,73,Centro,Profissional da Saúde,Em análise
+176,12/06/2020,M,27,Chácara do Visconde,Sem registro de contato ou viagem,Em análise
+177,12/06/2020,F,42,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+178,11/06/2020,M,1,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+179,11/06/2020,M,34,Flamboyant,Sem registro de contato ou viagem,Descartado
+180,11/06/2020,M,64,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+181,11/06/2020,F,66,Esplanada Terezinha,Sem registro de contato ou viagem,Descartado
+182,11/06/2020,F,67,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+183,11/05/2020,F,55,Barranco,Profissional de Saúde,Em análise
+184,11/06/2020,F,50,Centro,Profissional de Saúde,Em análise
+185,11/06/2020,M,28,Vila São José,Segurança Pública,Em análise
+186,11/06/2020,F,55,Barranco,Profissional de Saúde,Detectável novo Coronavírus (2019-nCoV)
+187,11/06/2020,F,7,Vila Aparecida,Sem registro de contato ou viagem,Descartado
+188,11/06/2020,M,34,Continental I,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+189,11/06/2020,M,34,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+190,11/06/2020,M,32,Esplanada Independencia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+191,11/06/2020,M,1,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+192,11/06/2020,M,37,Granja Daniel,Sem registro de contato ou viagem,Em análise (I)
+193,10/06/2020,F,40,Centro,Sem registro de contato ou viagem,Descartado
+194,10/06/2020,M,55,Cidade de Deus,Sem registro de contato ou viagem,Em análise (I)
+195,10/06/2020,F,67,Pq Três Marias,Sem registro de contato ou viagem,Em análise
+196,10/06/2020,F,46,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+197,10/06/2020,F,32,Vila São José,Sem registro de contato ou viagem,Descartado
+198,10/06/2020,M,54,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+199,10/06/2020,F,29,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+200,10/06/2020,F,45,Ana Rosa,Sem registro de contato ou viagem,Descartado
+201,10/06/2020,F,21,Pq Aeroporto,Sem registro de contato ou viagem,Em análise
+202,10/06/2020,M,37,Granja Daniel,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+203,10/06/2020,F,35,Pq Piratininga,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+204,10/06/2020,M,39,Chácara Flórida,Sem registro de contato ou viagem,Descartado
+205,10/06/2020,F,39,Vila Costa,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+206,10/06/2020,F,52,Barreiro,Sem registro de contato ou viagem,Descartado
+207,10/06/2020,F,35,Pq Piratininga,Sem registro de contato ou viagem,Descartado
+208,10/06/2020,F,24,Monte Belo,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+209,10/06/2020,F,43,Santa Luzia,Sem registro de contato ou viagem,Descartado
+210,10/06/2020,F,67,Chácara Silvestre,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+211,10/06/2020,M,56,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+212,10/06/2020,F,23,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
+213,10/06/2020,F,85,Barranco,Sem registro de contato ou viagem,Em análise (I)
+214,10/06/2020,F,57,Independência,Sem registro de contato ou viagem,Em análise (Óbito)
+215,09/05/2020,F,41,Vila São José,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+216,10/06/2020,F,44,São Gonçalo,Sem registro de contato ou viagem,Descartado
+217,09/06/2020,F,33,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+218,09/06/2020,M,38,Jaraguá,Profissional da Saúde,Descartado
+219,09/06/2020,F,24,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+220,09/06/2020,F,33,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+221,09/06/2020,F,26,Chácara Flórida,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+222,09/06/2020,M,29,Quiririm,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+223,09/06/2020,F,63,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+224,09/06/2020,F,36,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+225,09/06/2020,F,35,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+226,09/06/2020,F,36,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+227,09/06/2020,M,39,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+228,09/06/2020,M,42,Pq São Cristovão,Sem registro de contato ou viagem,Descartado (Óbito)
+229,09/06/2020,M,39,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+230,09/06/2020,M,38,Estoril,Sem registro de contato ou viagem,Descartado
+231,09/06/2020,M,62,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
+232,09/06/2020,F,42,Cataguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+233,09/06/2020,F,31,Jardim América,Profissional da Saúde,Descartado
+234,09/06/2020,M,40,Gurilândia,Sem registro de contato ou viagem,Descartado
+235,09/06/2020,F,40,Terra Nova,Profissional da Saúde,Descartado
+236,09/06/2020,M,56,Abaeté,Sem registro de contato ou viagem,Descartado
+237,09/06/2020,M,77,Centro,Sem registro de contato ou viagem,Descartado
+238,09/06/2020,F,58,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+239,09/06/2020,M,66,São Gonçalo,Sem registro de contato ou viagem,Descartado
+240,09/06/2020,F,27,Vila São José,Profissional da Saúde,Descartado
+241,09/06/2020,M,19,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+242,09/06/2020,M,41,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+243,08/06/2020,F,21,Água Quente,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+244,08/06/2020,F,32,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+245,08/06/2020,F,93,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+246,08/06/2020,F,44,Jardim Morumbi,Profissional da Saúde,Descartado
+247,08/06/2020,F,40,Chácara do Visconde,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+248,08/06/2020,F,38,Residencial Sítio Santo Antônio,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+249,08/06/2020,F,37,Jaraguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+250,08/06/2020,F,31,Monjolinho,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+251,08/06/2020,M,28,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+252,08/06/2020,F,32,Vila Costa,Profissional da Saúde,Descartado
+253,08/06/2020,F,36,Pq Urupês,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+254,08/06/2020,F,34,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
+255,08/06/2020,F,24,Monte Belo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+256,08/06/2020,F,85,Centro,Sem registro de contato ou viagem,Descartado
+257,08/06/2020,F,55,Terra Nova,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+258,08/06/2020,F,38,Stefan Luba,Profissional da Saúde,Descartado
+259,08/06/2020,M,25,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+260,08/06/2020,F,44,Campos Eliseos,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+261,08/06/2020,M,59,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+262,07/06/2020,M,40,Piracangaguá,Sem registro de contato ou viagem,Descartado
+263,07/06/2020,M,30,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+264,07/06/2020,M,34,Ana Rosa,Sem registro de contato ou viagem,Descartado
+265,07/06/2020,F,38,Pq Piratininga,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+266,07/06/2020,F,82,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
+267,07/06/2020,F,27,Vila São José,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+268,07/06/2020,F,31,Água Quente,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+269,07/06/2020,M,26,Vila Aparecida,Sem registro de contato ou viagem,Descartado
+270,07/06/2020,M,72,Chácara Flórida,Sem registro de contato ou viagem,Descartado
+271,07/06/2020,M,77,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+272,07/06/2020,M,41,Vila Edmundo,Sem registro de contato ou viagem,Descartado
+273,07/06/2020,F,52,Estiva,Sem registro de contato ou viagem,Descartado
+274,07/06/2020,M,26,Vila Aparecida,Profissional da Saúde,Descartado
+275,06/06/2020,F,25,Pq Aeroporto,Profissional da Saúde,Descartado
+276,06/06/2020,F,35,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+277,06/06/2020,M,48,Vila Nogueira,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+278,06/06/2020,M,5,Jardim California,Sem registro de contato ou viagem,Descartado
+279,06/06/2020,F,58,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+280,06/06/2020,F,25,Pq Aeroporto,Profissional da Saúde,Descartado
+281,06/06/2020,F,5,Novo Horizonte,Sem registro de contato ou viagem,Descartado
+282,06/06/2020,M,79,Jardim Canuto Borges,Sem registro de contato ou viagem,Descartado
+283,05/06/2020,F,40,Cecap,Profissional da Saúde,Descartado
+284,05/06/2020,M,27,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+285,05/06/2020,M,32,Perpetuo Socorro,Profissional da Saúde,Descartado
+286,05/06/2020,F,60,Novo Horizonte,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+287,05/06/2020,M,45,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+288,05/06/2020,F,63,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+289,05/06/2020,M,55,São Gonçalo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+290,05/06/2020,M,51,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+291,05/06/2020,F,41,Gurilândia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+292,05/06/2020,F,3,Gurilândia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+293,05/06/2020,F,46,San Marino,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+294,05/06/2020,F,79,Piracangaguá,Sem registro de contato ou viagem,Descartado
+295,05/06/2020,M,26,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
+296,05/06/2020,M,38,Chácara Flórida,Sem registro de contato ou viagem,Descartado
+297,05/06/2020,F,32,Perpetuo Socorro,Profissional da Saúde,Descartado
+298,05/06/2020,F,20,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+299,05/06/2020,M,78,Residencial Paraiso,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+300,05/06/2020,M,51,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
+301,05/06/2020,F,30,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+302,05/06/2020,F,33,Pq Bandeirantes,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+303,05/06/2020,M,3,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+304,04/06/2020,M,56,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+305,04/06/2020,M,65,Pq São Luis,Sem registro de contato ou viagem,Descartado
+306,04/06/2020,F,93,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+307,04/06/2020,M,50,Vila Santos,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+308,04/06/2020,F,51,São Gonçalo,Profissional da Saúde,Descartado
+309,04/06/2020,F,32,Monte Belo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+310,04/06/2020,F,60,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+311,04/06/2020,M,39,Vila Nogueira,Sem registro de contato ou viagem,Descartado
+312,04/06/2020,F,45,Cidade Jardim,Sem registro de contato ou viagem,Descartado
+313,04/06/2020,M,46,Independência,Sem registro de contato ou viagem,Descartado
+314,04/06/2020,M,69,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+315,04/06/2020,F,49,Centro,Profissional da Saúde,Descartado
+316,04/06/2020,F,36,Centro,Profissional da Saúde,Descartado
+317,04/06/2020,F,2,Piracangaguá,Sem registro de contato ou viagem,Descartado
+318,04/06/2020,M,55,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+319,04/06/2020,F,55,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+320,04/06/2020,M,31,Jardim California,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+321,04/06/2020,M,73,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+322,04/06/2020,F,27,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+323,03/06/2020,M,36,Bonfim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+324,03/06/2020,F,39,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+325,03/06/2020,F,54,Estiva,Sem registro de contato ou viagem,Descartado
+326,03/06/2020,M,24,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+327,03/06/2020,M,30,Centro,Profissional da Saúde,Descartado
+328,03/06/2020,M,40,Gurilândia,Sem registro de contato ou viagem,Descartado
+329,03/06/2020,F,35,Jardim Bela Vista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+330,03/06/2020,M,39,Santa Catatina,Profissional da Saúde,Descartado
+331,03/06/2020,F,31,Água Quente,Sem registro de contato ou viagem,Descartado
+332,03/06/2020,F,54,Residencial Paraiso,Sem registro de contato ou viagem,Descartado
+333,03/06/2020,F,43,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+334,03/06/2020,F,55,Residencial Paraiso,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+335,03/06/2020,F,40,Vila Paulista,Profissional da Saúde,Descartado
+336,03/06/2020,F,2,Monte Belo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+337,03/06/2020,M,50,Chácara do Visconde,Sem registro de contato ou viagem,Descartado
+338,03/06/2020,M,37,Bom Conselho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+339,03/06/2020,F,46,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+340,03/06/2020,M,41,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+341,03/06/2020,F,67,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+342,03/06/2020,F,66,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+343,02/06/2020,M,32,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+344,02/06/2020,M,9 m,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+345,02/06/2020,M,3,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+346,02/06/2020,F,62,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+347,02/06/2020,F,18,Taubateguassu,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+348,02/06/2020,F,62,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+349,02/06/2020,M,28,Vila Marli,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+350,02/06/2020,F,58,Pq Três Marias,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+351,02/06/2020,F,50,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+352,02/06/2020,M,36,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+353,02/06/2020,F,65,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+354,02/06/2020,F,94,Mourisco,Sem registro de contato ou viagem,Descartado
+355,02/06/2020,F,10 m,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+356,02/06/2020,M,41,Jardim das Nações,Profissional da Saúde,Descartado
+357,02/06/2020,F,45,Gurilândia,Profissional da Saúde,Descartado
+358,02/06/2020,M,34,Vila São José,Sem registro de contato ou viagem,Descartado
+359,02/06/2020,F,40,Jaraguá,Profissional da Saúde,Descartado
+360,02/06/2020,F,40,Jd Sandra Maria,Profissional da Saúde,Descartado
+361,02/06/2020,F,24,Jaraguá,Profissional da Saúde,Descartado
+362,02/06/2020,M,71,Baronesa,Sem registro de contato ou viagem,Descartado
+363,02/06/2020,M,52,Quiririm,Sem registro de contato ou viagem,Descartado
+364,02/06/2020,F,49,Independência,Segurança Pública,Descartado
+365,02/06/2020,F,88,Jabuticabeiras,Sem registro de contato ou viagem,Descartado
+366,02/06/2020,F,44,Cataguá,Sem registro de contato ou viagem,Descartado
+367,02/06/2020,M,72,Centro,Sem registro de contato ou viagem,Descartado
+368,02/06/2020,F,42,Centro,Profissional da Saúde,Descartado
+369,02/06/2020,F,50,Centro,Profissional da Saúde,Descartado
+370,02/06/2020,M,44,Terra Nova,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+371,02/06/2020,M,35,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+372,02/06/2020,F,39,Jardim do Sol,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+373,02/06/2020,F,6,Ana Rosa,Sem registro de contato ou viagem,Descartado
+374,01/06/2020,F,35,Cidade de Deus,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+375,01/06/2020,M,74,Jardim dos Estados,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+376,01/06/2020,F,19,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+377,01/06/2020,M,37,Flamboyant,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+378,01/06/2020,F,37,Granja Santa Terezinha,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+379,01/06/2020,F,22,Pq Três Marias,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+380,01/06/2020,M,56,Estiva,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+381,01/06/2020,F,46,Piratininga,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+382,01/06/2020,F,17,Vila Bela,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+383,01/06/2020,M,46,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+384,01/06/2020,F,50,Ana Rosa,Sem registro de contato ou viagem,Descartado
+385,01/06/2020,F,03 D,Mourisco,Sem registro de contato ou viagem,Descartado
+386,01/06/2020,M,30,Centro,Sem registro de contato ou viagem,Descartado
+387,01/06/2020,F,57,Jardim Sônia Maria,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+388,01/06/2020,F,67,Cataguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+389,01/06/2020,F,6,Ana Rosa,Sem registro de contato ou viagem,Descartado
+390,01/06/2020,F,45,Barranco,Sem registro de contato ou viagem,Descartado
+391,01/06/2020,F,40,Pq São Luis,Profissional da Saúde,Descartado
+392,01/06/2020,F,94,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
+393,01/06/2020,M,22,Chácara do Visconde,Sem registro de contato ou viagem,Descartado
+394,01/06/2020,F,40,Alto São Pedro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+395,01/06/2020,F,68,Pq Paduan,Sem registro de contato ou viagem,Descartado
+396,31/05/2020,M,32,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+397,31/05/2020,F,34,Santa Fé,Sem registro de contato ou viagem,Descartado
+398,31/05/2020,M,24,Independência,Sem registro de contato ou viagem,Descartado
+399,31/05/2020,M,78,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+400,31/05/2020,M,16,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
+401,31/05/2020,F,32,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+402,30/05/2020,M,52,Jardim Russi,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+403,30/05/2020,F,80,Pq Três Marias,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+404,30/05/2020,M,63,São Gonçalo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+405,30/05/2020,M,29,Água Grande,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+406,30/05/2020,M,63,São Gonçalo,Sem registro de contato ou viagem,Descartado
+407,30/05/2020,M,29,Água Quente,Sem registro de contato ou viagem,Descartado
+408,30/05/2020,M,76,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+409,30/05/2020,M,36,Cidade de Deus,Sem registro de contato ou viagem,Descartado
+410,30/05/2020,F,40,Vila Paulista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+411,30/05/2020,M,34,Vila São José,Sem registro de contato ou viagem,Descartado
+412,30/05/2020,F,43,Gurilândia,Sem registro de contato ou viagem,Descartado
+413,30/05/2020,M,76,Cecap,Sem registro de contato ou viagem,Descartado
+414,30/05/2020,F,35,Vila São José,Profissional da Saúde,Descartado
+415,30/05/2020,F,31,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
+416,30/05/2020,F,80,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+417,30/05/2020,M,75,Cidade Jardim,Sem registro de contato ou viagem,Descartado
+418,30/05/2020,M,52,Jardim Russi,Sem registro de contato ou viagem,Descartado
+419,30/05/2020,F,34,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
+420,29/05/2020,M,43,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+421,29/05/2020,M,44,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+422,29/05/2020,M,43,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+423,29/05/2020,M,65,Alto São Pedro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+424,29/05/2020,F,36,Pq Paduan,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+425,29/05/2020,F,65,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+426,29/05/2020,M,67,Ana Emilía,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+427,29/05/2020,F,49,Jd Santa Clara,Profissional da Saúde,Descartado
+428,29/05/2020,F,36,Granja Daniel,Sem registro de contato ou viagem,Descartado
+429,29/05/2020,F,72,Independência,Sem registro de contato ou viagem,Descartado
+430,29/05/2020,M,45,Imaculada,Funcionário Público,Descartado
+431,29/05/2020,M,28,Residencial Estorial,Sem registro de contato ou viagem,Descartado
+432,29/05/2020,F,43,Bonfim,Profissional da Saúde,Descartado
+433,29/05/2020,F,30,Independência,Profissional da Saúde,Descartado
+434,29/05/2020,F,44,Jardim Sônia Maria,Profissional da Saúde,Descartado
+435,29/05/2020,F,36,Pq Paduan,Sem registro de contato ou viagem,Descartado
+436,29/05/2020,F,47,Ana Rosa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+437,29/05/2020,F,34,Chácara Flórida,Profissional da Saúde,Descartado
+438,28/05/2020,M,36,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+439,28/05/2020,F,66,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+440,28/05/2020,M,42,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+441,28/05/2020,F,43,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+442,28/05/2020,F,42,Independência,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+443,28/05/2020,M,38,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+444,28/05/2020,M,45,Jardim California,Sem registro de contato ou viagem,Descartado
+445,28/05/2020,M,22,Santa Cruz do Areão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+446,28/05/2020,M,57,Pq Urupês,Sem registro de contato ou viagem,Descartado
+447,28/05/2020,F,34,Estiva,Sem registro de contato ou viagem,Descartado
+448,28/05/2020,F,26,Morador de rua,Sem registro de contato ou viagem,Descartado
+449,28/05/2020,F,28,Independência,Segurança Pública,Descartado
+450,28/05/2020,M,36,Jardim das Nações,Segurança Pública,Descartado
+451,28/05/2020,M,46,Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+452,28/05/2020,F,27,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+453,28/05/2020,F,74,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+454,28/05/2020,F,4,Pq Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+455,28/05/2020,F,37,Jaraguá,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+456,28/05/2020,M,45,Novo Horizonte,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+457,27/05/2020,F,51,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+458,27/05/2020,M,54,Jardim Ana Emília,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+459,27/05/2020,F,50,Vila IAPI,Sem registro de contato ou viagem,Descartado
+460,27/05/2020,F,38,Centro,Sem registro de contato ou viagem,Descartado
+461,27/05/2020,F,60,Pq São Jorge,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+462,27/05/2020,F,48,Pq das Flores,Sem registro de contato ou viagem,Descartado
+463,27/05/2020,F,73,Centro,Sem registro de contato ou viagem,Descartado
+464,27/05/2020,F,38,Centro,Sem registro de contato ou viagem,Descartado
+465,27/05/2020,F,20,Vila Nogueira,Sem registro de contato ou viagem,Descartado
+466,27/05/2020,F,46,Itaim,Sem registro de contato ou viagem,Descartado
+467,27/05/2020,F,71,Centro,Sem registro de contato ou viagem,Descartado
+468,27/05/2020,F,34,Chácara Flórida,Profissional da Saúde,Descartado
+469,27/05/2020,F,22,Gurilândia,Profissional da Saúde,Descartado
+470,27/05/2020,F,37,Jd Ana Emília,Profissional da Saúde,Descartado
+471,27/05/2020,M,31,Vila São José,Segurança Pública,Descartado
+472,27/05/2020,F,48,Vila São José,Segurança Pública,Descartado
+473,27/05/2020,M,75,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+474,27/05/2020,M,42,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+475,27/05/2020,F,59,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+476,27/05/2020,F,82,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+477,27/05/2020,M,34,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+478,27/05/2020,F,58,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+479,26/05/2020,F,18,Residêncial Sítio Santo Antônio,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+480,26/05/2020,F,33,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+481,26/05/2020,F,49,Residêncial Sítio Santo Antônio,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+482,26/05/2020,F,42,Jardim Garcez,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+483,26/05/2020,F,20,Mourisco,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+484,26/05/2020,M,62,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+485,26/05/2020,M,68,Cataguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+486,26/05/2020,F,40,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+487,26/05/2020,M,28,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+488,26/05/2020,F,21,Residencial Sítio Santo Antônio,Sem registro de contato ou viagem,Descartado
+489,26/05/2020,M,38,Vila São Geraldo,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+490,26/05/2020,F,90,Vila Marli,Sem registro de contato ou viagem,Descartado
+491,26/05/2020,F,51,Vila Bela,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+492,26/05/2020,F,27,Barranco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+493,26/05/2020,F,33,Monção,Profissional da Saúde,Descartado
+494,26/05/2020,F,25,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+495,26/05/2020,F,49,Esplanada Independencia,Profissional da Saúde,Descartado
+496,26/05/2020,F,33,Jardim dos Estados,Profissional da Saúde,Descartado
+497,26/05/2020,F,24,Barreiro,Sem registro de contato ou viagem,Descartado
+498,26/05/2020,F,45,Vila Marli,Profissional da Saúde,Descartado
+499,26/05/2020,F,29,Continental I,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+500,26/05/2020,M,53,San Marino,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+501,25/05/2020,M,72,Jardim da Luz,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+502,25/05/2020,M,28,Estiva,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+503,25/05/2020,M,35,Jabuticabeiras,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+504,25/05/2020,F,72,Jardim da Luz,Sem registro de contato ou viagem,Descartado
+505,25/05/2020,M,58,Jd Santa Clara,Sem registro de contato ou viagem,Descartado
+506,25/05/2020,M,22,Jd Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+507,25/05/2020,M,65,San Marino,Sem registro de contato ou viagem,Descartado
+508,25/05/2020,F,75,San Marino,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+509,25/05/2020,M,28,Estiva,Sem registro de contato ou viagem,Descartado
+510,24/05/2020,F,55,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+511,24/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+512,24/05/2020,F,55,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+513,24/05/2020,F,32,Gurilândia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+514,24/05/2020,F,48,Ana Emilía,Profissional da Saúde,Descartado
+515,24/05/2020,F,54,Monção,Profissional da Saúde,Descartado
+516,24/05/2020,M,38,Chácara Flórida,Sem registro de contato ou viagem,Descartado
+517,24/05/2020,M,76,Centro,Sem registro de contato ou viagem,Descartado
+518,24/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+519,24/05/2020,M,35,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+520,24/05/2020,M,33,Granjas Panorama,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+521,24/05/2020,F,30,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+522,24/05/2020,M,38,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
+523,24/05/2020,F,54,Jardim das Nações,Profissional da Saúde,Descartado
+524,23/05/2020,M,49,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+525,23/05/2020,F,40,Jardim Garcez,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+526,23/05/2020,F,39,Chácara do Visconde,Profissional da Saúde,Descartado
+527,23/05/2020,M,84,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+528,23/05/2020,F,35,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+529,22/05/2020,M,42,Pq São Luis,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+530,22/05/2020,F,48,Cataguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+531,22/05/2020,M,59,Baronesa,Sem registro de contato ou viagem,Descartado
+532,22/05/2020,F,20,Jardim Santa Tereza,Sem registro de contato ou viagem,Descartado
+533,22/05/2020,M,40,Residêncial San Marino,Profissional da Saúde,Descartado
+534,22/05/2020,M,42,Pq São Luis,Profissional da Saúde,Descartado
+535,22/05/2020,M,36,Piratininga,Profissional da Saúde,Descartado
+536,22/05/2020,F,63,Barranco,Sem registro de contato ou viagem,Descartado
+537,22/05/2020,M,43,Vila São José,Sem registro de contato ou viagem,Descartado
+538,22/05/2020,M,59,Baronesa,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+539,22/05/2020,M,20,Santa Tereza,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+540,22/05/2020,M,56,Novo Horizonte,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+541,22/05/2020,M,36,Piratininga,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+542,22/05/2020,M,65,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+543,22/05/2020,F,26,Vila das Graças,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+544,22/05/2020,F,20,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
+545,22/05/2020,M,43,Pq São Luis,Sem registro de contato ou viagem,Descartado
+546,22/05/2020,M,40,Chácara do Visconde,Segurança Pública,Descartado
+547,22/05/2020,F,52,Jardim dos Estados,Segurança Pública,Descartado
+548,22/05/2020,F,61,Vila das Graças,Segurança Pública,Descartado
+549,22/05/2020,F,44,Jardim Sônia Maria,Profissional da Saúde,Descartado
+550,22/05/2020,M,56,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
+551,22/05/2020,M,19,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+552,22/05/2020,M,56,Novo Horizonte,Sem registro de contato ou viagem,Descartado
+553,21/05/2020,M,5 D,Areão,Sem registro de contato ou viagem,Descartado (Óbito)
+554,21/05/2020,F,26,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+555,21/05/2020,M,34,Itaim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+556,21/05/2020,M,34,Chácaras Reunidas Brasil,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+557,21/05/2020,F,25,Jd Sônia Maria,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+558,21/05/2020,F,47,Jardim Russi,Sem registro de contato ou viagem,Descartado
+559,21/05/2020,M,11,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+560,21/05/2020,F,24,Chácara Silvestre,Profissional da Saúde,Descartado
+561,21/05/2020,F,36,Jaraguá,Profissional da Saúde,Descartado
+562,21/05/2020,M,24,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+563,21/05/2020,F,30,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+564,21/05/2020,M,37,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+565,21/05/2020,F,71,Cecap,Sem registro de contato ou viagem,Descartado (Óbito)
+566,21/05/2020,M,37,Centro,Sem registro de contato ou viagem,Descartado
+567,20/05/2020,M,35,Jardim Eulália,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+568,20/05/2020,M,43,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+569,20/05/2020,M,48,Vila São Geraldo,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+570,20/05/2020,M,58,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+571,20/05/2020,M,32,Jardim dos Estados,Segurança Pública,Descartado
+572,20/05/2020,M,41,Santa Helena,Sem registro de contato ou viagem,Descartado
+573,20/05/2020,M,38,Gurilândia,Sem registro de contato ou viagem,Descartado
+574,20/05/2020,F,19,Piracangaguá,Sem registro de contato ou viagem,Descartado
+575,20/05/2020,F,15,Vila São José,Sem registro de contato ou viagem,Descartado
+576,20/05/2020,F,23,Comerciários,Profissional da Saúde,Descartado
+577,20/05/2020,M,39,Jaraguá,Profissional da Saúde,Descartado
+578,20/05/2020,F,28,Quiririm,Sem registro de contato ou viagem,Descartado
+579,20/05/2020,M,71,Cidade de Deus,Sem registro de contato ou viagem,Descartado
+580,20/05/2020,M,78,São Jorge,Sem registro de contato ou viagem,Descartado
+581,20/05/2020,M,39,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+582,19/05/2020,M,6,Jardim Santa Tereza,Sem registro de contato ou viagem,Descartado
+583,19/05/2020,M,22,Jaraguá,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+584,19/05/2020,M,51,Estiva,Sem registro de contato ou viagem,Descartado
+585,19/05/2020,F,28,Quiririm,Profissional da Saúde,Descartado
+586,19/05/2020,M,42,Pq São Cristovão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+587,19/05/2020,F,30,São Gonçalo,Sem registro de contato ou viagem,Descartado
+588,19/05/2020,F,50,Centro,Profissional da Saúde,Descartado
+589,19/05/2020,M,4,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
+590,19/05/2020,F,23,Comerciários,Profissional da Saúde,Descartado
+591,19/05/2020,M,65,Alto São Pedro,Sem registro de contato ou viagem,Descartado
+592,19/05/2020,M,28,Residencial Paraiso,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+593,19/05/2020,F,37,Jd Sônia Maria,Profissional da Saúde,Descartado
+594,19/05/2020,M,29,Bosque da Saúde,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+595,19/05/2020,F,57,Vila São Geraldo,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+596,19/05/2020,M,13,Chácara do Visconde,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+597,19/05/2020,M,59,Chácara do Visconde,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+598,19/05/2020,F,48,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
+599,18/05/2020,F,31,Chácara do Visconde,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+600,18/05/2020,M,39,Campos Eliseos,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+601,18/05/2020,F,37,Jd Sônia Maria,Profissional da Saúde,Descartado
+602,18/05/2020,F,42,Centro,Sem registro de contato ou viagem,Descartado
+603,18/05/2020,M,33,Vila Paulista,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+604,18/05/2020,M,39,Jd Continental,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+605,18/05/2020,F,39,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+606,18/05/2020,M,29,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+607,18/05/2020,F,71,Vila São José,Sem registro de contato ou viagem,Descartado
+608,18/05/2020,F,48,Jd Santa Isabel,Profissional da Saúde,Descartado
+609,18/05/2020,F,57,Pq Aeroporto,Profissional da Saúde,Descartado
+610,18/05/2020,F,51,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+611,18/05/2020,F,51,Continental I,Sem registro de contato ou viagem,Descartado
+612,18/05/2020,F,72,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+613,18/05/2020,M,14,Jardim Resende,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
+614,18/05/2020,F,7,Jardim Resende,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
+615,17/05/2020,M,46,Ana Rosa,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+616,17/05/2020,M,52,Cataguá,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+617,17/05/2020,F,73,Residencial Colim,Sem registro de contato ou viagem,Descartado
+618,17/05/2020,F,37,Vila Prosperidade,Sem registro de contato ou viagem,Descartado
+619,17/05/2020,F,51,Jardim Paulista,Sem registro de contato ou viagem,Descartado
+620,16/05/2020,F,26,Terra Nova,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+621,16/05/2020,M,41,Jardim do Sol,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+622,16/05/2020,M,37,Marlene Miranda,Profissional da Saúde,Descartado
+623,16/05/2020,F,29,Pq Urupês,Profissional da Saúde,Descartado
+624,16/05/2020,F,51,Piracangaguá,Sem registro de contato ou viagem,Descartado
+625,16/05/2020,F,70,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
+626,16/05/2020,M,51,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
+627,16/05/2020,M,31,Morada do Vale,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+628,16/05/2020,F,20,Esplanada Santa Terezinha,Profissional da Saúde,Descartado
+629,16/05/2020,M,34,Gurilândia,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+630,15/05/2020,M,1,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+631,15/05/2020,F,1,Belém,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+632,15/05/2020,M,30,Belém,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+633,15/05/2020,F,51,Barreiro,Sem registro de contato ou viagem,Descartado
+634,15/05/2020,M,45,Vila Aparecida,Segurança Pública,Descartado
+635,15/05/2020,M,68,Centro,Profissional da Saúde,Descartado
+636,15/05/2020,F,72,Jardim das Nações,Profissional da Saúde,Descartado
+637,15/05/2020,F,72,Gurilândia,Sem registro de contato ou viagem,Descartado
+638,15/05/2020,M,35,Gurilândia,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+639,15/05/2020,F,33,Água Quente,Profissional da Saúde,Descartado
+640,15/05/2020,F,49,Jardim das Nações,Profissional da Saúde,Descartado
+641,15/05/2020,F,32,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
+642,15/05/2020,M,17,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+643,15/05/2020,M,70,Terra Nova,Sem registro de contato ou viagem,Descartado
+644,14/05/2020,M,43,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+645,14/05/2020,M,41,Barreiro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+646,14/05/2020,M,69,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
+647,14/05/2020,M,33,Independência,Segurança Pública,Detectável novo Coronavírus (2019-nCoV)
+648,14/05/2020,F,49,Jardim das Nações,Profissional da Saúde,Descartado
+649,14/05/2020,F,51,Ana Emilía,Profissional da Saúde,Descartado
+650,14/05/2020,F,21,Gurilândia,Profissional da Saúde,Descartado
+651,14/05/2020,M,69,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
+652,14/05/2020,F,33,Água Quente,Profissional da Saúde,Descartado
+653,14/05/2020,F,45,Gurilândia,Sem registro de contato ou viagem,Descartado
+654,14/05/2020,F,31,Centro,Profissional da Saúde,Descartado
+655,14/05/2020,M,70,Terra Nova,Sem registro de contato ou viagem,Descartado
+656,14/05/2020,F,41,Jd Mesquita,Profissional da Saúde,Descartado
+657,14/05/2020,F,95,Gurilândia,Sem registro de contato ou viagem,Descartado
+658,14/05/2020,M,75,Pq Urupês,Sem registro de contato ou viagem,Descartado (Óbito)
+659,14/05/2020,F,84,Chácara Ingrid,Sem registro de contato ou viagem,Descartado (Óbito)
+660,13/05/2020,F,32,Portal da Mantiqueira,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+661,13/05/2020,F,64,Pq Paduan,Sem registro de contato ou viagem,Descartado
+662,13/05/2020,M,35,São Judas Tadeu,Segurança Pública,Descartado
+663,13/05/2020,F,60,Cecap 2,Sem registro de contato ou viagem,Descartado
+664,13/05/2020,M,61,Vila das Graças,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+665,13/05/2020,M,54,Taubaté Village,Profissional da Saúde,Descartado
+666,13/05/2020,F,41,Jardim Mesquita,Profissional da Saúde,Descartado
+667,13/05/2020,F,51,Jardim Ana Emília,Profissional da Saúde,Descartado
+668,13/05/2020,F,33,Gurilândia,Profissional da Saúde,Descartado
+669,13/05/2020,F,43,Cecap,Profissional da Saúde,Descartado
+670,13/05/2020,F,45,Jardim Julieta,Profissional da Saúde,Descartado
+671,12/05/2020,M,68,Pinheirinho,Sem registro de contato ou viagem,Descartado
+672,12/05/2020,M,47,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+673,12/05/2020,M,94,Centro,Sem registro de contato ou viagem,Descartado
+674,12/05/2020,F,43,Cecap,Profissional da Saúde,Descartado
+675,12/05/2020,F,33,Gurilândia,Profissional da Saúde,Descartado
+676,12/05/2020,M,54,Taubaté Village,Profissional da Saúde,Descartado
+677,12/05/2020,M,38,Pq Paduan,Sem registro de contato ou viagem,Descartado
+678,12/05/2020,F,43,Jardim Julieta,Profissional da Saúde,Descartado
+679,12/05/2020,F,56,Bonfim,Sem registro de contato ou viagem,Descartado
+680,12/05/2020,M,75,Monção,Profissional da Saúde,Descartado
+681,12/05/2020,F,61,Bonfim,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+682,12/05/2020,M,65,Vila Aparecida,Contato com caso positivo para COVID-19,Detectável novo Coronavírus (2019-nCoV)
+683,12/05/2020,F,40,Gurilândia,Profissional da Saúde,Descartado
+684,11/05/2020,M,64,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+685,11/05/2020,M,21,Estoril,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+686,11/05/2020,M,31,Morador de rua,Morador de rua,Descartado
+687,11/05/2020,F,33,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+688,11/05/2020,F,46,Piracangaguá,Sem registro de contato ou viagem,Descartado
+689,11/05/2020,F,37,Independência,Profissional da Saúde,Descartado
+690,11/05/2020,F,21,Gurilândia,Profissional da Saúde,Descartado
+691,11/05/2020,F,37,Terra Nova,Sem registro de contato ou viagem,Descartado
+692,11/05/2020,M,27,Centro,Sem registro de contato ou viagem,Descartado
+693,11/05/2020,F,44,Jaraguá,Sem registro de contato ou viagem,Descartado
+694,11/05/2020,F,62,Terra Nova,Sem registro de contato ou viagem,Descartado
+695,10/05/2020,F,63,Bonfim,Profissional da Saúde,Descartado
+696,10/05/2020,F,30,Res. Portal da Mantiqueira,Profissional da Saúde,Descartado
+697,10/05/2020,F,90,Vila das Graças,Sem registro de contato ou viagem,Descartado
+698,10/05/2020,M,38,Chácara Flórida,Sem registro de contato ou viagem,Descartado
+699,09/05/2020,F,71,Mourisco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+700,09/05/2020,F,32,Centro,Profissional da Saúde,Descartado
+701,09/05/2020,M,49,Jardim das Nações,Profissional da Saúde,Descartado
+702,09/05/2020,M,69,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+703,08/05/2020,F,52,Barranco,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+704,08/05/2020,F,26,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+705,08/05/2020,F,59,Chácara do Visconde,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+706,08/05/2020,M,54,Jardim Sônia Maria,Sem registro de contato ou viagem,Descartado
+707,08/05/2020,F,24,Residêncial Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado
+708,08/05/2020,M,57,Vila Marli,Sem registro de contato ou viagem,Descartado
+709,08/05/2020,M,41,Chácara Cataguá,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+710,08/05/2020,F,44,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+711,08/05/2020,F,46,Continental I,Profissional da Saúde,Descartado
+712,08/05/2020,F,37,Terra Nova,Profissional da Saúde,Descartado
+713,08/05/2020,F,36,Vila São José,Profissional da Saúde,Descartado
+714,08/05/2020,F,38,Barreiro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+715,08/05/2020,M,59,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+716,08/05/2020,M,59,Jardim Sônia Maria,Sem registro de contato ou viagem,Descartado
+717,08/05/2020,F,34,Shalon,Profissional da Saúde,Descartado
+718,08/05/2020,M,71,Alto São Pedro,Sem registro de contato ou viagem,Descartado
+719,07/05/2020,F,89,Granja Daniel,Sem registro de contato ou viagem,Descartado
+720,07/05/2020,F,44,Cecap,Profissional da Saúde,Descartado
+721,07/05/2020,M,57,Centro,Sem registro de contato ou viagem,Descartado
+722,07/05/2020,F,39,Gurilândia,Profissional da Saúde,Descartado
+723,07/05/2020,F,56,Jardim California,Sem registro de contato ou viagem,Descartado
+724,07/05/2020,M,43,Bonfim,Sem registro de contato ou viagem,Descartado
+725,07/05/2020,M,59,Mourisco,Sem registro de contato ou viagem,Descartado
+726,07/05/2020,F,62,Vila São José,Sem registro de contato ou viagem,Descartado
+727,07/05/2020,M,53,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+728,07/05/2020,F,56,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+729,07/05/2020,M,32,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+730,06/05/2020,F,51,São Gonçalo,Profissional da Saúde,Descartado
+731,06/05/2020,F,97,Cecap 2,Sem registro de contato ou viagem,Descartado
+732,06/05/2020,M,90,Jardim Mansur,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+733,06/05/2020,M,63,Alto São Pedro,Sem registro de contato ou viagem,Descartado
+734,06/05/2020,M,97,Baronesa,Sem registro de contato ou viagem,Descartado (Óbito)
+735,06/05/2020,F,73,Baronesa,Sem registro de contato ou viagem,Descartado
+736,06/05/2020,F,74,Terra Nova,Sem registro de contato ou viagem,Descartado
+737,06/05/2020,F,97,Quiririm,Sem registro de contato ou viagem,Descartado
+738,05/05/2020,M,47,Jardim Santa Clara,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+739,05/05/2020,F,56,Vila São José,Profissional da Saúde,Descartado
+740,05/05/2020,F,40,Piracangaguá,Sem registro de contato ou viagem,Descartado
+741,05/05/2020,F,68,Vila Nogueira,Sem registro de contato ou viagem,Descartado (Óbito)
+742,05/05/2020,M,34,Bonfim,Profissional da Saúde,Descartado
+743,05/05/2020,M,38,Pq Paduan,Profissional da Saúde,Descartado
+744,05/05/2020,M,45,Jd dos Estados,Profissional da Saúde,Descartado
+745,05/05/2020,F,46,Gurilândia,Profissional da Saúde,Descartado
+746,05/05/2020,F,21,Pq São Luis,Profissional da Saúde,Descartado
+747,05/05/2020,F,52,Gurilândia,Profissional da Saúde,Descartado
+748,04/05/2020,F,28,Taubaté Village,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+749,04/05/2020,F,37,Gurilândia,Profissional da Saúde,Descartado
+750,04/05/2020,F,36,São Judas Tadeu,Profissional da Saúde,Descartado
+751,04/05/2020,M,21,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
+752,04/05/2020,M,45,Jd dos Estados,Profissional da Saúde,Descartado
+753,04/05/2020,F,21,Quiririm,Sem registro de contato ou viagem,Descartado
+754,04/05/2020,M,42,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado
+755,04/05/2020,F,46,Gurilândia,Profissional da Saúde,Descartado
+756,03/05/2020,F,47,Areão,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+757,03/05/2020,M,34,Gurilândia,Profissional da Saúde,Descartado
+758,03/05/2020,M,39,Vila São José,Sem registro de contato ou viagem,Descartado
+759,03/05/2020,F,27,Jardim América,Profissional da Saúde,Descartado
+760,02/05/2020,M,40,Areão,Profissional da Saúde,Descartado
+761,02/05/2020,M,30,Chácara Silvestre,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+762,02/05/2020,F,42,Vila Costa,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+763,02/05/2020,M,32,Estoril,Sem registro de contato ou viagem,Descartado
+764,02/05/2020,M,75,Vila São José,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+765,02/05/2020,F,72,Gurilândia,Sem registro de contato ou viagem,Descartado
+766,01/05/2020,M,73,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
+767,29/04/2020,M,73,Imaculada,Sem registro de contato ou viagem,Descartado
+768,29/04/2020,F,74,São Gonçalo,Profissional da Saúde,Descartado
+769,29/04/2020,M,34,Chácara Santa Luzia,Sem registro de contato ou viagem,Descartado
+770,29/04/2020,F,28,Jardim das Nações,Profissional da Saúde,Descartado
+771,29/04/2020,M,54,Chácara Silvestre,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+772,29/04/2020,F,27,Pq Três Marias,Auxiliar de Enfermagem,Descartado
+773,29/04/2020,F,34,Centro,Sem registro de contato ou viagem,Descartado
+774,29/04/2020,M,53,Alto São Pedro,Sem registro de contato ou viagem,Descartado
+775,28/04/2020,M,5,Estoril,Sem registro de contato ou viagem,Descartado
+776,28/04/2020,F,27,Jd Sandra Maria,Profissional da Saúde,Descartado
+777,28/04/2020,F,7,Areão,Sem registro de contato ou viagem,Descartado
+778,28/04/2020,M,26,Água Quente,Profissional da Saúde,Descartado
+779,28/04/2020,M,37,Vila das Graças,Profissional da Saúde,Descartado
+780,28/04/2020,M,59,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+781,28/04/2020,F,59,Vila São José,Sem registro de contato ou viagem,Descartado (Óbito)
+782,28/04/2020,M,52,São Charbel,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+783,28/04/2020,F,55,Jd América,Sem registro de contato ou viagem,Descartado
+784,27/04/2020,F,36,Jardim do Lago,Profissional da Saúde,Descartado
+785,27/04/2020,F,35,Centro,Profissional da Saúde,Descartado
+786,27/04/2020,F,80,Centro,Sem registro de contato ou viagem,Descartado
+787,27/04/2020,F,44,Esplanada Santa Terezinha,Profissional da Saúde,Descartado
+788,27/04/2020,F,80,Centro,Sem registro de contato ou viagem,Descartado
+789,27/04/2020,M,42,Piracangaguá,Contato com pesssoas que estivem no aeroporto de SP.,Detectável novo Coronavírus (2019-nCoV)
+790,26/04/2020,F,44,Esplanada Independencia,Profissional da Saúde,Descartado
+791,26/04/2020,F,39,Jardim dos Passos,Profissional da Saúde,Descartado
+792,25/04/2020,M,70,Itapecirica,Sem registro de contato ou viagem,Descartado
+793,25/04/2020,F,34,Esplanada Independencia,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+794,25/04/2020,F,44,Vila Marli,Profissional da Saúde,Descartado
+795,25/04/2020,M,80,Pq Paduan,Sem registro de contato ou viagem,Descartado (Óbito)
+796,25/04/2020,M,37,Estiva,Sem registro de contato ou viagem,Descartado
+797,24/04/2020,F,25,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
+798,24/04/2020,M,21,Jd Santa Tereza,Profissional da Saúde,Descartado
+799,24/04/2020,F,32,Esplanada Independencia,Profissional da Saúde,Descartado
+800,24/04/2020,M,51,Esplanada Independencia,Profissional da Saúde,Descartado
+801,24/04/2020,M,53,Alto São Pedro,Sem registro de contato ou viagem,Descartado
+802,24/04/2020,F,28,Monção,Profissional da Saúde,Descartado
+803,24/04/2020,M,49,Monção,Sem registro de contato ou viagem,Descartado
+804,24/04/2020,M,58,Gurilândia,Sem registro de contato ou viagem,Descartado
+805,23/04/2020,M,62,Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado
+806,23/04/2020,F,37,Quiririm,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
+807,23/04/2020,M,41,Vila Edmundo,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
+808,23/04/2020,M,2,Vila Edmundo,Contato com positivo para COVID-19 (Policial Militar),Detectável novo Coronavírus (2019-nCoV)
+809,23/04/2020,F,48,Recanto dos Coquerais,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+810,23/04/2020,F,43,Pq Aeroporto,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+811,22/04/2020,M,48,Jardim do Sol,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+812,22/04/2020,F,51,Quiririm,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+813,22/04/2020,F,79,Jardim das Nações,Profissional da Saúde,Descartado
+814,22/04/2020,M,78,Pq Aeroporto,Sem registro de contato ou viagem,Descartado (Óbito)
+815,22/04/2020,M,77,Vila Aparecida,Sem registro de contato ou viagem,Descartado
+816,21/04/2020,M,66,Estiva,Sem registro de contato ou viagem,Descartado
+817,21/04/2020,M,34,Jardim das Nações,Profissional da Saúde,Descartado
+818,21/04/2020,F,28,Vila Edmundo,Profissional da Saúde,Descartado
+819,21/04/2020,F,77,Vila Aparecida,Sem registro de contato ou viagem,Descartado
+820,21/04/2020,M,66,Emecal,Sem registro de contato ou viagem,Descartado
+821,21/04/2020,M,57,Jardim Morumbi,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+822,20/04/2020,F,79,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+823,20/04/2020,F,77,Residencial Bom Conselho,Sem registro de contato ou viagem,Descartado (Óbito)
+824,20/04/2020,M,20,Vila Bela,Profissional da Saúde,Descartado
+825,19/04/2020,M,60,Res. Arco Íris,Sem registro de contato ou viagem,Descartado
+826,19/04/2020,M,20,Vila Bela,Profissional da Saúde,Descartado
+827,19/04/2020,M,32,Jardim do Sol,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+828,19/04/2020,M,74,Marlene Miranda,Sem registro de contato ou viagem,Descartado
+829,19/04/2020,F,74,Mourisco,Sem registro de contato ou viagem,Descartado
+830,19/04/2020,F,58,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
+831,18/04/2020,F,31,Quiririm,Sem registro de contato ou viagem,Descartado
+832,18/04/2020,F,1,Itaim,Sem registro de contato ou viagem,Descartado
+833,18/04/2020,F,58,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
+834,18/04/2020,F,75,Mourisco,Sem registro de contato ou viagem,Descartado (Óbito)
+835,17/04/2020,M,55,Jabuticabeiras,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+836,17/04/2020,M,3,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+837,17/04/2020,M,62,Imaculada,Sem registro de contato ou viagem,Descartado
+838,17/04/2020,F,62,Marlene Miranda,Sem registro de contato ou viagem,Descartado
+839,17/04/2020,F,63,Gurilândia,Sem registro de contato ou viagem,Descartado
+840,17/04/2020,M,83,Pinheirinho,Sem registro de contato ou viagem,Descartado
+841,17/04/2020,M,60,Barranco,Sem registro de contato ou viagem,Descartado
+842,16/04/2020,M,44 D,Jd Continental,Sem registro de contato ou viagem,Descartado (Óbito)
+843,16/04/2020,F,15,Jd Ana Lúcia,Sem registro de contato ou viagem,Descartado
+844,16/04/2020,F,50,Gurilândia,Sem registro de contato ou viagem,Descartado
+845,16/04/2020,F,30,Pq São Luis,Sem registro de contato ou viagem,Descartado
+846,16/04/2020,M,72,Centro,Sem registro de contato ou viagem,Descartado
+847,16/04/2020,F,75,Independência,Sem registro de contato ou viagem,Descartado
+848,16/04/2020,F,32,Jd dos Passáros,Sem registro de contato ou viagem,Descartado
+849,16/04/2020,F,35,Centro,Profissional da Saúde,Descartado
+850,16/04/2020,F,53,Chácara do Visconde,Profissional da Saúde,Descartado
+851,16/04/2020,F,44,Res. Ouro Ville,Profissional da Saúde,Descartado
+852,16/04/2020,F,53,Alto São Pedro,Profissional da Saúde,Descartado
+853,16/04/2020,F,77,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado
+854,15/04/2020,F,13,Centro,Contato com pessoas que viajaram para exteriror,Detectável novo Coronavírus (2019-nCoV)
+855,15/04/2020,M,49,Independência,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+856,15/04/2020,M,46,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+857,15/04/2020,M,64,Monte Belo,Sem registro de contato ou viagem,Descartado
+858,15/04/2020,F,41,Taubaté Village,"Deslocameto para Itália, Portugual e Milão",Detectável novo Coronavírus (2019-nCoV)
+859,15/04/2020,F,75,Vila Prosperidade,Sem registro de contato ou viagem,Descartado
+860,15/04/2020,F,74,Quiririm,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+861,15/04/2020,M,65,Ana Rosa,Sem registro de contato ou viagem,Descartado
+862,15/04/2020,F,15,Jd Ana Lúcia,Sem registro de contato ou viagem,Descartado
+863,15/04/2020,M,4,Água Quente,Sem registro de contato ou viagem,Descartado
+864,15/04/2020,F,77,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado (Óbito)
+865,15/04/2020,F,02 D,Pq São Luis,Sem registro de contato ou viagem,Descartado
+866,15/04/2020,F,31,Marlene Miranda,Profissional da Saúde,Descartado
+867,15/04/2020,F,78,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
+868,15/04/2020,M,66,Jd Eulália,Sem registro de contato ou viagem,Descartado (Óbito)
+869,15/04/2020,F,51,Vila Olímpia,Sem registro de contato ou viagem,Descartado
+870,14/04/2020,F,28,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+871,14/04/2020,M,64,Monte Belo,Sem registro de contato ou viagem,Descartado (Óbito)
+872,14/04/2020,M,66,Jd Eulália,Sem registro de contato ou viagem,Descartado (Óbito)
+873,14/04/2020,F,42,Barreiro,Profissional da Saúde,Descartado
+874,14/04/2020,F,49,Barranco,Sem registro de contato ou viagem,Descartado
+875,14/04/2020,F,75,Vila Prosperidade,Sem registro de contato ou viagem,Descartado (Óbito)
+876,14/04/2020,F,27,Centro,Profissional da Saúde,Descartado
+877,14/04/2020,M,93,Jd Maria Augusta,Sem registro de contato ou viagem,Descartado (Óbito)
+878,14/04/2020,F,57,Independência,Profissional da Saúde,Descartado
+879,14/04/2020,F,41,Jd do Lago,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+880,14/04/2020,F,49,Jd Resende,Profissional da Saúde,Descartado
+881,14/04/2020,F,78,Jd Sônia Maria,Sem registro de contato ou viagem,Descartado
+882,14/04/2020,M,37,Morada dos Nobres,Profissional da Saúde,Descartado
+883,14/04/2020,F,39,Pq São Luis,Profissional da Saúde,Descartado
+884,14/04/2020,F,41,Quiririm,Profissional da Saúde,Descartado
+885,14/04/2020,F,30,Vila das Graças,Profissional da Saúde,Descartado
+886,14/04/2020,M,36,Vila dos Comerciários,Profissional da Saúde,Descartado
+887,14/04/2020,F,70,Vila Nogueira,Sem registro de contato ou viagem,Descartado
+888,13/04/2020,F,83,Belém,Sem registro de contato ou viagem,Descartado (Óbito)
+889,13/04/2020,F,38,Jd Sônia Maria,Profissional da Saúde,Descartado
+890,13/04/2020,F,41,Quiririm,Profissional da Saúde,Descartado
+891,13/04/2020,F,51,Vila Olímpia,Sem registro de contato ou viagem,Descartado
+892,13/04/2020,F,50,São Gonçalo,Sem registro de contato ou viagem,Descartado (Óbito)
+893,13/04/2020,M,59,Vila São José,Sem registro de contato ou viagem,Descartado (Óbito)
+894,13/04/2020,F,42,Barreiro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+895,12/04/2020,F,80,Belém,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+896,12/04/2020,F,37,Morada dos Nobres,Profissional da Saúde,Descartado
+897,12/04/2020,M,28,Barranco,Sem registro de contato ou viagem,Descartado
+898,12/04/2020,F,83,Belém,Sem registro de contato ou viagem,Descartado (Óbito)
+899,11/04/2020,F,29,Campos Eliseos,Profissional da Saúde,Descartado
+900,11/04/2020,F,41,Chácara Hipólito,Profissional da Saúde,Descartado
+901,11/04/2020,F,20,Pq São Luis,Sem registro de contato ou viagem,Descartado
+902,11/04/2020,F,44,Pq Aeroporto,Profissional da Saúde,Descartado
+903,10/04/2020,F,64,Granja Santa Terezinha,Sem registro de contato ou viagem,Descartado (Óbito)
+904,10/04/2020,M,83,Pq Três Marias,Sem registro de contato ou viagem,Descartado (Óbito)
+905,10/04/2020,M,51,Terra Nova,Sem registro de contato ou viagem,Descartado
+906,09/04/2020,F,25,Baronesa,Trabalha no H.Policlin (cozinha),Detectável novo Coronavírus (2019-nCoV)
+907,09/04/2020,M,40,Jd Santa Isabel,Sem registro de contato ou viagem,Descartado
+908,09/04/2020,M,38,Vila São José,Profissional da Saúde,Descartado
+909,09/04/2020,F,35,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+910,09/04/2020,M,36,Centro,Profissional da Saúde,Descartado
+911,09/04/2020,M,31,Terra Nova,Sem registro de contato ou viagem,Descartado
+912,08/04/2020,M,53,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+913,08/04/2020,F,30,Bosque da Saúde,Deslocamento para Irlanda (13/03 - 29/03/2020),Detectável novo Coronavírus (2019-nCoV)
+914,08/04/2020,F,39,Jd Continental,Profissional da Saúde,Descartado
+915,08/04/2020,F,35,Morada dos Nobres,Sem registro de contato ou viagem,Descartado
+916,08/04/2020,M,54,Centro,Profissional da Saúde,Descartado
+917,08/04/2020,M,69,Esplanada Independencia,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+918,08/04/2020,F,29,Jd Santa Tereza,Profissional da Saúde,Descartado
+919,07/04/2020,F,54,Belém,Sem registro de contato ou viagem,Descartado
+920,07/04/2020,F,7,Cecap 4,Sem registro de contato ou viagem,Descartado
+921,07/04/2020,F,69,Centro,Sem registro de contato ou viagem,Descartado
+922,07/04/2020,M,36,Jardim das Nações,Profissional da Saúde,Descartado
+923,07/04/2020,F,37,Vila dos Comerciários II,Contato com positivo para COVID-19 (marido),Detectável novo Coronavírus (2019-nCoV)
+924,06/04/2020,F,35,Baronesa,Profissional da Saúde,Descartado
+925,06/04/2020,F,34,Jardim das Nações,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+926,06/04/2020,M,36,Jardim das Nações,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+927,06/04/2020,M,30,Baronesa,Deslocamento PARANÁ,Detectável novo Coronavírus (2019-nCoV)
+928,06/04/2020,F,54,Belém,Profissional da Saúde,Descartado
+929,06/04/2020,F,51,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+930,06/04/2020,M,33,Jabuticabeiras,Deslocamento PARANÁ,Detectável novo Coronavírus (2019-nCoV)
+931,06/04/2020,F,45,Jd Ana Emília,Profissional da Saúde,Descartado
+932,06/04/2020,F,34,Belém,Sem registro de contato ou viagem,Descartado
+933,06/04/2020,F,22,Jd Santa Isabel,Profissional da Saúde,Descartado
+934,06/04/2020,F,40,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
+935,06/04/2020,M,76,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+936,06/04/2020,F,40,Chácaras Reunidas Brasil,Profissional da Saúde,Descartado
+937,06/04/2020,F,33,São Gonçalo,Sem registro de contato ou viagem,Descartado
+938,06/04/2020,F,25,Vila São Geraldo,Profissional da Saúde,Descartado
+939,05/04/2020,F,40,Pq Santo Antônio,Sem registro de contato ou viagem,Descartado
+940,05/04/2020,F,25,Vila São Geraldo,Profissional da Saúde,Descartado
+941,05/04/2020,M,76,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+942,04/04/2020,M,69,Estiva,Sem registro de contato ou viagem,Descartado (Óbito)
+943,04/04/2020,F,33,São Gonçalo,Sem registro de contato ou viagem,Descartado
+944,04/04/2020,M,44,Monte Belo,Sem registro de contato ou viagem,Descartado
+945,04/04/2020,M,34,San Marino,Deslocamento para São Paulo,Descartado
+946,03/04/2020,M,100,Campos Eliseos,Sem registro de contato ou viagem,Descartado
+947,03/04/2020,F,81,Jardim das Nações,Sem registro de contato ou viagem,Descartado (Óbito)
+948,03/04/2020,F,41,Jardim das Nações,Profissional da Saúde,Descartado
+949,03/04/2020,F,38,Bosque da Saúde,Profissional da Saúde,Descartado
+950,03/04/2020,M,9,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
+951,03/04/2020,F,46,Sitio Santo Antônio,Sem registro de contato ou viagem,Descartado (Óbito)
+952,02/04/2020,M,70,Campos Eliseos,Profissional da Saúde,Descartado (Óbito)
+953,02/04/2020,M,70,Cataguá,Sem registro de contato ou viagem,Descartado
+954,02/04/2020,M,65,Centro,Profissional da Saúde,Descartado
+955,02/04/2020,F,15,Quiririm,Sem registro de contato ou viagem,Descartado
+956,02/04/2020,F,69,Centro,Sem registro de contato ou viagem,Descartado
+957,02/04/2020,M,52,Centro,Sem registro de contato ou viagem,Descartado
+958,02/04/2020,F,69,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+959,02/04/2020,F,84,Monjolinho,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+960,01/04/2020,F,31,Bosque da Saúde,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+961,01/04/2020,M,42,Vila dos Comerciários,Contato com positivo para COVID-19 (óbito),Detectável novo Coronavírus (2019-nCoV)
+962,01/04/2020,M,67,Centro,Sem registro de contato ou viagem,Descartado
+963,01/04/2020,M,38,Independência,Sem registro de contato ou viagem,Descartado
+964,01/04/2020,F,44,Centro,Profissional da Saúde,Descartado
+965,01/04/2020,M,65,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+966,01/04/2020,F,60,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+967,01/04/2020,F,55,São Gonçalo,Profissional da Saúde,Descartado
+968,31/03/2020,F,26,Ana Rosa,Sem registro de contato ou viagem,Descartado
+969,31/03/2020,M,38,Centro,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV)
+970,31/03/2020,M,32,Chácara Flórida,Profissional da Saúde,Descartado
+971,31/03/2020,M,39,Gurilândia,Profissional da Saúde,Descartado
+972,31/03/2020,F,26,São Gonçalo,Profissional da Saúde,Descartado
+973,31/03/2020,M,38,Independência,Sem registro de contato ou viagem,Descartado
+974,31/03/2020,F,36,Independência,Profissional da Saúde,Descartado
+975,31/03/2020,M,48,Jd Bom Conselho,Profissional da Saúde,Descartado
+976,31/03/2020,F,39,Quiririm,Profissional da Saúde,Descartado
+977,31/03/2020,F,55,São Gonçalo,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+978,31/03/2020,F,39,Vila Edmundo,Profissional da Saúde,Descartado
+979,31/03/2020,M,46,Vila São José,Profissional da Saúde,Descartado
+980,30/03/2020,F,35,São Gonçalo,Profissional da Saúde,Descartado
+981,29/03/2020,F,65,Centro,Sem registro de contato ou viagem,Descartado (Óbito)
+982,29/03/2020,F,75,Jd Humaita,Sem registro de contato ou viagem,Descartado (Óbito)
+983,29/03/2020,F,22,Terra Nova,Sem registro de contato ou viagem,Descartado
+984,29/03/2020,F,30,Chácaras Reunidas Brasil,Sem registro de contato ou viagem,Descartado
+985,29/03/2020,F,16,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+986,29/03/2020,F,15,Quiririm,Sem registro de contato ou viagem,Descartado
+987,29/03/2020,F,30,São Gonçalo,Sem registro de contato ou viagem,Descartado
+988,28/03/2020,F,5,Campos Eliseos,Sem registro de contato ou viagem,Descartado
+989,28/03/2020,M,84,Alto São João,Sem registro de contato ou viagem,Descartado
+990,28/03/2020,F,83,Estiva,Sem registro de contato ou viagem,Descartado (Óbito)
+991,28/03/2020,M,38,Jardim das Nações,Profissional da Saúde,Descartado
+992,27/03/2020,M,61,Água Quente,Sem registro de contato ou viagem,Descartado (Óbito)
+993,27/03/2020,F,84,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+994,27/03/2020,M,55,Centro,Profissional da Saúde,Descartado
+995,27/03/2020,F,33,Independência,Profissional da Saúde,Descartado
+996,27/03/2020,F,2,Terra Nova,Sem registro de contato ou viagem,Descartado
+997,27/03/2020,F,46,Jabuticabeiras,Profissional da Saúde,Descartado
+998,27/03/2020,F,49,Jd Mourisco,Sem registro de contato ou viagem,Descartado
+999,27/03/2020,F,2 meses,Jd Santa Tereza,Sem registro de contato ou viagem,Descartado
+1000,27/03/2020,F,36,Pq Urupês,Sem registro de contato ou viagem,Descartado
+1001,27/03/2020,M,84,Quiririm,Sem registro de contato ou viagem,Descartado
+1002,27/03/2020,F,67,São Gonçalo,Sem registro de contato ou viagem,Descartado
+1003,26/03/2020,F,44,Bosque da Saúde,Profissional da Saúde,Descartado
+1004,26/03/2020,M,72,Cecap,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+1005,26/03/2020,F,53,Centro,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+1006,26/03/2020,M,9,Centro,Sem registro de contato ou viagem,Descartado
+1007,26/03/2020,F,44,Chafariz,Profissional da Saúde,Descartado
+1008,26/03/2020,F,42,Residencial Jd Oásis,Profissional da Saúde,Descartado
+1009,26/03/2020,F,53,Jabuticabeiras,Profissional da Saúde,Descartado
+1010,26/03/2020,F,27,Jardim das Nações,Profissional da Saúde,Descartado
+1011,26/03/2020,F,33,Vila São Geraldo,Profissional da Saúde,Descartado
+1012,26/03/2020,F,37,Jardim California,Profissional da Saúde,Descartado
+1013,26/03/2020,M,43,Vila Costa,Profissional da Saúde,Descartado
+1014,26/03/2020,M,43,Pq Urupês,Profissional da Saúde,Descartado
+1015,26/03/2020,F,48,Vila São José,Profissional da Saúde,Descartado
+1016,26/03/2020,F,73,Vila São José,Sem registro de contato ou viagem,Descartado
+1017,25/03/2020,F,3,Bonfim,Sem registro de contato ou viagem,Descartado
+1018,25/03/2020,M,15,Cataguá,Sem registro de contato ou viagem,Descartado
+1019,25/03/2020,F,41,Cecap 3,Profissional da Saúde,Descartado
+1020,25/03/2020,F,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1021,25/03/2020,F,29,Residencial São Francisco,Profissional da Saúde,Descartado
+1022,25/03/2020,F,62,Centro,Profissional da Saúde,Descartado
+1023,25/03/2020,M,43,Chácara Felix,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+1024,25/03/2020,F,62,Estiva,Sem registro de contato ou viagem,Descartado
+1025,25/03/2020,F,49,Independência,Profissional da Saúde,Descartado
+1026,25/03/2020,F,33,Independência,Profissional da Saúde,Descartado
+1027,25/03/2020,F,72,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+1028,25/03/2020,F,39,Jardim das Nações,Profissional da Saúde,Descartado
+1029,25/03/2020,F,45,Jd Ana Emília,Sem registro de contato ou viagem,Descartado
+1030,25/03/2020,F,29,Residêncial Sitio Santo Antônio,Profissional da Saúde,Descartado
+1031,24/03/2020,F,32,Campos Eliseos,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+1032,24/03/2020,M,68,Independência,Sem registro de contato ou viagem,Descartado
+1033,24/03/2020,F,39,Jardim das Nações,Profissional da Saúde,Descartado
+1034,24/03/2020,F,41,Cecap 3,Profissional da Saúde,Descartado
+1035,24/03/2020,M,3,Bonfim,Sem registro de contato ou viagem,Descartado
+1036,24/03/2020,F,43,Jd Eliete,Profissional da Saúde,Descartado
+1037,24/03/2020,F,27,Estiva,Profissional da Saúde,Descartado
+1038,24/03/2020,F,44,Ana Rosa,Profissional da Saúde,Descartado
+1039,24/03/2020,F,45,Jd Ana Emília,Profissional da Saúde,Descartado
+1040,24/03/2020,F,33,Independência,Profissional da Saúde,Descartado
+1041,24/03/2020,F,52,Pq Aeroporto,Profissional da Saúde,Descartado
+1042,24/03/2020,F,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1043,24/03/2020,M,62,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1044,24/03/2020,F,54,São Gonçalo,Profissional da Saúde,Descartado
+1045,24/03/2020,F,21,Terra Nova,Profissional da Saúde,Descartado
+1046,23/03/2020,F,37,Centro,Profissional da Saúde,Descartado
+1047,23/03/2020,F,31,Chácara do Visconde,Profissional da Saúde,Descartado
+1048,23/03/2020,M,32,Chácara Flórida,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+1049,23/03/2020,M,33,Gurilândia,Contato com caso suspeito - SP,Descartado
+1050,23/03/2020,F,68,Independência,Sem registro de contato ou viagem,Descartado (Óbito)
+1051,23/03/2020,F,43,Jd Eliete,Profissional da Saúde,Descartado
+1052,23/03/2020,F,52,Pq Aeroporto,Profissional da Saúde,Descartado
+1053,23/03/2020,M,32,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1054,23/03/2020,F,62,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1055,23/03/2020,F,54,São Gonçalo,Profissional da Saúde,Descartado
+1056,22/03/2020,F,32,Granjas Panorama,Profissional da Saúde,Detectável novo Coronavírus (2019-nCoV)
+1057,22/03/2020,F,66,Barranco,Profissional da Saúde,Descartado
+1058,22/03/2020,M,27,Independência,Profissional da Saúde,Descartado
+1059,22/03/2020,F,46,Recanto dos Coquerais,Profissional da Saúde,Descartado
+1060,21/03/2020,M,76,Barranco,Sem registro de contato ou viagem,Descartado (Óbito)
+1061,21/03/2020,F,65,Chácara Cataguá,Contato com caso suspeito - SP,Descartado
+1062,21/03/2020,F,39,Chácara Silvestre,Sem registro de contato ou viagem,Descartado
+1063,21/03/2020,M,67,Jardim das Nações,Sem registro de contato ou viagem,Detectável novo Coronavírus (2019-nCoV) - Óbito
+1064,21/03/2020,F,40,Jd do Sol,Europa,Descartado
+1065,21/03/2020,M,80,Pq Aeroporto,Sem registro de contato ou viagem,Descartado
+1066,21/03/2020,M,42,Pq Três Marias,Sem registro de contato ou viagem,Descartado
+1067,21/03/2020,F,64,Sitio Santo Antônio,Contato com caso suspeito - SP,Descartado
+1068,20/03/2020,F,49,Caminho Novo,Profissional da Saúde,Descartado
+1069,20/03/2020,M,25,Chácara Guisard,Sem registro de contato ou viagem,Descartado
+1070,20/03/2020,F,55,Gurilândia,Sem registro de contato ou viagem,Descartado
+1071,20/03/2020,F,42,Jd Eulália,Profissional da Saúde,Descartado
+1072,20/03/2020,M,6,Jd Santa Clara,Sem registro de contato ou viagem,Descartado
+1073,20/03/2020,F,39,Novo Horizonte,Contato com caso suspeito,Descartado
+1074,20/03/2020,M,48,Pq Três Marias,Contato com caso suspeito - SP,Descartado
+1075,19/03/2020,F,25,Baronesa,Sem registro de contato ou viagem,Descartado
+1076,19/03/2020,M,2,Barranco,Sem registro de contato ou viagem,Descartado
+1077,19/03/2020,F,26,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
+1078,19/03/2020,M,30,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
+1079,19/03/2020,M,34,Independência,Sem registro de contato ou viagem,Descartado
+1080,19/03/2020,M,20,Jardim dos Passos,Contato com caso suspeito,Descartado
+1081,19/03/2020,F,27,Jd Colombia,Sem registro de contato ou viagem,Descartado
+1082,19/03/2020,M,21,Jd Mourisco,Contato com caso suspeito,Descartado
+1083,19/03/2020,F,21,Quiririm,Sem registro de contato ou viagem,Descartado
+1084,19/03/2020,F,35,Vila Aparecida,Sem registro de contato ou viagem,Descartado
+1085,19/03/2020,M,5,Vila Bela,Contato com Alemão,Descartado
+1086,19/03/2020,F,37,Vila IAPI,Sem registro de contato ou viagem,Descartado
+1087,19/03/2020,F,82,Vila São José,Sem registro de contato ou viagem,Descartado
+1088,19/03/2020,M,21,Vila São José,Paraguai,Descartado
+1089,18/03/2020,F,37,Bosque da Saúde,Sem registro de contato ou viagem,Descartado
+1090,18/03/2020,F,48,Cond. Vila Verde,Sem registro de contato ou viagem,Descartado
+1091,18/03/2020,F,24,Esplanada Independencia,Sem registro de contato ou viagem,Descartado
+1092,18/03/2020,F,39,Esplanada Santa Terezinha,Contato com caso suspeito,Descartado
+1093,18/03/2020,F,41,Flamboyant,Argentina,Descartado
+1094,18/03/2020,F,67,Flor do Vale,Sem registro de contato ou viagem,Descartado
+1095,18/03/2020,F,30,Gurilândia,Sem registro de contato ou viagem,Descartado
+1096,18/03/2020,F,27,Gurilândia,Sem registro de contato ou viagem,Descartado
+1097,18/03/2020,F,2,Independência,França,Descartado
+1098,18/03/2020,F,65,Jabuticabeiras,Sem registro de contato ou viagem,Descartado
+1099,18/03/2020,F,26,Jabuticabeiras,EUA,Descartado
+1100,18/03/2020,M,37,Jaraguá,Contato com caso suspeito,Descartado
+1101,18/03/2020,F,42,Jaraguá,Alemanhã,Descartado
+1102,18/03/2020,F,34,Jaraguá,Itália,Descartado
+1103,18/03/2020,F,13,Jaraguá,Itália,Descartado
+1104,18/03/2020,F,34,Jardim das Nações,Portugal,Descartado
+1105,18/03/2020,M,27,Jd América,Itália,Descartado
+1106,18/03/2020,F,46,Jd do Lago,Sem registro de contato ou viagem,Descartado
+1107,18/03/2020,M,1,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
+1108,18/03/2020,M,5,Jd Sandra Maria,Sem registro de contato ou viagem,Descartado
+1109,18/03/2020,F,24,Jd Santa Clara,Itália,Descartado
+1110,18/03/2020,F,25,Jd Santa Clara,Itália,Descartado
+1111,18/03/2020,F,12,Jd Santa Isabel,Sem registro de contato ou viagem,Descartado
+1112,18/03/2020,F,41,Pq São Luis,Sem registro de contato ou viagem,Descartado
+1113,18/03/2020,F,15,Santa Helena,Argentina,Descartado
+1114,18/03/2020,M,34,Vale das Flores,Sem registro de contato ou viagem,Descartado
+1115,18/03/2020,M,29,Vila Aparecida,Contato com caso suspeito,Descartado
+1116,18/03/2020,F,38,Vila Bela,Contato com caso suspeito,Descartado
+1117,18/03/2020,F,45,Vila dos Comerciarios,Itália,Descartado
+1118,18/03/2020,F,50,Vila dos Comerciarios,Sem registro de contato ou viagem,Descartado
+1119,18/03/2020,M,19,Vila IAPI,Portugal,Descartado
+1120,18/03/2020,F,60,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+1121,18/03/2020,F,23,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+1122,17/03/2020,F,36,Barreiro,EUA,Descartado
+1123,17/03/2020,F,33,Bom Conselho,São Paulo,Descartado
+1124,17/03/2020,F,26,Centro,EUA,Descartado
+1125,17/03/2020,F,34,Centro,São Paulo,Descartado
+1126,17/03/2020,F,27,Esplanada Santa Helena,Sem registro de contato ou viagem,Descartado
+1127,17/03/2020,F,23,Vila São Geraldo,Sem registro de contato ou viagem,Descartado
+1128,17/03/2020,F,20,Flamboyant,Sem registro de contato ou viagem,Descartado
+1129,17/03/2020,F,26,Independência,Contato com caso suspeito,Descartado
+1130,17/03/2020,F,23,Independência,Canadá,Descartado
+1131,17/03/2020,F,62,Jardim das Nações,Sem registro de contato ou viagem,Descartado
+1132,17/03/2020,F,9,Jardim das Nações,Canadá,Descartado
+1133,17/03/2020,F,34,Jd América,Contato com caso suspeito,Descartado
+1134,17/03/2020,F,44,Jd Mourisco,Sem registro de contato ou viagem,Descartado
+1135,17/03/2020,F,49,Jd Mourisco,Contato com caso suspeito,Descartado
+1136,17/03/2020,F,23,Jd Neusa Maria,Chicago,Descartado
+1137,17/03/2020,F,45,Pq Arco Iris,Sem registro de contato ou viagem,Descartado
+1138,17/03/2020,M,21,Pq São Luis,EUA,Descartado
+1139,17/03/2020,F,49,Pq São Luis,EUA,Descartado
+1140,17/03/2020,F,41,Pq São Luis,EUA,Descartado
+1141,17/03/2020,F,20,Pq Três Marias,São Paulo,Descartado
+1142,17/03/2020,M,17,Terra Nova,África,Descartado
+1143,16/03/2020,F,27,Alto São Pedro,EUA,Descartado
+1144,16/03/2020,M,48,Centro,Sem registro de contato ou viagem,Descartado
+1145,16/03/2020,M,32,Centro,Belo Horizonte,Descartado
+1146,16/03/2020,F,53,Centro,EUA,Descartado
+1147,16/03/2020,F,9,Centro,Itália,Descartado
+1148,16/03/2020,F,42,Centro,Itália,Descartado
+1149,16/03/2020,F,30,Esplanada Santa Terezinha,Sem registro de contato ou viagem,Descartado
+1150,16/03/2020,F,72,Estiva,Califórnia,Descartado
+1151,16/03/2020,F,30,Independência,Itália,Descartado
+1152,16/03/2020,F,33,Jardim das Nações,EUA,Descartado
+1153,16/03/2020,F,39,Jardim das Nações,Espanha,Descartado
+1154,16/03/2020,M,24,Jd California,Sem registro de contato ou viagem,Descartado
+1155,16/03/2020,M,6,Quiririm,Portugal,Descartado
+1156,16/03/2020,M,8,Quiririm,Sem registro de contato ou viagem,Descartado
+1157,16/03/2020,F,2,Quiririm,Portugal,Descartado
+1158,16/03/2020,M,42,Vila São Geraldo,Itália,Descartado
+1159,15/03/2020,F,21,Centro,EUA,Descartado
+1160,15/03/2020,M,23,Estiva,Sem registro de contato ou viagem,Descartado
+1161,15/03/2020,M,25,Independência,Europa,Descartado
+1162,15/03/2020,F,34,Independência,França,Descartado
+1163,15/03/2020,F,59,Jardim das Nações,EUA,Descartado
+1164,15/03/2020,F,34,Jd Mourisco,França,Descartado
+1165,15/03/2020,F,26,Novo Horizonte,Itália,Descartado
+1166,15/03/2020,F,19,Santa Iês,Iolanda,Descartado
+1167,15/03/2020,F,21,São Gonçalo,Alemanhã,Descartado
+1168,15/03/2020,F,45,Vila São José,Califórnia,Descartado
+1169,14/03/2020,F,3,Cataguá,França,Descartado
+1170,14/03/2020,M,33,Centro,Carnaval MG,Descartado
+1171,14/03/2020,M,75,Centro,EUA,Descartado
+1172,14/03/2020,F,1,Chácara Silvestre,EUA,Descartado
+1173,14/03/2020,F,20,Estiva,EUA,Descartado
+1174,14/03/2020,F,24,Jd Ana Emília,Irlanda,Descartado
+1175,14/03/2020,F,16,Jd Mourisco,Itália,Descartado
+1176,13/03/2020,F,35,Areão,EUA,Descartado
+1177,13/03/2020,F,26,Centro,Califórnia,Descartado
+1178,13/03/2020,F,71,Chácara Santa Luzia,Madri,Descartado
+1179,13/03/2020,F,39,Independência,Itália,Descartado
+1180,13/03/2020,F,19,Jardim das Nações,Itália,Descartado
+1181,13/03/2020,F,17,Pq São Luis,Califórnia,Descartado
+1182,13/03/2020,F,37,Vila Rica,EUA,Descartado
+1183,13/03/2020,F,25,Vila São José,"Austria, Alemanha, e República Tcheca",Descartado
+1184,12/03/2020,F,35,Centro,"Barcelona, Espanha.",Detectável novo Coronavírus (2019-nCoV)
+1185,12/03/2020,F,15,Esplanada Independencia,Califórnia,Descartado
+1186,12/03/2020,F,21,Esplanada Independencia,Califórnia,Descartado
+1187,12/03/2020,F,52,Esplanada Independencia,Califórnia,Descartado
+1188,12/03/2020,F,16,Vila São José,"Nova York, Losangeles",Descartado
+1189,11/03/2020,F,01 a 1 meses,Bonfim,Itália (Toscana),Descartado
+1190,11/03/2020,F,35,Bonfim,Itália (Toscana),Descartado
+1191,09/03/2020,F,34,Gurilândia,Itália,Descartado
+1192,09/03/2020,F,36,Jabuticabeiras,EUA,Detectável para Influeza B
+1193,09/03/2020,F,23,Jaraguá,Itália (Toscana),Descartado
+1194,09/03/2020,F,52,Vila São José,Itália,Descartado
+1195,09/03/2020,F,23,Vila São José,Itália,Descartado
+1196,07/03/2020,F,25,Esplanada Santa Terezinha,EUA,Descartado
+1197,06/03/2020,F,23,Ana Rosa,"Itália, Roma e Barcelona",Descartado
+1198,02/03/2020,M,27,Pq Aeroporto,Londres,Descartado
+1199,01/03/2020,M,45,Vila São Geraldo,Roma,Descartado
