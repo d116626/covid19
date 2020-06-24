@@ -2060,3 +2060,7 @@ IPDL protocol error: Handler returned error code!
 1592865984984	Marionette	INFO	Listening on port 45259
 1592865984989	Marionette	WARN	TLS certificate errors will be ignored for this session
 1592866004813	Marionette	INFO	Stopped listening on port 45259
+1592958727379	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekxeEm5"
+1592958728962	Marionette	INFO	Listening on port 39283
+1592958728999	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592958747681	Marionette	INFO	Stopped listening on port 39283
