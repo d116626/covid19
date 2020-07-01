@@ -107,7 +107,7 @@ taubate_pie:
   barmode: 'group'
 
   # colors: ['#5768D2', '#C51162']
-  colors: ['#5DB7EB', '#DF718A']
+  colors: ['#DF718A', '#5DB7EB']
 
   soft_colors: ['#CF9C75','#768B91','#809F9E','#919191']
   # colors: ['#F24949', '#34758A', '#0097A7', '#007ABE', '#F2F2F2']
