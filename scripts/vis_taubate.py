@@ -313,8 +313,8 @@ def taubate_update_html(tb_cases, config_embed, save=False):
     todayCasesPerc = todayNewCases/(todayCases - todayNewCases)
 
 
-    todayRecover     = today_data['descartado'].values[0]
-    todayNewRecover  = today_data['descartado_day'].values[0]
+    todayRecover     = today_data['recuperados'].values[0]
+    todayNewRecover  = today_data['recuperados_day'].values[0]
     todayRecoverPerc = todayNewRecover/(todayRecover - todayNewRecover)
 
 
