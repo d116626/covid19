@@ -292,7 +292,7 @@ def update_ms_data():
     download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[1]/div[2]/ion-button[1]')[0]
     download_button.click()
 
-    time.sleep(7)
+    time.sleep(15)
 
     firefox.quit()
 
@@ -304,17 +304,32 @@ def update_ms_data():
     os.rename(path+f'/{new_file}', path+f'/{today}_ms_covid19.xlsx')
     print('renamed')
 
+
+
+    initial_time = time.time()
+
     df = pd.read_excel(path+f'/{today}_ms_covid19.xlsx')
     df['last_update'] = datetime.today().strftime('%Y-%m-%d %H:%M')
-        
+      
+    final_time = time.time()
+    
+    print(final_time - initial_time)
+    
+    
     # dd = pd.read_csv("../data/ministerio_da_saude/last_data_ms_covid19.csv")
 
     # today = datetime.today().strftime('%Y-%m-%d')
     # mask = dd['data']!=today
     # dd = dd[mask]
     # df = pd.concat([df,dd], 0)
+    initial_time = time.time()
 
     df.to_csv('../data/ministerio_da_saude/last_data_ms_covid19.csv', index=False, encoding='utf-8')
+    
+    final_time = time.time()
+    print(final_time - initial_time)
+
+    
     print('saved')
 
 
