@@ -2313,3 +2313,13 @@ IPDL protocol error: Handler returned error code!
 
 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
 
+1594394019880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWGfwGB"
+1594394021539	Marionette	INFO	Listening on port 45745
+1594394021584	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1594394173135	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileREv2x5"
+1594394174780	Marionette	INFO	Listening on port 37071
+1594394174851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594394207469	Marionette	INFO	Stopped listening on port 37071
