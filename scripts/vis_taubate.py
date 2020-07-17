@@ -254,7 +254,7 @@ def get_map_taubate(df,status_adjusts, config_map, save=False):
             bairro_row = bairro_table[mask]
             
              
-            r   = int(bairro_row['count'].values[0])*20
+            r   = int(bairro_row['count'].values[0])*15
             lat = bairro_row['lat'].values[0]
             lon = bairro_row['lon'].values[0]
 
