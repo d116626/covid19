@@ -16,6 +16,7 @@ from scripts import vis_graphs
 from datetime import datetime
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, offline
 from selenium import webdriver
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.ui import Select
 import time
 from datetime import datetime
@@ -261,6 +262,7 @@ def update_ms_data():
 
     path= os.getcwd().split('covid19')[0] + 'covid19/data/ministerio_da_saude' 
 
+    
     initial_files = listdir(path)
 
     profile = webdriver.FirefoxProfile()
@@ -279,7 +281,7 @@ def update_ms_data():
 
     # year = '2019'
 
-    firefox = webdriver.Firefox(firefox_profile=profile)
+    firefox = webdriver.Firefox(firefox_profile=profile, executable_path = GeckoDriverManager().install())
 
     # firefox = webdriver.Firefox()
     url = 'https://covid.saude.gov.br/'
