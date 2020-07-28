@@ -2490,3 +2490,16 @@ IPDL protocol error: Handler returned error code!
 1595731661239	Marionette	INFO	Listening on port 41077
 1595731661354	Marionette	WARN	TLS certificate errors will be ignored for this session
 1595731689775	Marionette	INFO	Stopped listening on port 41077
+1595824933798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCeQs4R"
+1595824935382	Marionette	INFO	Listening on port 37869
+1595824935403	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595824970645	Marionette	INFO	Stopped listening on port 37869
+1595908437080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQwbkWR"
+1595908438845	Marionette	INFO	Listening on port 40293
+1595908438977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595908451507	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1595908466725	Marionette	INFO	Stopped listening on port 40293
