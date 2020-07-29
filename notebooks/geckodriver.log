@@ -2503,3 +2503,7 @@ TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 1595908466725	Marionette	INFO	Stopped listening on port 40293
+1595993050434	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletWIr9L"
+1595993052134	Marionette	INFO	Listening on port 42125
+1595993052141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595993081376	Marionette	INFO	Stopped listening on port 42125
