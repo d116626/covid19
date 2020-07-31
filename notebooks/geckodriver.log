@@ -2507,3 +2507,13 @@ webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 1595993052134	Marionette	INFO	Listening on port 42125
 1595993052141	Marionette	WARN	TLS certificate errors will be ignored for this session
 1595993081376	Marionette	INFO	Stopped listening on port 42125
+1596075757586	geckodriver	INFO	Listening on 127.0.0.1:50091
+1596075757591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuIKd9n"
+1596075759128	Marionette	INFO	Listening on port 33129
+1596075759204	Marionette	WARN	TLS certificate errors will be ignored for this session
+1596075786944	Marionette	INFO	Stopped listening on port 33129
+1596198201067	geckodriver	INFO	Listening on 127.0.0.1:40377
+1596198201073	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGm66Sz"
+1596198202973	Marionette	INFO	Listening on port 36499
+1596198203032	Marionette	WARN	TLS certificate errors will be ignored for this session
+1596198236148	Marionette	INFO	Stopped listening on port 36499
