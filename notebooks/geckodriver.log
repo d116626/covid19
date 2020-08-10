@@ -2537,3 +2537,23 @@ webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 1596669574040	Marionette	INFO	Listening on port 34727
 1596669574127	Marionette	WARN	TLS certificate errors will be ignored for this session
 1596669613622	Marionette	INFO	Stopped listening on port 34727
+1596757227849	geckodriver	INFO	Listening on 127.0.0.1:40857
+1596757227858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenryhhE"
+1596757229665	Marionette	INFO	Listening on port 44969
+1596757229764	Marionette	WARN	TLS certificate errors will be ignored for this session
+1596757248869	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:245:13
+TimedPromise@chrome://marionette/content/sync.js:230:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1596757264093	Marionette	INFO	Stopped listening on port 44969
+1596838627024	geckodriver	INFO	Listening on 127.0.0.1:37539
+1596838627029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePHNyWx"
+1596838628775	Marionette	INFO	Listening on port 40273
+1596838628818	Marionette	WARN	TLS certificate errors will be ignored for this session
+1596838657681	Marionette	INFO	Stopped listening on port 40273
+1597026864900	geckodriver	INFO	Listening on 127.0.0.1:36171
+1597026864905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIf97nl"
+1597026866568	Marionette	INFO	Listening on port 36419
+1597026866629	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597026895063	Marionette	INFO	Stopped listening on port 36419
