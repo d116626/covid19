@@ -182,9 +182,70 @@ def add_fases(df):
     
     return df
 
+
+
+
+
+def add_fases_only_evolution(df):
+
+    NC = df['casos_var'].apply(lambda x: casos_fase(x))
+
+    NI = df.apply(lambda x: internacoes_fase(x['internacoes_var'],x['internacoes_14d_pc']), axis=1)
+
+    NO = df.apply(lambda x: obitos_fase(x['obitos_var'],x['obitos_14d_pc']), axis=1)
+
+    c2 = (NC + 3*NI + NO)/5
+
+    df['Evolução da Pandemia'] = c2
+
+    df['casos_var'] = df['casos_var'].round(2).astype(str)
+    df['obitos_var'] = df['obitos_var'].round(2).astype(str)
+    df['internacoes_var'] = df['internacoes_var'].round(2).astype(str)
+
+
+    # df['Classif. Final'] = df['Classif. Final'].astype(int).astype(str)
+    # df['Evolução da Pandemia'] = df['Evolução da Pandemia'].astype(int).astype(str)
+    # df['Capacidade Hospitalar'] = df['Capacidade Hospitalar'].astype(int).astype(str)
+
+    df['Evolução da Pandemia'] = df['Evolução da Pandemia'].round(1).astype(str)
+
+    df['internacoes_14d_pc'] = df['internacoes_14d_pc'].round(1).astype(str)
+    df['obitos_14d_pc'] = df['obitos_14d_pc'].round(1).astype(str)
+    
+    
+    
+    cols = ['datahora','nome_drs','Evolução da Pandemia','casos_var','internacoes_var','obitos_var']
+
+
+
+    cols_rename ={
+        'datahora':'Data',
+        'nome_drs':'DRS',
+        'casos_var':'Variação de casos',
+        'obitos_var':'Variação de óbitos',
+        'leitos_pc':'Leitos COVID/100 mil hab',
+        'internacoes_var':'Variação internações',
+        'internacoes_14d_pc':'Internações / 100 mil habitantes nos ultimos 14 dias',
+        'uti_var':'Ocupação leitos UTI COVID',
+        'obitos_14d_pc':'Óbitos / 100 mil habitantes nos ultimos 14 dias'
+
+    }
+
+
+
+
+    df = df[cols].rename(columns=cols_rename).sort_values(by='DRS')
+        
+    return df
+
+
+
+
+
+
 def padronize_planosp_names(df):
     
-    cols = ['datahora','nome_drs','Capacidade Hospitalar','uti_var','leitos_pc','Evolução da Pandemia','casos_var','internacoes_var','internacoes_14d_pc','obitos_var','obitos_14d_pc','Classif. Final']
+    cols = ['datahora','nome_drs','Capacidade Hospitalar','uti_var','leitos_pc','Evolução da Pandemia','casos_var','internacoes_var','internacoes_14d_pc','obitos_var','obitos_14d_pc']
 
     cols = ['datahora','nome_drs','Capacidade Hospitalar','uti_var','leitos_pc','Evolução da Pandemia','casos_var','internacoes_var','obitos_var','Classif. Final']
 
@@ -299,7 +360,6 @@ def padronize_planosp_parameters(sp_casos,sp_internacoes):
 
     final['nome_drs'] = final['nome_drs'].map(rename_drs)
 
-    mask  = final['nome_drs'].isin(['DRS 01 - Município de São Paulo','DRS 17 - Taubaté','DRS 12 - Registro','DRS 04 - Baixada Santista'])
 
     # mask  = final['nome_drs'].isin(['a'])
     # mask = np.logical_not(mask)
