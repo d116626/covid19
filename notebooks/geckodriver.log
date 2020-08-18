@@ -2573,3 +2573,9 @@ TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
 1597372053464	Marionette	INFO	Stopped listening on port 36757
+1597753223049	geckodriver	INFO	Listening on 127.0.0.1:42883
+1597753223055	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejVl1Es"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597753224941	Marionette	INFO	Listening on port 36685
+1597753225001	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597753255634	Marionette	INFO	Stopped listening on port 36685
