@@ -18,6 +18,8 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot, o
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.firefox.options import Options
+
 import time
 from datetime import datetime
 today = datetime.today().strftime('%Y-%m-%d')
@@ -279,16 +281,18 @@ def update_ms_data():
     profile.set_preference("browser.download.manager.closeWhenDone", True);
     profile.set_preference("pdfjs.disabled", True);
 
-    # year = '2019'
+    #HIDE FIREFOX
+    options = Options()
+    options.headless = True
+    
+    firefox = webdriver.Firefox(options=options,firefox_profile=profile, executable_path = GeckoDriverManager().install())
+    # firefox = webdriver.Firefox(firefox_profile=profile, executable_path = GeckoDriverManager().install())
 
-    firefox = webdriver.Firefox(firefox_profile=profile, executable_path = GeckoDriverManager().install())
-
-    # firefox = webdriver.Firefox()
     url = 'https://covid.saude.gov.br/'
 
     firefox.get(url)
     # firefox.request('POST', url,)
-
+    print('IN')
     time.sleep(7)
 
     download_button = firefox.find_elements_by_xpath('/html[1]/body[1]/app-root[1]/ion-app[1]/ion-router-outlet[1]/app-home[1]/ion-content[1]/div[1]/div[2]/ion-button[1]')[0]
@@ -297,7 +301,8 @@ def update_ms_data():
     time.sleep(15)
 
     firefox.quit()
-
+    print('OUT')
+    
     now_files = listdir(path)
 
     print('downloaded')

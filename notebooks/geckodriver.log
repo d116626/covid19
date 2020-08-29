@@ -2655,3 +2655,70 @@ IPDL protocol error: Handler returned error code!
 
 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
 
+1598742767859	geckodriver	INFO	Listening on 127.0.0.1:40777
+1598742767865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg4pFnJ"
+Error: no DISPLAY environment variable specified
+1598742791838	geckodriver	INFO	Listening on 127.0.0.1:34409
+1598742791853	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBB3mUn"
+Error: no DISPLAY environment variable specified
+1598742807754	geckodriver	INFO	Listening on 127.0.0.1:41957
+1598742807764	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIuTPvp"
+Error: no DISPLAY environment variable specified
+1598742827227	geckodriver	INFO	Listening on 127.0.0.1:55553
+1598742827242	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelEz8RN"
+Error: no DISPLAY environment variable specified
+1598742886778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewEULjX"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598742888731	Marionette	INFO	Listening on port 33567
+1598742888783	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598743003191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuJVLSG"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598743005493	Marionette	INFO	Listening on port 37079
+1598743005503	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:29567): GLib-GObject-CRITICAL **: 20:17:11.106: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1598743043671	geckodriver	INFO	Listening on 127.0.0.1:51629
+1598743044692	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelIXfQp"
+Error: no DISPLAY environment variable specified
+1598743171378	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5YBFKp"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598743172912	Marionette	INFO	Listening on port 34563
+1598743173017	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:30108): GLib-GObject-CRITICAL **: 20:19:52.959: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1598743203076	Marionette	INFO	Stopped listening on port 34563
+1598743645663	geckodriver	INFO	Listening on 127.0.0.1:45869
+1598743645673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2Gc90N"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598743647107	Marionette	INFO	Listening on port 44085
+1598743647178	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:30572): GLib-GObject-CRITICAL **: 20:27:49.092: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1598743678424	Marionette	INFO	Stopped listening on port 44085
+1598743743009	geckodriver	INFO	Listening on 127.0.0.1:57371
+1598743743021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFyPDXk"
+Error: no DISPLAY environment variable specified
+1598744025082	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP04IVR"
+Error: no DISPLAY environment variable specified
+1598744233922	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefPnV6Z"
+Error: no DISPLAY environment variable specified
+1598744267680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevliDVU"
+Error: no DISPLAY environment variable specified
+1598744275330	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecOXjSj"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598744276822	Marionette	INFO	Listening on port 35745
+1598744276836	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
