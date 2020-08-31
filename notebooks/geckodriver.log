@@ -2722,3 +2722,17 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1598911431768	geckodriver	INFO	Listening on 127.0.0.1:44779
+1598911431773	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXhBW51"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598911433369	Marionette	INFO	Listening on port 44201
+1598911433442	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:27472): GLib-GObject-CRITICAL **: 19:04:20.343: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1598911470215	Marionette	INFO	Stopped listening on port 44201
+1598911608468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilex7927o"
+*** You are running in headless mode.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598911610247	Marionette	INFO	Listening on port 38419
+1598911610323	Marionette	WARN	TLS certificate errors will be ignored for this session
